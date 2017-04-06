@@ -1,0 +1,293 @@
+/*
+Theme Name: POD Theme
+Author: Innouveau
+Author URI: https://www.innouveau.com
+Description: custom template for OOM
+Version: 1.0
+License: exclusief gebruik voor OOM
+
+*/
+
+html {
+    font-size: 100%;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-family: "Roboto Condensed";
+    font-size: 16px;
+    line-height: 1.6;
+    background: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+
+
+/* architecture */
+
+.pagewrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.grid-row {
+    clear: both;
+    overflow: auto;
+}
+
+.grid-col {
+    float: left
+}
+
+.grid-50 {
+    width: 50%;
+}
+
+.grid-left {
+    padding-right: 8px;
+}
+
+.grid-right {
+    padding-left: 8px;
+}
+
+#page-body {
+    padding-bottom: 400px;
+}
+
+.background-pattern {
+    background: #FFD150;
+}
+
+
+/* top bar */
+
+#top-bar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding-top: 16px;
+}
+
+
+/* page top */
+
+#page-top {
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+}
+
+#page-top-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+
+#page-top-content {
+    position: absolute;
+    left: 0;
+    top: 160px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+#pod-identity-container {
+    height: 395px;
+}
+
+#pod-identity-side-text {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+    font-style: italic;
+    padding-top: 54px;
+}
+
+
+
+/* menu */
+
+#hamburger {
+    width: 26px;
+    cursor: pointer;
+}
+
+.burger {
+    height: 4px;
+    background: #fff;
+    margin-bottom: 5px;
+}
+
+#hamburger:hover .burger {
+    background: #FFD150;
+}
+
+
+
+/* button */
+
+button, .button {
+    height: 40px;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 900;
+    border: 0;
+    line-height: 0.6;
+    text-decoration: none;
+    display: inline-block;
+}
+
+button.yellow {
+    background: #FFD150;
+    color: #fff;
+}
+
+.button.white {
+    background: #fff;
+    color: #000;
+}
+
+.button:hover {
+    background: #000;
+    color: #fff;
+}
+
+
+
+
+
+
+/* Meeting */
+
+
+/* meeting header */
+
+#meeting-header {
+    color: #fff;
+    font-size: 40px;
+    line-height: 1.2;
+    font-weight: 900;
+}
+
+#meeting-header-date {
+    text-align: right;
+    color: #FFD150;
+}
+
+
+
+/* meeting-module */
+
+.meeting-module-intro {
+    font-size: 32px;
+    line-height: 1.1;
+    font-weight: 700;
+}
+
+.meeting-module-header {
+    border-bottom: 2px solid #C9C6C5;
+    padding: 16px 0;
+}
+
+.meeting-module-header-solo {
+    border-bottom: 0;
+}
+
+.meeting-module-header h3 {
+    margin: 0;
+    font-weight: 900;
+    font-size: 18px;
+    color: #FFD150;
+}
+
+.meeting-module-content {
+    padding: 32px 0;
+}
+
+.meeting-program-row {
+    padding-top: 40px;
+}
+
+.meeting-program-row:first-child {
+    padding-top: 0;
+}
+
+.meeting-program-time {
+    text-align: right;
+    color: #FFD150;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+
+
+/* map */
+
+#meeting-location {
+    height: 600px;
+    position: relative;
+}
+
+#meeting-location-map {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    background: grey;
+}
+
+#meeting-location-content {
+    height: 100%;
+    position: absolute;
+    left: calc(50% - 600px);
+    top: 0;
+    z-index: 1;
+    display: inline-block;
+}
+
+#meeting-location .meeting-module-header {
+    border-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+
+    .pagewrap {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+
+
+
+
