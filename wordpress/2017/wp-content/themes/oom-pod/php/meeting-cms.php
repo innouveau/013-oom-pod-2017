@@ -1,16 +1,8 @@
 ?<
 
-function createCMSinput( $box_name, $post ) {
-    wp_nonce_field( $box_name. '_input', $box_name . '_nonce' );
-    $input_value = get_post_meta( $post->ID, $box_name. '_input', true );
-
-    echo $input_value . ':';
-    echo '<input type="text" id="' . $box_name .'" name="' . $box_name .'_input" value="' . esc_attr( $input_value  ) . '">';
-}
-
 function savePost ($box_name, $post_id ) {
     // Check if our nonce is set.
-    if ( ! isset( $_POST[$box_name . '_input'] ) ) {
+    if ( ! isset( $_POST[$box_name . '_value'] ) ) {
         return;
     }
 
@@ -37,17 +29,23 @@ function savePost ($box_name, $post_id ) {
 
     // OK, it's safe for us to save the data now
     // Make sure that it is set.
-    if ( ! isset( $_POST[$box_name . '_input'] ) ) {
+    if ( ! isset( $_POST[$box_name . '_value'] ) ) {
         return;
     }
 
     // Sanitize user input.
-    $input_value = sanitize_text_field( $_POST[$box_name . '_input'] );
+    $input_value = sanitize_text_field( $_POST[$box_name . '_value'] );
 
     // Update the meta field in the database.
-    update_post_meta( $post_id, $box_name . '_input', $input_value );
+    update_post_meta( $post_id, $box_name . '_value', $input_value );
 }
 
+function createCMSinput($box_name) {
+    wp_nonce_field( $box_name. '_value', $box_name . '_nonce' );
+    $input_value = get_post_meta( $post->ID, $box_name. '_value', true );
+    echo $input_value . ':';
+    echo '<input type="text" id="' . $box_name .'" name="' . $box_name .'_value" value="' . esc_attr( $input_value  ) . '">';
+}
 
 
 
@@ -63,14 +61,17 @@ function savePostMetaBoxes($post_id) {
     }
 }
 
-function createAllCMSinputs($post_id) {
-    for ($i = 0; $i < $count($cmsValues); $i++) {
+
+
+function createAllCMSinputs() {
+    $l = $count($cmsValues);
+    for ($i = 0; $i < $l; $i++) {
         $item = $cmsValues[$i];
         $screens = array( 'post');
         foreach ( $screens as $screen ) {
             add_meta_box(
-                'links_sectionid',
-                __( 'links', 'myplugin_textdomain' ),
+                $item . '_id',
+                $item,
                 createCMSinput,
                 $screen
             );
