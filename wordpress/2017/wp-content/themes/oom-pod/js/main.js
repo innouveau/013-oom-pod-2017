@@ -2,7 +2,7 @@ $(window).ready(function(){
 
     setPageTopHeight();
     listenToScroll();
-
+    listenToWorkshop();
 });
 
 function setPageTopHeight() {
@@ -18,19 +18,43 @@ function listenToScroll() {
         // do set element at end of scrolling
         clearTimeout(timer);
         timer = setTimeout(function(){
-            setElement();
+            setElements();
         }, 50);
 
 
-        setElement();
+        setElements();
     });
 
-    function setElement() {
+    function setElements() {
         var top = Math.floor(0.7 * $(window).scrollTop());
         if (top >= 0) {
             $('#page-top-image').css('top', top);
         }
+
+        if (top > 160) {
+            $('#top-bar').addClass('scrolled');
+            $('#top-bar-mini-logo').fadeIn(200);
+        } else {
+            $('#top-bar').removeClass('scrolled');
+            $('#top-bar-mini-logo').fadeOut(200);
+        }
     }
+}
+
+function listenToWorkshop() {
+    var showButton = $('#show-workshops'),
+        hideButton = $('#hide-workshops'),
+        frame = $('#meeting-workshops');
+
+    hideButton.click(function(){
+        showButton.show();
+        frame.hide();
+    });
+
+    showButton.click(function(){
+        showButton.hide();
+        frame.show();
+    });
 }
 
 function initMap() {
