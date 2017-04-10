@@ -66,10 +66,15 @@ class InterfaceBuilder
         wp_nonce_field('pod_nonce', 'pod_nonce');
 
         $input_value = get_post_meta($post->ID, $field['name']. '_value', true );
+        $type = $field['type'];
 
-        echo '<label for=" ' . $field['name']. '_value">' . $field['name'].'</label>';
-        echo '<input type="text" id="' . $field['name'] .'" name="' . $field['name'] .'_value" value="' . esc_attr( $input_value  ) . '">';
-        echo "<br />";
+        if ($type == 'input') {
+            echo '<input type="text" size="' . $field['size'] . '" placeholder="' . $field['placeholder'] .'" id="' . $field['name'] .'" name="' . $field['name'] .'_value" value="' . esc_attr( $input_value  ) . '">';
+            echo "<br />";
+        } else if ($type == 'textarea') {
+             echo '<textarea style="resize:none" cols="40" rows="' . $field['size'] . '" placeholder="' . $field['placeholder'] .'" id="' . $field['name'] .'" name="' . $field['name'] .'_value">' . esc_attr( $input_value  ) . '</textarea>';
+            echo "<br />";
+        }
     }
 
     protected function setTitle($title)
