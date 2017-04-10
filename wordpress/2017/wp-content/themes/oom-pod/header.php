@@ -73,25 +73,25 @@
 
 
             <div id="page-top-content">
+                    <div class="pagewrap">
+                        <div id="pod-identity-container" class="grid-row">
+                            <div class="grid-50 grid-right grid-col">&nbsp;</div>
 
-                    <div id="pod-identity-container" class="grid-row">
-                        <div class="grid-50 grid-right grid-col">&nbsp;</div>
-
-                        <div id="pod-identity" class="grid-50 grid-right grid-col">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/pod-logo-2017.svg">
-                           </div>
-                    </div>
-
-                    <div id="meeting-header" class="grid-row">
-                        <div id="meeting-header-date" class="grid-50 grid-left grid-col">
-                            29 juni
+                            <div id="pod-identity" class="grid-50 grid-right grid-col">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/pod-logo-2017.svg">
+                               </div>
                         </div>
-                        <div id="meeting-header-location" class="grid-50 grid-right grid-col">
-                            Complex Willemsoord<br>
-                            Den Helder
+
+                        <div id="meeting-header" class="grid-row">
+                            <div id="meeting-header-date" class="grid-50 grid-left grid-col">
+                                29 juni
+                            </div>
+                            <div id="meeting-header-location" class="grid-50 grid-right grid-col">
+                                Complex Willemsoord<br>
+                                Den Helder
+                            </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>

@@ -4,116 +4,27 @@
 
             <!-- programma -->
             <div class="meeting-module">
-                <div class="meeting-module-header pagewrap">
-                    <h3>
-                        programma
-                    </h3>
-                </div>
-
-                <div class="meeting-module-content pagewrap">
-                    <div class="meeting-module-absolute">
-                        <div class="meeting-module-intro">
-                            Een inspirerende dag met collega’s onder elkaar
-                        </div>
-                    </div>
-                    <div class="grid-row meeting-program-row">
-                        <div class="meeting-program-time grid-50 grid-left grid-col">
-                            13:00
-                        </div>
-                        <div class="meeting-program-description grid-50 grid-right grid-col">
-                            <span class="meeting-program-title">Rondleiding</span> Em invenim est, unt volenes
-                            cipsanti aborem- pos millo cus, anis audis que
-                            dolorporum, coreptas re que voloreius dis et
-                            landus, is etures aliquis ent ea as soluptatiunt.
-                        </div>
-                    </div>
-
-                    <div class="grid-row meeting-program-row">
-                        <div class="meeting-program-time grid-50 grid-left grid-col">
-                            15:00
-                        </div>
-                        <div class="meeting-program-description grid-50 grid-right grid-col">
-                            <span class="meeting-program-title">Rondleiding</span> Em invenim est, unt volenes
-                            cipsanti aborem- pos millo cus, anis audis que
-                            dolorporum, coreptas re que voloreius dis et
-                            landus, is etures aliquis ent ea as soluptatiunt.
-                        </div>
-                    </div>
-
-                    <div class="grid-row meeting-program-row">
-                        <div class="meeting-program-time grid-50 grid-left grid-col">
-                            17:00
-                        </div>
-                        <div class="meeting-program-description grid-50 grid-right grid-col">
-                            <span class="meeting-program-title">Rondleiding</span> Em invenim est, unt volenes
-                            cipsanti aborem- pos millo cus, anis audis que
-                            dolorporum, coreptas re que voloreius dis et
-                            landus, is etures aliquis ent ea as soluptatiunt.
-                        </div>
+                <div class="pagewrap">
+                    <div class="meeting-module-header">
+                        <h3>
+                            programma
+                        </h3>
                     </div>
                 </div>
-            </div>
 
-            <!-- workshops -->
-            <div class="meeting-module">
-                <div class="meeting-module-header pagewrap">
-                    <h3>
-                        workshops
-                    </h3>
-                </div>
-
-                <div class="meeting-module-content pagewrap">
-                    <div class="grid-row">
-                        <div class="grid-50 grid-left grid-col">
+                <div class="pagewrap">
+                    <div class="meeting-module-content">
+                        <div class="meeting-module-absolute">
                             <div class="meeting-module-intro">
-                                Keuze uit een gevarieerd aanbod aan workshops
+                                Een inspirerende dag met collega’s onder elkaar
                             </div>
                         </div>
-                        <div class="grid-50 grid-right grid-col">
-                            Er wordt de gelegenheid geboden om twee
-                            workshops te volgen; één in het ochtend en één
-                            in het middag deel van het programma. In het
-                            onderstaand overzicht kunt u zien waar de
-                            workshops over gaan, kies voor ieder dagdeel één
-                            uit. Daarnaast vragen wij u een reserve keuze
-                            te maken in- dien een door u gekozen workshop
-                            vol zit.
-                            <br><br>
-                            <button class="yellow" id="show-workshops">toon workshops</button>
-                        </div>
-                    </div>
-
-                    <div id="meeting-workshops">
-                        <div class="grid-row meeting-workshop-row">
-                            <div class="meeting-workshop-time grid-50 grid-left grid-col">
-                                A
+                        <div class="grid-row meeting-program-row">
+                            <div class="meeting-program-time grid-50 grid-left grid-col">
+                                13:00
                             </div>
-                            <div class="meeting-workshop-description grid-50 grid-right grid-col">
-                                <span class="meeting-workshop-title">Titel van de workshop</span> Em invenim est, unt volenes
-                                cipsanti aborem- pos millo cus, anis audis que
-                                dolorporum, coreptas re que voloreius dis et
-                                landus, is etures aliquis ent ea as soluptatiunt.
-                            </div>
-                        </div>
-
-                        <div class="grid-row meeting-workshop-row">
-                            <div class="meeting-workshop-time grid-50 grid-left grid-col">
-                                B
-                            </div>
-                            <div class="meeting-workshop-description grid-50 grid-right grid-col">
-                                <span class="meeting-workshop-title">Titel van de workshop</span> Em invenim est, unt volenes
-                                cipsanti aborem- pos millo cus, anis audis que
-                                dolorporum, coreptas re que voloreius dis et
-                                landus, is etures aliquis ent ea as soluptatiunt.
-                            </div>
-                        </div>
-
-                        <div class="grid-row meeting-workshop-row">
-                            <div class="meeting-workshop-time grid-50 grid-left grid-col">
-                                C
-                            </div>
-                            <div class="meeting-workshop-description grid-50 grid-right grid-col">
-                                <span class="meeting-workshop-title">Titel van de workshop</span> Em invenim est, unt volenes
+                            <div class="meeting-program-description grid-50 grid-right grid-col">
+                                <span class="meeting-program-title">Rondleiding</span> Em invenim est, unt volenes
                                 cipsanti aborem- pos millo cus, anis audis que
                                 dolorporum, coreptas re que voloreius dis et
                                 landus, is etures aliquis ent ea as soluptatiunt.
@@ -121,9 +32,106 @@
                         </div>
 
                         <div class="grid-row meeting-program-row">
-                            <div class="grid-50 grid-left grid-col"></div>
+                            <div class="meeting-program-time grid-50 grid-left grid-col">
+                                15:00
+                            </div>
+                            <div class="meeting-program-description grid-50 grid-right grid-col">
+                                <span class="meeting-program-title">Rondleiding</span> Em invenim est, unt volenes
+                                cipsanti aborem- pos millo cus, anis audis que
+                                dolorporum, coreptas re que voloreius dis et
+                                landus, is etures aliquis ent ea as soluptatiunt.
+                            </div>
+                        </div>
+
+                        <div class="grid-row meeting-program-row">
+                            <div class="meeting-program-time grid-50 grid-left grid-col">
+                                17:00
+                            </div>
+                            <div class="meeting-program-description grid-50 grid-right grid-col">
+                                <span class="meeting-program-title">Rondleiding</span> Em invenim est, unt volenes
+                                cipsanti aborem- pos millo cus, anis audis que
+                                dolorporum, coreptas re que voloreius dis et
+                                landus, is etures aliquis ent ea as soluptatiunt.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- workshops -->
+            <div class="meeting-module">
+                <div class="pagewrap">
+                    <div class="meeting-module-header">
+                        <h3>
+                            workshops
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="pagewrap">
+                    <div class="meeting-module-content">
+                        <div class="grid-row">
+                            <div class="grid-50 grid-left grid-col">
+                                <div class="meeting-module-intro">
+                                    Keuze uit een gevarieerd aanbod aan workshops
+                                </div>
+                            </div>
                             <div class="grid-50 grid-right grid-col">
-                                <button class="yellow" id="hide-workshops">verberg</button>
+                                Er wordt de gelegenheid geboden om twee
+                                workshops te volgen; één in het ochtend en één
+                                in het middag deel van het programma. In het
+                                onderstaand overzicht kunt u zien waar de
+                                workshops over gaan, kies voor ieder dagdeel één
+                                uit. Daarnaast vragen wij u een reserve keuze
+                                te maken in- dien een door u gekozen workshop
+                                vol zit.
+                                <br><br>
+                                <button class="yellow" id="show-workshops">toon workshops</button>
+                            </div>
+                        </div>
+
+                        <div id="meeting-workshops">
+                            <div class="grid-row meeting-workshop-row">
+                                <div class="meeting-workshop-time grid-50 grid-left grid-col">
+                                    A
+                                </div>
+                                <div class="meeting-workshop-description grid-50 grid-right grid-col">
+                                    <span class="meeting-workshop-title">Titel van de workshop</span> Em invenim est, unt volenes
+                                    cipsanti aborem- pos millo cus, anis audis que
+                                    dolorporum, coreptas re que voloreius dis et
+                                    landus, is etures aliquis ent ea as soluptatiunt.
+                                </div>
+                            </div>
+
+                            <div class="grid-row meeting-workshop-row">
+                                <div class="meeting-workshop-time grid-50 grid-left grid-col">
+                                    B
+                                </div>
+                                <div class="meeting-workshop-description grid-50 grid-right grid-col">
+                                    <span class="meeting-workshop-title">Titel van de workshop</span> Em invenim est, unt volenes
+                                    cipsanti aborem- pos millo cus, anis audis que
+                                    dolorporum, coreptas re que voloreius dis et
+                                    landus, is etures aliquis ent ea as soluptatiunt.
+                                </div>
+                            </div>
+
+                            <div class="grid-row meeting-workshop-row">
+                                <div class="meeting-workshop-time grid-50 grid-left grid-col">
+                                    C
+                                </div>
+                                <div class="meeting-workshop-description grid-50 grid-right grid-col">
+                                    <span class="meeting-workshop-title">Titel van de workshop</span> Em invenim est, unt volenes
+                                    cipsanti aborem- pos millo cus, anis audis que
+                                    dolorporum, coreptas re que voloreius dis et
+                                    landus, is etures aliquis ent ea as soluptatiunt.
+                                </div>
+                            </div>
+
+                            <div class="grid-row meeting-program-row">
+                                <div class="grid-50 grid-left grid-col"></div>
+                                <div class="grid-50 grid-right grid-col">
+                                    <button class="yellow" id="hide-workshops">verberg</button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -131,10 +139,12 @@
             </div>
 
             <div class="meeting-module">
-                <div class="meeting-module-header meeting-module-header-solo pagewrap">
-                    <h3>
-                        aanmelden
-                    </h3>
+                <div class="pagewrap">
+                    <div class="meeting-module-header meeting-module-header-solo">
+                        <h3>
+                            aanmelden
+                        </h3>
+                    </div>
                 </div>
 
                 <div class="meeting-module-content background-pattern">

@@ -380,9 +380,53 @@ button.yellow {
     .pagewrap {
         width: 100%;
         margin: 0;
+        padding: 0 20px;
+    }
+
+    #meeting-location-content {
+        left: 20px;
     }
 }
 
+
+
+
+@media (max-width: 768px) {
+
+    #top-logos {
+        display: none;
+    }
+
+    #page-top-content {
+        top: 80px;
+    }
+
+    #meeting-header-date {
+        text-align: left;
+    }
+
+    .grid-col {
+        float: none;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .meeting-module-absolute {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+
+    .meeting-module-intro {
+        padding-bottom: 40px;
+    }
+
+    .meeting-program-time, .meeting-workshop-time {
+        text-align: left;
+    }
+}
 
 
 
