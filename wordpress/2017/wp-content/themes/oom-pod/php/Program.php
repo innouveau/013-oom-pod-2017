@@ -42,6 +42,36 @@ class Program
                     'placeholder' => 'Postcode',
                     'size' => 8
                 ],
+                'field_6' => [
+                    'type' => 'input',
+                    'name' => 'meeting_lat',
+                    'placeholder' => 'Google Maps Lat.',
+                    'size' => 5
+                ],
+                'field_7' => [
+                    'type' => 'input',
+                    'name' => 'meeting_lng',
+                    'placeholder' => 'Google Maps Lng.',
+                    'size' => 5
+                ],
+                'field_8' => [
+                    'type' => 'input',
+                    'name' => 'meeting_form_link',
+                    'placeholder' => 'Link naar het formulier',
+                    'size' => 30
+                ],
+                'field_9' => [
+                    'type' => 'textarea',
+                    'name' => 'program_intro',
+                    'placeholder' => 'Tekst bij het pogrammma',
+                    'size' => 3
+                ],
+                'field_10' => [
+                    'type' => 'textarea',
+                    'name' => 'workshop_intro',
+                    'placeholder' => 'Tekst bij de workshops',
+                    'size' => 3
+                ],
             ],
         ],
 
@@ -225,7 +255,365 @@ class Program
                         ],
                     ],
                 ],
+                'P9' => [
+                    'fields' => [
+                        'field_1' => [
+                            'type' => 'input',
+                            'name' => 'program_9_time',
+                            'placeholder' => 'Tijd',
+                            'size' => 3
+                        ],
+                        'field_2' => [
+                            'type' => 'input',
+                            'name' => 'program_9_name',
+                            'placeholder' => 'Titel',
+                            'size' => 20
+                        ],
+                        'field_3' => [
+                            'type' => 'textarea',
+                            'name' => 'program_9_description',
+                            'placeholder' => 'Beschrijving',
+                            'size' => 5,
+                        ],
+                    ],
+                ],
+                'P10' => [
+                    'fields' => [
+                        'field_1' => [
+                            'type' => 'input',
+                            'name' => 'program_10_time',
+                            'placeholder' => 'Tijd',
+                            'size' => 3
+                        ],
+                        'field_2' => [
+                            'type' => 'input',
+                            'name' => 'program_10_name',
+                            'placeholder' => 'Titel',
+                            'size' => 20
+                        ],
+                        'field_3' => [
+                            'type' => 'textarea',
+                            'name' => 'program_10_description',
+                            'placeholder' => 'Beschrijving',
+                            'size' => 5,
+                        ],
+                    ],
+                ],
+                'P11' => [
+                    'fields' => [
+                        'field_1' => [
+                            'type' => 'input',
+                            'name' => 'program_11_time',
+                            'placeholder' => 'Tijd',
+                            'size' => 3
+                        ],
+                        'field_2' => [
+                            'type' => 'input',
+                            'name' => 'program_11_name',
+                            'placeholder' => 'Titel',
+                            'size' => 20
+                        ],
+                        'field_3' => [
+                            'type' => 'textarea',
+                            'name' => 'program_11_description',
+                            'placeholder' => 'Beschrijving',
+                            'size' => 5,
+                        ],
+                    ],
+                ],
+                'P12' => [
+                    'fields' => [
+                        'field_1' => [
+                            'type' => 'input',
+                            'name' => 'program_12_time',
+                            'placeholder' => 'Tijd',
+                            'size' => 3
+                        ],
+                        'field_2' => [
+                            'type' => 'input',
+                            'name' => 'program_12_name',
+                            'placeholder' => 'Titel',
+                            'size' => 20
+                        ],
+                        'field_3' => [
+                            'type' => 'textarea',
+                            'name' => 'program_12_description',
+                            'placeholder' => 'Beschrijving',
+                            'size' => 5,
+                        ],
+                    ],
+                ]
             ],
         ],
+
+        'group_3' => [
+                'title' => 'Workshops',
+                'programs' => [
+                    'W1' => [
+                        'fields' => [
+                            'field_1' => [
+                                'type' => 'input',
+                                'name' => 'workshop_1_time',
+                                'placeholder' => 'Code',
+                                'size' => 3
+                            ],
+                            'field_2' => [
+                                'type' => 'input',
+                                'name' => 'workshop_1_name',
+                                'placeholder' => 'Titel',
+                                'size' => 20
+                            ],
+                            'field_3' => [
+                                'type' => 'textarea',
+                                'name' => 'workshop_1_description',
+                                'placeholder' => 'Beschrijving',
+                                'size' => 5,
+                            ],
+                        ],
+                    ],
+                    'W2' => [
+                        'fields' => [
+                            'field_1' => [
+                                'type' => 'input',
+                                'name' => 'workshop_2_time',
+                                'placeholder' => 'Code',
+                                'size' => 3
+                            ],
+                            'field_2' => [
+                                'type' => 'input',
+                                'name' => 'workshop_2_name',
+                                'placeholder' => 'Titel',
+                                'size' => 20
+                            ],
+                            'field_3' => [
+                                'type' => 'textarea',
+                                'name' => 'workshop_2_description',
+                                'placeholder' => 'Beschrijving',
+                                'size' => 5,
+                            ],
+                        ],
+                    ],
+                    'W3' => [
+                        'fields' => [
+                            'field_1' => [
+                                'type' => 'input',
+                                'name' => 'workshop_3_time',
+                                'placeholder' => 'Code',
+                                'size' => 3
+                            ],
+                            'field_2' => [
+                                'type' => 'input',
+                                'name' => 'workshop_3_name',
+                                'placeholder' => 'Titel',
+                                'size' => 20
+                            ],
+                            'field_3' => [
+                                'type' => 'textarea',
+                                'name' => 'workshop_3_description',
+                                'placeholder' => 'Beschrijving',
+                                'size' => 5,
+                            ],
+                        ],
+                    ],
+                    'W4' => [
+                        'fields' => [
+                            'field_1' => [
+                                'type' => 'input',
+                                'name' => 'workshop_4_time',
+                                'placeholder' => 'Code',
+                                'size' => 3
+                            ],
+                            'field_2' => [
+                                'type' => 'input',
+                                'name' => 'workshop_4_name',
+                                'placeholder' => 'Titel',
+                                'size' => 20
+                            ],
+                            'field_3' => [
+                                'type' => 'textarea',
+                                'name' => 'workshop_4_description',
+                                'placeholder' => 'Beschrijving',
+                                'size' => 5,
+                            ],
+                        ],
+                    ],
+                    'W5' => [
+                        'fields' => [
+                            'field_1' => [
+                                'type' => 'input',
+                                'name' => 'workshop_5_time',
+                                'placeholder' => 'Code',
+                                'size' => 3
+                            ],
+                            'field_2' => [
+                                'type' => 'input',
+                                'name' => 'workshop_5_name',
+                                'placeholder' => 'Titel',
+                                'size' => 20
+                            ],
+                            'field_3' => [
+                                'type' => 'textarea',
+                                'name' => 'workshop_5_description',
+                                'placeholder' => 'Beschrijving',
+                                'size' => 5,
+                            ],
+                        ],
+                    ],
+                    'W6' => [
+                        'fields' => [
+                            'field_1' => [
+                                'type' => 'input',
+                                'name' => 'workshop_6_time',
+                                'placeholder' => 'Code',
+                                'size' => 3
+                            ],
+                            'field_2' => [
+                                'type' => 'input',
+                                'name' => 'workshop_6_name',
+                                'placeholder' => 'Titel',
+                                'size' => 20
+                            ],
+                            'field_3' => [
+                                'type' => 'textarea',
+                                'name' => 'workshop_6_description',
+                                'placeholder' => 'Beschrijving',
+                                'size' => 5,
+                            ],
+                        ],
+                    ],
+                    'W7' => [
+                        'fields' => [
+                            'field_1' => [
+                                'type' => 'input',
+                                'name' => 'workshop_7_time',
+                                'placeholder' => 'Code',
+                                'size' => 3
+                            ],
+                            'field_2' => [
+                                'type' => 'input',
+                                'name' => 'workshop_7_name',
+                                'placeholder' => 'Titel',
+                                'size' => 20
+                            ],
+                            'field_3' => [
+                                'type' => 'textarea',
+                                'name' => 'workshop_7_description',
+                                'placeholder' => 'Beschrijving',
+                                'size' => 5,
+                            ],
+                        ],
+                    ],
+                    'W8' => [
+                        'fields' => [
+                            'field_1' => [
+                                'type' => 'input',
+                                'name' => 'workshop_8_time',
+                                'placeholder' => 'Code',
+                                'size' => 3
+                            ],
+                            'field_2' => [
+                                'type' => 'input',
+                                'name' => 'workshop_8_name',
+                                'placeholder' => 'Titel',
+                                'size' => 20
+                            ],
+                            'field_3' => [
+                                'type' => 'textarea',
+                                'name' => 'workshop_8_description',
+                                'placeholder' => 'Beschrijving',
+                                'size' => 5,
+                            ],
+                        ],
+                    ],
+                    'W9' => [
+                        'fields' => [
+                            'field_1' => [
+                                'type' => 'input',
+                                'name' => 'workshop_9_time',
+                                'placeholder' => 'Code',
+                                'size' => 3
+                            ],
+                            'field_2' => [
+                                'type' => 'input',
+                                'name' => 'workshop_9_name',
+                                'placeholder' => 'Titel',
+                                'size' => 20
+                            ],
+                            'field_3' => [
+                                'type' => 'textarea',
+                                'name' => 'workshop_9_description',
+                                'placeholder' => 'Beschrijving',
+                                'size' => 5,
+                            ],
+                        ],
+                    ],
+                    'W10' => [
+                        'fields' => [
+                            'field_1' => [
+                                'type' => 'input',
+                                'name' => 'workshop_10_time',
+                                'placeholder' => 'Code',
+                                'size' => 3
+                            ],
+                            'field_2' => [
+                                'type' => 'input',
+                                'name' => 'workshop_10_name',
+                                'placeholder' => 'Titel',
+                                'size' => 20
+                            ],
+                            'field_3' => [
+                                'type' => 'textarea',
+                                'name' => 'workshop_10_description',
+                                'placeholder' => 'Beschrijving',
+                                'size' => 5,
+                            ],
+                        ],
+                    ],
+                    'W11' => [
+                        'fields' => [
+                            'field_1' => [
+                                'type' => 'input',
+                                'name' => 'workshop_11_time',
+                                'placeholder' => 'Code',
+                                'size' => 3
+                            ],
+                            'field_2' => [
+                                'type' => 'input',
+                                'name' => 'workshop_11_name',
+                                'placeholder' => 'Titel',
+                                'size' => 20
+                            ],
+                            'field_3' => [
+                                'type' => 'textarea',
+                                'name' => 'workshop_11_description',
+                                'placeholder' => 'Beschrijving',
+                                'size' => 5,
+                            ],
+                        ],
+                    ],
+                    'W12' => [
+                        'fields' => [
+                            'field_1' => [
+                                'type' => 'input',
+                                'name' => 'workshop_12_time',
+                                'placeholder' => 'Code',
+                                'size' => 3
+                            ],
+                            'field_2' => [
+                                'type' => 'input',
+                                'name' => 'workshop_12_name',
+                                'placeholder' => 'Titel',
+                                'size' => 20
+                            ],
+                            'field_3' => [
+                                'type' => 'textarea',
+                                'name' => 'workshop_12_description',
+                                'placeholder' => 'Beschrijving',
+                                'size' => 5,
+                            ],
+                        ],
+                    ]
+                ],
+            ],
     ];
 }
