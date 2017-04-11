@@ -4,17 +4,18 @@
     if(have_posts()): while(have_posts()) : the_post();
 
         // metabox variables
-        $meeting_date = get_post_meta($post->ID, 'meeting_date', true);
-        $meeting_location = get_post_meta($post->ID, 'meeting_location', true);
-        $meeting_city = get_post_meta($post->ID, 'meeting_city', true);
-        $meeting_address = get_post_meta($post->ID, 'meeting_address', true);
-        $meeting_zipcode = get_post_meta($post->ID, 'meeting_zipcode', true);
-        $meeting_lat = get_post_meta($post->ID, 'meeting_lat', true);
-        $meeting_lng = get_post_meta($post->ID, 'meeting_lng', true);
-        $meeting_form_link = get_post_meta($post->ID, 'meeting_form_link', true);
-        $program_intro = get_post_meta($post->ID, 'program_intro', true);
-        $workshop_quote = get_post_meta($post->ID, 'workshop_quote', true);
-        $workshop_intro = get_post_meta($post->ID, 'workshop_intro', true);
+        $meeting_date = get_post_meta($post->ID, 'meeting_date_value', true);
+        $meeting_location = get_post_meta($post->ID, 'meeting_location_value', true);
+        $meeting_city = get_post_meta($post->ID, 'meeting_city_value', true);
+        $meeting_address = get_post_meta($post->ID, 'meeting_address_value', true);
+        $meeting_zipcode = get_post_meta($post->ID, 'meeting_zipcode_value', true);
+        $meeting_lat = get_post_meta($post->ID, 'meeting_lat_value', true);
+        $meeting_lng = get_post_meta($post->ID, 'meeting_lng_value', true);
+        $meeting_form_link = get_post_meta($post->ID, 'meeting_form_link_value', true);
+        $program_intro = get_post_meta($post->ID, 'program_intro_value', true);
+        $workshop_quote = get_post_meta($post->ID, 'workshop_quote_value', true);
+        $workshop_intro = get_post_meta($post->ID, 'workshop_intro_value', true);
+
 
 ?>
 
@@ -64,7 +65,7 @@
                     <div class="meeting-module-content">
                         <div class="meeting-module-absolute">
                             <div class="meeting-module-intro">
-                                Een inspirerende dag met collega’s onder elkaar
+                                <?php echo $program_intro; ?>
                             </div>
                         </div>
                         <div class="grid-row meeting-program-row">
@@ -121,18 +122,11 @@
                         <div class="grid-row">
                             <div class="grid-50 grid-left grid-col">
                                 <div class="meeting-module-intro">
-                                    Keuze uit een gevarieerd aanbod aan workshops
+                                    <?php echo $workshop_quote; ?>
                                 </div>
                             </div>
                             <div class="grid-50 grid-right grid-col">
-                                Er wordt de gelegenheid geboden om twee
-                                workshops te volgen; één in het ochtend en één
-                                in het middag deel van het programma. In het
-                                onderstaand overzicht kunt u zien waar de
-                                workshops over gaan, kies voor ieder dagdeel één
-                                uit. Daarnaast vragen wij u een reserve keuze
-                                te maken in- dien een door u gekozen workshop
-                                vol zit.
+                                <?php echo $workshop_intro; ?>
                                 <br><br>
                                 <button class="yellow" id="show-workshops">toon workshops</button>
                             </div>
@@ -206,7 +200,7 @@
                             <div class="grid-50 grid-right grid-col">
                                 Ga naar het online inschrijfformulier van OTIB en de organiserende partijen om je aan te melden
                                 <br><br>
-                                <a class="button white" href="">aanmelden</a>
+                                <a class="button white" href="<?php echo $meeting_form_link; ?>">aanmelden</a>
                             </div>
                         </div>
                     </div>
@@ -224,15 +218,15 @@
                     </div>
                     <div class="meeting-module-content">
                         <div class="meeting-module-intro">
-                            Willemsoord 47<br>
-                            1780 AD<br>
-                            Den Helder
+                            <?php echo $meeting_address; ?><br>
+                            <?php echo $meeting_zipcode; ?><br>
+                            <?php echo $meeting_city ?>
                         </div>
                     </div>
 
                 </div>
 
-                <a href="http://maps.google.com/?q=willemsoord 47, 1780 AD, Den Helder" class="plan-route" target="_blank">
+                <a href="http://maps.google.com/?q=<?php echo $meeting_address; ?>, <?php echo $meeting_zipcode; ?>, <?php echo $meeting_city ?>" class="plan-route" target="_blank">
                     <div class="plan-route-circle"></div>
                     <div class="plan-route-text">
                         plan route
@@ -241,6 +235,15 @@
 
 
             </div>
+
+            <!-- google maps -->
+            <script>
+                var meetingCoordinates = {
+                    lat: <?php echo $meeting_lat; ?>,
+                    lng: <?php echo $meeting_lng; ?>
+                }
+            </script>
+            <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwtBMZCa2IYtCuY6pqpupaO2igtDAa-rQ&callback=initMap"></script>
 
 
 
