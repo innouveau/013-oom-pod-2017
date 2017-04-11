@@ -1,26 +1,29 @@
 <?php
     get_header();
+    require 'php/uiElements.php';
 
     if(have_posts()): while(have_posts()) : the_post();
 
-        // metabox variables
-        $meeting_date = get_post_meta($post->ID, 'meeting_date_value', true);
-        $meeting_location = get_post_meta($post->ID, 'meeting_location_value', true);
-        $meeting_city = get_post_meta($post->ID, 'meeting_city_value', true);
-        $meeting_address = get_post_meta($post->ID, 'meeting_address_value', true);
-        $meeting_zipcode = get_post_meta($post->ID, 'meeting_zipcode_value', true);
-        $meeting_lat = get_post_meta($post->ID, 'meeting_lat_value', true);
-        $meeting_lng = get_post_meta($post->ID, 'meeting_lng_value', true);
-        $meeting_form_link = get_post_meta($post->ID, 'meeting_form_link_value', true);
-        $program_intro = get_post_meta($post->ID, 'program_intro_value', true);
-        $workshop_quote = get_post_meta($post->ID, 'workshop_quote_value', true);
-        $workshop_intro = get_post_meta($post->ID, 'workshop_intro_value', true);
+        $post_id = $post->ID;
+        $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post_id ), 'full' )[0];
 
+        // metabox variables
+        $meeting_date = get_post_meta($post_id, 'meeting_date_value', true);
+        $meeting_location = get_post_meta($post_id, 'meeting_location_value', true);
+        $meeting_city = get_post_meta($post_id, 'meeting_city_value', true);
+        $meeting_address = get_post_meta($post_id, 'meeting_address_value', true);
+        $meeting_zipcode = get_post_meta($post_id, 'meeting_zipcode_value', true);
+        $meeting_lat = get_post_meta($post_id, 'meeting_lat_value', true);
+        $meeting_lng = get_post_meta($post_id, 'meeting_lng_value', true);
+        $meeting_form_link = get_post_meta($post_id, 'meeting_form_link_value', true);
+        $program_intro = get_post_meta($post_id, 'program_intro_value', true);
+        $workshop_quote = get_post_meta($post_id, 'workshop_quote_value', true);
+        $workshop_intro = get_post_meta($post_id, 'workshop_intro_value', true);
 
 ?>
 
 <div id="page-top">
-            <div id="page-top-image" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/placeholder-header.jpg);"></div>
+            <div id="page-top-image" style="background-image: url(<?php echo $image; ?>);"></div>
 
 
             <div id="page-top-content">
@@ -68,41 +71,7 @@
                                 <?php echo $program_intro; ?>
                             </div>
                         </div>
-                        <div class="grid-row meeting-program-row">
-                            <div class="meeting-program-time grid-50 grid-left grid-col">
-                                13:00
-                            </div>
-                            <div class="meeting-program-description grid-50 grid-right grid-col">
-                                <span class="meeting-program-title">Rondleiding</span> Em invenim est, unt volenes
-                                cipsanti aborem- pos millo cus, anis audis que
-                                dolorporum, coreptas re que voloreius dis et
-                                landus, is etures aliquis ent ea as soluptatiunt.
-                            </div>
-                        </div>
-
-                        <div class="grid-row meeting-program-row">
-                            <div class="meeting-program-time grid-50 grid-left grid-col">
-                                15:00
-                            </div>
-                            <div class="meeting-program-description grid-50 grid-right grid-col">
-                                <span class="meeting-program-title">Rondleiding</span> Em invenim est, unt volenes
-                                cipsanti aborem- pos millo cus, anis audis que
-                                dolorporum, coreptas re que voloreius dis et
-                                landus, is etures aliquis ent ea as soluptatiunt.
-                            </div>
-                        </div>
-
-                        <div class="grid-row meeting-program-row">
-                            <div class="meeting-program-time grid-50 grid-left grid-col">
-                                17:00
-                            </div>
-                            <div class="meeting-program-description grid-50 grid-right grid-col">
-                                <span class="meeting-program-title">Rondleiding</span> Em invenim est, unt volenes
-                                cipsanti aborem- pos millo cus, anis audis que
-                                dolorporum, coreptas re que voloreius dis et
-                                landus, is etures aliquis ent ea as soluptatiunt.
-                            </div>
-                        </div>
+                        <?php getPrograms($post_id); ?>
                     </div>
                 </div>
             </div>
@@ -133,41 +102,7 @@
                         </div>
 
                         <div id="meeting-workshops">
-                            <div class="grid-row meeting-workshop-row">
-                                <div class="meeting-workshop-time grid-50 grid-left grid-col">
-                                    A
-                                </div>
-                                <div class="meeting-workshop-description grid-50 grid-right grid-col">
-                                    <span class="meeting-workshop-title">Titel van de workshop</span> Em invenim est, unt volenes
-                                    cipsanti aborem- pos millo cus, anis audis que
-                                    dolorporum, coreptas re que voloreius dis et
-                                    landus, is etures aliquis ent ea as soluptatiunt.
-                                </div>
-                            </div>
-
-                            <div class="grid-row meeting-workshop-row">
-                                <div class="meeting-workshop-time grid-50 grid-left grid-col">
-                                    B
-                                </div>
-                                <div class="meeting-workshop-description grid-50 grid-right grid-col">
-                                    <span class="meeting-workshop-title">Titel van de workshop</span> Em invenim est, unt volenes
-                                    cipsanti aborem- pos millo cus, anis audis que
-                                    dolorporum, coreptas re que voloreius dis et
-                                    landus, is etures aliquis ent ea as soluptatiunt.
-                                </div>
-                            </div>
-
-                            <div class="grid-row meeting-workshop-row">
-                                <div class="meeting-workshop-time grid-50 grid-left grid-col">
-                                    C
-                                </div>
-                                <div class="meeting-workshop-description grid-50 grid-right grid-col">
-                                    <span class="meeting-workshop-title">Titel van de workshop</span> Em invenim est, unt volenes
-                                    cipsanti aborem- pos millo cus, anis audis que
-                                    dolorporum, coreptas re que voloreius dis et
-                                    landus, is etures aliquis ent ea as soluptatiunt.
-                                </div>
-                            </div>
+                            <?php getWorkshops($post_id); ?>
 
                             <div class="grid-row meeting-program-row">
                                 <div class="grid-50 grid-left grid-col"></div>
@@ -200,7 +135,7 @@
                             <div class="grid-50 grid-right grid-col">
                                 Ga naar het online inschrijfformulier van OTIB en de organiserende partijen om je aan te melden
                                 <br><br>
-                                <a class="button white" href="<?php echo $meeting_form_link; ?>">aanmelden</a>
+                                <a class="button white" target="_blank" href="<?php echo $meeting_form_link; ?>">aanmelden</a>
                             </div>
                         </div>
                     </div>

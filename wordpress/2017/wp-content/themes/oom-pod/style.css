@@ -63,12 +63,11 @@ body {
 }
 
 #page-body {
-    padding-bottom: 400px;
 }
 
 .background-pattern {
     background-color: #FFD150;
-    background-image: url(img/pod-pattern-02.png);
+    background-image: url(img/pod-pattern-03.png);
 }
 
 
@@ -190,6 +189,66 @@ button.yellow {
     color: #fff;
 }
 
+
+
+/* home */
+
+#home-meeting-container {
+    font-size: 0;
+}
+
+.home-meeting {
+    display: inline-block;
+    vertical-align: top;
+    width: calc((100% + 40px) / 3);
+    height: 220px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.home-meeting:nth-child(3n) {
+    margin-right: 0;
+}
+
+.home-meeting-img {
+    height: 180px;
+    position: relative;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.home-meeting-title {
+    position: absolute;
+    left: 8px;
+    bottom: 8px;
+    z-index: 1;
+    line-height: 1.1;
+}
+
+.home-meeting-title h5 {
+    font-weight: 900;
+    color: #FFD150;
+    font-size: 18px;
+    margin: 0;
+    line-height: 1.1;
+}
+
+.home-meeting-title h4 {
+    font-weight: 700;
+    color: #fff;
+    font-size: 33px;
+    margin: 0;
+}
+
+.home-meeting-footer {
+    height: 40px;
+    background: #FFD150;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 4px 8px;
+}
 
 
 
