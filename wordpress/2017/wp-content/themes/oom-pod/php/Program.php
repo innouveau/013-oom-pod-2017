@@ -16,7 +16,7 @@ class Program
                     'type' => 'input',
                     'name' => 'meeting_date',
                     'placeholder' => 'Datum',
-                    'size' => 20
+                    'size' => 8
                 ],
                 'field_2' => [
                     'type' => 'input',
@@ -46,31 +46,37 @@ class Program
                     'type' => 'input',
                     'name' => 'meeting_lat',
                     'placeholder' => 'Google Maps Lat.',
-                    'size' => 5
+                    'size' => 20
                 ],
                 'field_7' => [
                     'type' => 'input',
                     'name' => 'meeting_lng',
                     'placeholder' => 'Google Maps Lng.',
-                    'size' => 5
+                    'size' => 20
                 ],
                 'field_8' => [
                     'type' => 'input',
                     'name' => 'meeting_form_link',
                     'placeholder' => 'Link naar het formulier',
-                    'size' => 30
+                    'size' => 70
                 ],
                 'field_9' => [
-                    'type' => 'textarea',
+                    'type' => 'input',
                     'name' => 'program_intro',
                     'placeholder' => 'Tekst bij het pogrammma',
-                    'size' => 3
+                    'size' => 70
                 ],
                 'field_10' => [
+                    'type' => 'input',
+                    'name' => 'workshop_quote',
+                    'placeholder' => 'Quote bij de workshops',
+                    'size' => 70
+                ],
+                'field_11' => [
                     'type' => 'textarea',
                     'name' => 'workshop_intro',
-                    'placeholder' => 'Tekst bij de workshops',
-                    'size' => 3
+                    'placeholder' => 'Introtekst bij de workshops',
+                    'size' => 10
                 ],
             ],
         ],
