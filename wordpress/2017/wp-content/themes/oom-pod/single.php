@@ -29,11 +29,11 @@
             <div id="page-top-content">
                     <div class="pagewrap">
                         <div id="pod-identity-container" class="grid-row">
-                            <div class="grid-50 grid-right grid-col">&nbsp;</div>
+                            <div class="grid-50 grid-left grid-col">&nbsp;</div>
 
                             <div id="pod-identity" class="grid-50 grid-right grid-col">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/pod-logo-2017.svg">
-                               </div>
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/identity/pod-logo-2017.svg">
+                            </div>
                         </div>
 
                         <div id="meeting-header" class="grid-row">
@@ -55,9 +55,9 @@
         <div id="page-body">
 
             <!-- programma -->
-            <div class="meeting-module">
+            <div class="module">
                 <div class="pagewrap">
-                    <div class="meeting-module-header">
+                    <div class="module-header">
                         <h3>
                             programma
                         </h3>
@@ -65,9 +65,9 @@
                 </div>
 
                 <div class="pagewrap">
-                    <div class="meeting-module-content">
-                        <div class="meeting-module-absolute">
-                            <div class="meeting-module-intro">
+                    <div class="module-content">
+                        <div class="module-absolute">
+                            <div class="module-intro">
                                 <?php echo $program_intro; ?>
                             </div>
                         </div>
@@ -77,9 +77,9 @@
             </div>
 
             <!-- workshops -->
-            <div class="meeting-module">
+            <div class="module">
                 <div class="pagewrap">
-                    <div class="meeting-module-header">
+                    <div class="module-header">
                         <h3>
                             workshops
                         </h3>
@@ -87,10 +87,10 @@
                 </div>
 
                 <div class="pagewrap">
-                    <div class="meeting-module-content">
+                    <div class="module-content">
                         <div class="grid-row">
                             <div class="grid-50 grid-left grid-col">
-                                <div class="meeting-module-intro">
+                                <div class="module-intro">
                                     <?php echo $workshop_quote; ?>
                                 </div>
                             </div>
@@ -115,20 +115,20 @@
                 </div>
             </div>
 
-            <div class="meeting-module">
+            <div class="module">
                 <div class="pagewrap">
-                    <div class="meeting-module-header meeting-module-header-solo">
+                    <div class="module-header module-header-solo">
                         <h3>
                             aanmelden
                         </h3>
                     </div>
                 </div>
 
-                <div class="meeting-module-content background-pattern">
+                <div class="module-content background-pattern">
                     <div class="pagewrap">
                         <div class="grid-row">
                             <div class="grid-50 grid-left grid-col">
-                                <div class="meeting-module-intro">
+                                <div class="module-intro">
                                     Ja, ik neem graag deel aan de dag en meld mij aan
                                 </div>
                             </div>
@@ -142,17 +142,17 @@
                 </div>
             </div>
 
-            <div id="meeting-location" class="meeting-module">
+            <div id="meeting-location" class="module">
                 <div id="meeting-location-map"></div>
 
                 <div id="meeting-location-content">
-                    <div class="meeting-module-header">
+                    <div class="module-header">
                         <h3>
                             Locatie
                         </h3>
                     </div>
-                    <div class="meeting-module-content">
-                        <div class="meeting-module-intro">
+                    <div class="module-content">
+                        <div class="module-intro">
                             <?php echo $meeting_address; ?><br>
                             <?php echo $meeting_zipcode; ?><br>
                             <?php echo $meeting_city ?>

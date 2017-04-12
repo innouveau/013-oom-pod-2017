@@ -1,3 +1,6 @@
+<?php
+    require 'php/svgLogos.php';
+?>
 <!DOCTYPE html>
 
 <html <?php language_attributes(); ?>>
@@ -43,23 +46,15 @@
             <div class="pagewrap">
                 <div class="grid-row">
                     <div id="menu" class="grid-50 grid-left grid-col">
-                        <div id="hamburger">
+                        <a id="hamburger" href="<?php echo get_bloginfo('home'); ?>">
                             <div class="burger"></div>
                             <div class="burger"></div>
                             <div class="burger"></div>
-                        </div>
+                        </a>
                     </div>
 
                     <div id="top-logos" class="grid-50 grid-right grid-col">
-                        <a href="" target="_blank">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/logos/ao-metalektro.png">
-                        </a>
-                        <a href="" target="_blank">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/logos/oom.png">
-                        </a>
-                        <a href="" target="_blank">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/logos/otib.png">
-                        </a>
+                        <?php getLogos(); ?>
                     </div>
                 </div>
             </div>

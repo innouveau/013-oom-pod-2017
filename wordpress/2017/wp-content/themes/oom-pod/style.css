@@ -67,7 +67,7 @@ body {
 
 .background-pattern {
     background-color: #FFD150;
-    background-image: url(img/pod-pattern-03.png);
+    background-image: url(img/patterns/pod-pattern-03.png);
 }
 
 
@@ -80,7 +80,8 @@ body {
     top: 0;
     width: 100%;
     z-index: 1000;
-    padding: 16px 0 12px 0;
+    padding-top: 10px;
+    height: 60px;
     background: transparent;
     transition: all 0.5s ease;
 }
@@ -89,13 +90,47 @@ body {
     background: rgba(0,0,0,0.8);
 }
 
+body.home #top-bar.scrolled {
+    background: rgba(255,255,255,0.8);
+}
+
 #top-bar-mini-logo {
     display: none;
+}
+
+#top-logos {
+    vertical-align: top;
 }
 
 #top-logos a {
     float: left;
     margin-right: 16px;
+}
+
+a.svglogo {
+    text-decoration: none;
+}
+
+a.svglogo svg {
+    display: inline-block;
+}
+
+a.svglogo svg rect,
+a.svglogo svg path,
+a.svglogo svg polygon {
+    fill: #fff;
+}
+
+a.svglogo:hover svg rect,
+a.svglogo:hover svg path,
+a.svglogo:hover svg polygon {
+    fill: #FFD150;
+}
+
+body.home a.svglogo svg rect,
+body.home a.svglogo svg path,
+body.home a.svglogo svg polygon {
+    fill: #000;
 }
 
 
@@ -140,7 +175,8 @@ body {
 #hamburger {
     width: 26px;
     cursor: pointer;
-    margin-top: 8px;
+    margin-top: 10px;
+    display: inline-block;
 }
 
 .burger {
@@ -151,6 +187,10 @@ body {
 
 #hamburger:hover .burger {
     background: #FFD150;
+}
+
+body.home .burger {
+    background: #000;
 }
 
 
@@ -193,7 +233,26 @@ button.yellow {
 
 /* home */
 
+#home-head {
+    height: 700px;
+    background-image: url('img/patterns/triangle-pattern.png');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    padding-top: 220px;
+}
+
+#home-intro {
+    font-size: 20px;
+    line-height: 1.9;
+    font-weight: 700;
+    max-width: 380px;
+    padding-top: 80px;
+}
+
+
+
 #home-meeting-container {
+    padding: 60px 0;
     font-size: 0;
 }
 
@@ -205,6 +264,7 @@ button.yellow {
     cursor: pointer;
     text-decoration: none;
     margin-right: 20px;
+    margin-bottom: 60px;
 }
 
 .home-meeting:nth-child(3n) {
@@ -250,6 +310,9 @@ button.yellow {
     padding: 4px 8px;
 }
 
+#footer-logos {
+    padding-top: 60px;
+}
 
 
 
@@ -278,38 +341,38 @@ button.yellow {
 
 
 
-/* meeting-module */
+/* module */
 
-.meeting-module-content {
+.module-content {
     padding: 35px 0;
     position: relative;
 }
 
-.meeting-module-absolute {
+.module-absolute {
     position: absolute;
     left: 0;
     top: 24px;
     width: 50%;
 }
 
-.meeting-module-intro {
+.module-intro {
     font-size: 32px;
     line-height: 1.1875;
     font-weight: 700;
     max-width: 380px;
 }
 
-.meeting-module-header {
+.module-header {
     border-bottom: 2px solid #C9C6C5;
     padding-top: 16px;
     height: 60px;
 }
 
-.meeting-module-header-solo {
+.module-header-solo {
     border-bottom: 0;
 }
 
-.meeting-module-header h3 {
+.module-header h3 {
     margin: 0;
     font-weight: 900;
     font-size: 18px;
@@ -390,7 +453,7 @@ button.yellow {
     display: inline-block;
 }
 
-#meeting-location .meeting-module-header {
+#meeting-location .module-header {
     border-bottom: 0;
 }
 
@@ -471,14 +534,14 @@ button.yellow {
         padding-right: 0;
     }
 
-    .meeting-module-absolute {
+    .module-absolute {
         position: relative;
         left: 0;
         top: 0;
         width: 100%;
     }
 
-    .meeting-module-intro {
+    .module-intro {
         padding-bottom: 40px;
     }
 
