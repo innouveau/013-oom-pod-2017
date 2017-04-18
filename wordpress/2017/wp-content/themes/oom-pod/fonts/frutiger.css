@@ -1,0 +1,42 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3375514, 2017-04-18T07:46:01-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: FrutigerLTPro-Black by Linotype
+ * URL: http://www.myfonts.com/fonts/linotype/frutiger/pro-75-black/
+ * Licensed pageviews: 500,000
+ * 
+ * Webfont: FrutigerLTPro-Bold by Linotype
+ * URL: http://www.myfonts.com/fonts/linotype/frutiger/pro-65-bold/
+ * Licensed pageviews: 500,000
+ * 
+ * Webfont: FrutigerLTPro-Roman by Linotype
+ * URL: http://www.myfonts.com/fonts/linotype/frutiger/pro-55-roman/
+ * Licensed pageviews: 250,000
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3375514
+ * Webfonts copyright: Part of the digitally encoded machine readable outline data for producing the Typefaces provided is copyrighted &#x00A9; 2006 Linotype GmbH, www.linotype.com. All rights reserved. This software is the property of Linotype GmbH, and may not be reproduced, 
+ * 
+ * © 2017 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/33819a");
+
+  
+@font-face {font-family: 'Frutiger'; font-weight: 900; src: url('webfonts/33819A_0_0.eot');src: url('webfonts/33819A_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/33819A_0_0.woff2') format('woff2'),url('webfonts/33819A_0_0.woff') format('woff'),url('webfonts/33819A_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'Frutiger'; font-weight: 700; src: url('webfonts/33819A_1_0.eot');src: url('webfonts/33819A_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/33819A_1_0.woff2') format('woff2'),url('webfonts/33819A_1_0.woff') format('woff'),url('webfonts/33819A_1_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'Frutiger'; font-weight: 400; src: url('webfonts/33819A_2_0.eot');src: url('webfonts/33819A_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/33819A_2_0.woff2') format('woff2'),url('webfonts/33819A_2_0.woff') format('woff'),url('webfonts/33819A_2_0.ttf') format('truetype');}
+ 

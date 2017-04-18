@@ -5,6 +5,13 @@
     if(have_posts()): while(have_posts()) : the_post();
 
         $post_id = $post->ID;
+        if (get_post_meta($post_id, 'meeting_finished_value', true) == 'x') {
+            $finished = true;
+        } else {
+            $finished = false;
+        }
+
+
         $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post_id ), 'full' )[0];
 
         // metabox variables
@@ -53,6 +60,27 @@
 
 
         <div id="page-body">
+            <?php
+                if ($finished) {
+            ?>
+            <!-- gallery -->
+            <div class="module">
+                <div class="pagewrap">
+                    <div class="module-header">
+                        <h3>
+                            Foto's
+                        </h3>
+                    </div>
+                </div>
+
+                <div class="pagewrap">
+                    <?php the_content(); ?>
+                </div>
+            </div>
+
+            <?php
+                } else {
+            ?>
 
             <!-- programma -->
             <div class="module">
@@ -180,7 +208,9 @@
             </script>
             <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCwtBMZCa2IYtCuY6pqpupaO2igtDAa-rQ&callback=initMap"></script>
 
-
+            <?php
+                }
+            ?>
 
 
         </div>

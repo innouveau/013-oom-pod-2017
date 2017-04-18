@@ -12,6 +12,12 @@ class Program
         'group_1' => [
             'title' => 'Algemeen',
             'fields' => [
+                'field_0' => [
+                    'type' => 'input',
+                    'name' => 'meeting_finished',
+                    'placeholder' => 'Afgelopen. x = ja',
+                    'size' => 15
+                ],
                 'field_1' => [
                     'type' => 'input',
                     'name' => 'meeting_date',

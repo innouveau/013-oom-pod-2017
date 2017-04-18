@@ -3,11 +3,18 @@ $(window).ready(function(){
     setPageTopHeight();
     listenToScroll();
     listenToWorkshop();
+    listenToHamburger();
 });
 
 function setPageTopHeight() {
     var windowHeight = $(window).outerHeight();
     $('#page-top').css('height', windowHeight - 100);
+}
+
+function listenToHamburger() {
+    $('#hamburger').click(function(){
+        $(this).toggleClass('active');
+    });
 }
 
 function listenToScroll() {
