@@ -13,7 +13,7 @@ function setPageTopHeight() {
 
 function listenToHamburger() {
     $('#hamburger').click(function(){
-        $(this).toggleClass('active');
+        $('body').toggleClass('menu-active');
     });
 }
 

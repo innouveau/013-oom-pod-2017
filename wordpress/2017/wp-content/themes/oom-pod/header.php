@@ -1,5 +1,6 @@
 <?php
     require 'php/svgLogos.php';
+    require 'php/uiElements.php';
 ?>
 <!DOCTYPE html>
 
@@ -37,27 +38,21 @@
                             <div class="burger"></div>
                             <div class="burger"></div>
                             <div class="burger"></div>
-                            <?php
-                        $defaults = array(
-                            'theme_location'  => 'main',
-                            'menu'            => 'hamburger',
-                            'container'       => 'div',
-                            'container_class' => '',
-                            'container_id'    => '',
-                            'menu_class'      => '',
-                            'menu_id'         => '',
-                            'echo'            => true,
-                            'fallback_cb'     => 'wp_page_menu',
-                            'before'          => '',
-                            'after'           => '',
-                            'link_before'     => '<div>',
-                            'link_after'      => '</div>',
-                            'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-                            'depth'           => 0,
-                            'walker'          => ''
-                            );
-                            wp_nav_menu( $defaults );
-                            ?>
+                            <div id="hamburger-content">
+                                <ul>
+                                    <li>
+                                        <a href="<?php echo get_bloginfo('home'); ?>">
+                                            <span class="menu-date">overzicht</span>
+                                            <span class="menu-location">Home</span>
+                                        </a>
+                                    </li>
+                                    <?php getMenu(); ?>
+                                </ul>
+
+                                <div id="hamburger-close">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/img/lightbox/close.svg">
+                                </div>
+                            </div>
                         </div>
 
                     </div>

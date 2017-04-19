@@ -194,51 +194,73 @@ body.home .burger {
     background: #000;
 }
 
-.menu-hamburger-container {
-    position: absolute;
-    left: -11px;
-    top: 100%;
-    width: 200px;
-    padding-top: 6px;
+#hamburger-content {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/patterns/pod-pattern-full-white.svg);
+    background-color: #000;
+    background-position: 50% 50%;
+    background-size: cover;
     display: none;
 }
 
-.active .menu-hamburger-container {
-    display: block;
+.menu-active #hamburger-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.menu-hamburger-container ul {
+body.menu-active {
+    overflow: hidden;
+}
+
+#hamburger-content ul {
     padding: 0;
     margin: 0;
     list-style: none;
-    border: 1px solid #ddd;
-    background: #fff;
-    box-shadow: 3px 3px 3px rgba(0,0,0,0.4);
+    width: 100%;
 }
 
-.menu-hamburger-container li:last-child a {
-    border-bottom: none;
-}
-
-.menu-hamburger-container li a {
+#hamburger-content li a {
     display: block;
     padding: 10px;
-    border-bottom: 1px solid #ddd;
     text-decoration: none;
-    color: #000;
-    background: #fff;
-    transition: 0.2s ease;
+    color: #fff;
+    font-size: 0;
+    width: 100%;
 }
 
-.menu-hamburger-container li a:hover {
-    background: #FFD150;
+#hamburger-content li a span {
+    display: inline-block;
+    font-size: 36px;
+    line-height: 1.6;
+    font-weight: 700;
+    width: 50%;
 }
 
-.menu-hamburger-container li.current-menu-item a {
-    background: #ddd;
+#hamburger-content li a .menu-date {
+    color: #FFD150;
+    text-align: right;
+    padding-right: 8px;
+}
+
+#hamburger-content li a .menu-location {
+    color: #fff;
+    padding-left: 8px;
+}
+
+#hamburger-content li.current-menu-item a {
     cursor: default;
 }
 
+#hamburger-close {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+}
 
 
 /* button */

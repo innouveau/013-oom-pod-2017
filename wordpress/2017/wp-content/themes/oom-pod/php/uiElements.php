@@ -37,3 +37,23 @@ function getWorkshops($post_id) {
         <?php }
     }
 }
+
+function getMenu() {
+    $args = array(
+        'posts_per_page' => 10,
+    );
+    $q = new WP_Query($args);
+    if($q->have_posts()) : while($q->have_posts()) : $q->the_post();
+        $post_id = get_the_ID();
+        echo $post_id;
+        $url = get_the_permalink();
+        $meeting_date = get_post_meta($post_id, 'meeting_date_value', true);
+        $meeting_location = get_post_meta($post_id, 'meeting_location_value', true);
+        echo '<li><a href="'. $url . '">';
+        echo '<span class="menu-date">' . $meeting_date . '</span>';
+        echo '<span class="menu-location">' . $meeting_location . '</span>';
+        echo '</a></li>';
+    endwhile;
+    wp_reset_postdata();
+    endif;
+}

@@ -1,6 +1,5 @@
 <?php
     get_header();
-    require 'php/uiElements.php';
 
     if(have_posts()): while(have_posts()) : the_post();
 

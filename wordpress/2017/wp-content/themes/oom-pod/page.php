@@ -1,5 +1,4 @@
 <?php
-    require 'php/uiElements.php';
     get_header();
 
 
