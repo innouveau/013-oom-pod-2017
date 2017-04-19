@@ -25,6 +25,7 @@
         $program_intro = get_post_meta($post_id, 'program_intro_value', true);
         $workshop_quote = get_post_meta($post_id, 'workshop_quote_value', true);
         $workshop_intro = get_post_meta($post_id, 'workshop_intro_value', true);
+        $review_text = get_post_meta($post_id, 'review_text_value', true);
 
 ?>
 
@@ -43,6 +44,19 @@
                         </div>
 
                         <div id="meeting-header" class="grid-row">
+                            <?php
+                                if ($finished) {
+                            ?>
+
+                            <div class="grid-50 grid-left grid-col"></div>
+                            <div id="meeting-header-review" class="grid-50 grid-right grid-col">
+                                Terugblik
+                            </div>
+
+                            <?php
+                                } else {
+                            ?>
+
                             <div id="meeting-header-date" class="grid-50 grid-left grid-col">
                                 <?php echo $meeting_date; ?>
                             </div>
@@ -50,6 +64,10 @@
                                 <?php echo $meeting_location; ?><br>
                                 <?php echo $meeting_city; ?>
                             </div>
+
+                            <?php
+                                }
+                            ?>
                         </div>
                     </div>
                 </div>
@@ -67,13 +85,29 @@
                 <div class="pagewrap">
                     <div class="module-header">
                         <h3>
-                            Foto's
+                            <?php echo $meeting_date; ?>
                         </h3>
                     </div>
                 </div>
 
                 <div class="pagewrap">
-                    <?php the_content(); ?>
+                    <div class="module-content">
+                        <div class="grid-row">
+                            <div class="grid-50 grid-left grid-col">
+                                <div class="module-intro">
+                                    <?php echo $meeting_location; ?><br>
+                                    <?php echo $meeting_city; ?>
+                                </div>
+                            </div>
+                            <div class="grid-50 grid-right grid-col">
+                                <?php echo $review_text; ?>
+                            </div>
+                        </div>
+
+                        <div class="grid-row">
+                            <?php the_content(); ?>
+                        </div>
+                    </div>
                 </div>
             </div>
 

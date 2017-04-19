@@ -84,6 +84,12 @@ class Program
                     'placeholder' => 'Introtekst bij de workshops',
                     'size' => 10
                 ],
+                'field_12' => [
+                    'type' => 'textarea',
+                    'name' => 'review_text',
+                    'placeholder' => 'Tekst bij de terugblik',
+                    'size' => 10
+                ],
             ],
         ],
 

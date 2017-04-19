@@ -386,8 +386,13 @@ button.yellow {
 
 /* gallery */
 
+body .ngg-galleryoverview {
+    margin: 40px -10px 0 -10px;
+}
+
 body .ngg-gallery-thumbnail {
     border: 1px solid transparent;
+    margin-bottom: 10px;
 }
 
 body .ngg-gallery-thumbnail:hover {
@@ -418,7 +423,7 @@ body #fancybox-content img {
 }
 
 #fancybox-overlay {
-    background: rgba(0,0,0,0.8)!important;
+    background: rgba(255,255,255,0.8)!important;
     opacity: 1!important;
 }
 
@@ -481,6 +486,12 @@ body #fancybox-close {
 }
 
 #meeting-header-location {
+    font-size: 40px;
+    line-height: 1.2;
+}
+
+#meeting-header-review {
+    color: #FFD150;
     font-size: 40px;
     line-height: 1.2;
 }
