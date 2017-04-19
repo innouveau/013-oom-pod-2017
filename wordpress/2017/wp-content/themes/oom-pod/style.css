@@ -373,7 +373,7 @@ body .ngg-gallery-thumbnail:hover {
 }
 
 body #fancybox-outer {
-    background-image: url(img/patterns/pod-pattern-black.png);
+    background: #000;
 }
 
 body #fancybox-title {
@@ -382,7 +382,7 @@ body #fancybox-title {
     font-size: 16px;
     font-weight: 300;
     color: #fff;
-    padding: 0 20px 20px 40px;
+    padding: 0 20px 20px 90px;
     margin: 0!important;
     width: calc(100% + 0) !important;
 }
@@ -395,56 +395,50 @@ body #fancybox-content img {
     border: 10px solid transparent;
 }
 
-body .fancy-ico {
-
-
-
+#fancybox-overlay {
+    background: rgba(0,0,0,0.8)!important;
+    opacity: 1!important;
 }
 
 body #fancybox-right {
-    right: -20px!important;
+    right: 20px!important;
 }
 
 body #fancybox-left {
-    left: -20px!important;
+    left: 20px!important;
+    right: auto!important;
+}
+
+body #fancybox-right-ico {
+    right: 20px!important;
+    left: auto!important;
+}
+
+body #fancybox-left-ico {
+    left: 20px!important;
 }
 
 body .fancy-ico {
+    width: 24px!important;
+    height: 40px!important;
+    background-position: 50% 50%!important;
+}
+
+body #fancybox-right-ico.fancy-ico {
+    background-image: url(img/lightbox/next.svg)!important;
+}
+
+body #fancybox-left-ico.fancy-ico {
+    background-image: url(img/lightbox/prev.svg)!important;
+}
+
+body #fancybox-close {
     width: 40px!important;
     height: 40px!important;
-    font-size: 36px;
+    right: 32px;
+    top: 32px;
+    background-image: url(img/lightbox/close.svg)!important;
 }
-
-body #fancybox-right-ico.fancy-ico:after {
-    content: '›';
-}
-
-body #fancybox-left-ico.fancy-ico:after {
-    content: '‹';
-}
-
-body #fancybox-close {
-    right: -30px;
-    top: 0;
-}
-
-body #fancybox-close,
-body .fancy-ico {
-    color: #fff;
-    text-align: center;
-    line-height: 1;
-    background: #FFD150;
-    background-image: none!important;
-}
-
-body #fancybox-close {
-    font-size: 24px;
-}
-
-body #fancybox-close:after {
-    content: '×';
-}
-
 
 
     /* Meeting */
