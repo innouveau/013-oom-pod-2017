@@ -1,20 +1,22 @@
 $(window).ready(function(){
 
-    setPageTopHeight();
     listenToScroll();
     listenToWorkshop();
     listenToHamburger();
 });
 
-function setPageTopHeight() {
-    var windowHeight = $(window).outerHeight();
-    $('#page-top').css('height', windowHeight - 100);
-}
-
 function listenToHamburger() {
+    $('#hamburger-content').hide();
+
     $('#hamburger').click(function(){
-        $('body').toggleClass('menu-active');
+        $('body').addClass('menu-active');
+        $('#hamburger-content').fadeIn(200);
     });
+
+    $('#hamburger-close').click(function(){
+        $('body').removeClass('menu-active');
+        $('#hamburger-content').fadeOut(200);
+    })
 }
 
 function listenToScroll() {

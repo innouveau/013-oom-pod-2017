@@ -38,23 +38,23 @@
                             <div class="burger"></div>
                             <div class="burger"></div>
                             <div class="burger"></div>
-                            <div id="hamburger-content">
-                                <ul>
-                                    <li>
-                                        <a href="<?php echo get_bloginfo('home'); ?>">
-                                            <span class="menu-date">overzicht</span>
-                                            <span class="menu-location">Home</span>
-                                        </a>
-                                    </li>
-                                    <?php getMenu(); ?>
-                                </ul>
-
-                                <div id="hamburger-close">
-                                    <img src="<?php echo get_template_directory_uri(); ?>/img/lightbox/close.svg">
-                                </div>
-                            </div>
                         </div>
+                    </div>
 
+                    <div id="hamburger-content">
+                        <ul>
+                            <li>
+                                <a href="<?php echo get_bloginfo('home'); ?>">
+                                    <span class="menu-date">overzicht</span>
+                                    <span class="menu-location">Home</span>
+                                </a>
+                            </li>
+                            <?php getMenu(); ?>
+                        </ul>
+
+                        <div id="hamburger-close">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/lightbox/close.svg">
+                        </div>
                     </div>
 
                     <div id="top-logos" class="grid-50 grid-right grid-col">

@@ -63,6 +63,8 @@ body {
 }
 
 #page-body {
+    position: relative;
+    z-index: 1;
 }
 
 .background-pattern {
@@ -138,9 +140,13 @@ body.home a.svglogo svg polygon {
 /* page top */
 
 #page-top {
-    min-height: 700px;
+    min-height: 780px;
     position: relative;
     overflow: hidden;
+}
+
+.home #page-top {
+    overflow: visible;
 }
 
 #page-top-image {
@@ -204,14 +210,11 @@ body.home .burger {
     background-color: #000;
     background-position: 50% 50%;
     background-size: cover;
-    display: none;
-}
-
-.menu-active #hamburger-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 
 body.menu-active {
     overflow: hidden;
@@ -260,6 +263,7 @@ body.menu-active {
     position: absolute;
     bottom: 40px;
     right: 40px;
+    cursor: pointer;
 }
 
 
