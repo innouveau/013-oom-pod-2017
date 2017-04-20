@@ -8,21 +8,27 @@
     endwhile; endif
 ?>
 
-        <div id="home-head">
-            <div class="pagewrap">
-                <div class="grid-row">
-                    <div class="grid-50 grid-left grid-col">
-                        <div id="home-intro">
-                            <?php the_content(); ?>
-                        </div>
-                    </div>
+        <div id="page-top">
+            <div id="page-top-image" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/patterns/pod-pattern-home.png);"></div>
 
-                    <div id="pod-identity" class="grid-50 grid-right grid-col">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/identity/pod-logo-2017-black.svg">
+
+            <div id="page-top-content">
+                <div class="pagewrap">
+                    <div id="pod-identity-container" class="grid-row">
+                        <div class="grid-50 grid-left grid-col">
+                            <div id="home-intro">
+                                <?php the_content(); ?>
+                            </div>
+                        </div>
+
+                        <div id="pod-identity" class="grid-50 grid-right grid-col">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/identity/pod-logo-2017-black.svg">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- end of page top -->
 
 
         <div id="page-body">
@@ -37,7 +43,8 @@
                 <div id="home-meeting-container">
                     <?php
                     $args = array(
-                        'posts_per_page' => 9,
+                        'posts_per_page' => 20,
+                        'order' => 'ASC',
                     );
                     $q = new WP_Query($args);
                         if($q->have_posts()) : while($q->have_posts()) : $q->the_post();

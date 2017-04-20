@@ -327,7 +327,7 @@ button.yellow {
 .home-meeting {
     display: inline-block;
     vertical-align: top;
-    width: calc((100% + 40px) / 3);
+    width: calc((100% - 40px) / 3);
     height: 220px;
     cursor: pointer;
     text-decoration: none;
@@ -401,6 +401,18 @@ body .ngg-gallery-thumbnail:hover {
 
 body #fancybox-outer {
     background: #000;
+    position: relative;
+}
+
+body #fancybox-outer:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 10000000;
+    width: 460px;
+    height: 280px;
+    content: '';
+    background-image: url(img/identity/pod-logo-lightbox.png);
 }
 
 body #fancybox-title {

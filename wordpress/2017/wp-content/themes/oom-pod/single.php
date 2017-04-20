@@ -29,7 +29,7 @@
 
 ?>
 
-<div id="page-top">
+        <div id="page-top">
             <div id="page-top-image" style="background-image: url(<?php echo $image; ?>);"></div>
 
 

@@ -41,11 +41,11 @@ function getWorkshops($post_id) {
 function getMenu() {
     $args = array(
         'posts_per_page' => 10,
+        'order' => 'ASC',
     );
     $q = new WP_Query($args);
     if($q->have_posts()) : while($q->have_posts()) : $q->the_post();
         $post_id = get_the_ID();
-        echo $post_id;
         $url = get_the_permalink();
         $meeting_date = get_post_meta($post_id, 'meeting_date_value', true);
         $meeting_location = get_post_meta($post_id, 'meeting_location_value', true);
