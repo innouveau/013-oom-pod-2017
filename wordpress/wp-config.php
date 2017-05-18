@@ -16,16 +16,16 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'praktijkopleidersdagen');
+define('DB_NAME', 'oom-pod-2017');
 
 /** MySQL database username */
-define('DB_USER', 'b9554411191ff9');
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', '53f0d81a');
+define('DB_PASSWORD', 'root');
 
 /** MySQL hostname */
-define('DB_HOST', 'eu-cdbr-azure-west-d.cloudapp.net');
+define('DB_HOST', 'localhost');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
@@ -54,27 +54,27 @@ define('NONCE_SALT',       'e?I}Qn7lzl>s_EgW6TH<,@=WDXMd?+30*+[r|U8mw~{.tk>j7=xA
 /**#@-*/
 
 /**
- * WordPress Database Table prefix.
- *
- * You can have multiple installations in one database if you give each a unique
- * prefix. Only numbers, letters, and underscores please!
- */
+* WordPress Database Table prefix.
+*
+* You can have multiple installations in one database if you give each a unique
+* prefix. Only numbers, letters, and underscores please!
+*/
 $table_prefix  = 'wp_';
 
 /**
- * For developers: WordPress debugging mode.
- *
- * Change this to true to enable the display of notices during development.
- * It is strongly recommended that plugin and theme developers use WP_DEBUG
- * in their development environments.
- */
+* For developers: WordPress debugging mode.
+*
+* Change this to true to enable the display of notices during development.
+* It is strongly recommended that plugin and theme developers use WP_DEBUG
+* in their development environments.
+*/
 define('WP_DEBUG', false);
 
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */
 if ( !defined('ABSPATH') )
-	define('ABSPATH', dirname(__FILE__) . '/');
+define('ABSPATH', dirname(__FILE__) . '/');
 
 /** Sets up WordPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');
