@@ -105,13 +105,12 @@
                                 </div>
                             </div>
                             <div class="grid-50 grid-right grid-col">
-                                Er wordt de gelegenheid geboden om twee workshops
-                                te volgen; één in het ochtend en één in het middag
-                                deel van het programma. In het onderstaand overzicht
-                                kunt u zien waar de workshops over gaan, kies voor
-                                ieder dagdeel één uit. Daarnaast vragen wij u een
-                                reserve keuze te maken indien een door u gekozen
-                                workshop vol zit.
+                                <b>Omdat goed praktijkopleiders voor goed opgeleide leerlingen zorgen.</b>
+                                Daarom organiseren de technische opleidingsfondsen
+                                A+O-Metalektro, OOM en OTIB gezamenlijk praktijkopleidersdagen.
+                                Het doel van deze dagen is om praktijkopleiders te informeren
+                                en te inspireren, maar vooral ook om praktijkopleiders ervaringen
+                                met elkaar uit te laten wisselen.
                             </div>
                         </div>
 

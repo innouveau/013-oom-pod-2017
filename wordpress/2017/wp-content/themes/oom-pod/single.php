@@ -191,11 +191,11 @@
                         <div class="grid-row">
                             <div class="grid-50 grid-left grid-col">
                                 <div class="module-intro">
-                                    Ja, ik neem graag deel aan de dag en meld mij aan
+                                    Ja, ik doe mee!
                                 </div>
                             </div>
                             <div class="grid-50 grid-right grid-col">
-                                Ga naar het online inschrijfformulier van OTIB en de organiserende partijen om je aan te melden
+                                Ga naar het online inschrijfformulier.
                                 <br><br>
                                 <a class="button white" target="_blank" href="<?php echo $meeting_form_link; ?>">aanmelden</a>
                             </div>

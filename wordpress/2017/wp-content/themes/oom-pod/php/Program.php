@@ -103,7 +103,7 @@ class Program
                             'type' => 'input',
                             'name' => 'program_1_time',
                             'placeholder' => 'Tijd',
-                            'size' => 3
+                            'size' => 20
                         ],
                         'field_2' => [
                             'type' => 'input',
@@ -125,7 +125,7 @@ class Program
                             'type' => 'input',
                             'name' => 'program_2_time',
                             'placeholder' => 'Tijd',
-                            'size' => 3
+                            'size' => 20
                         ],
                         'field_2' => [
                             'type' => 'input',
@@ -147,7 +147,7 @@ class Program
                             'type' => 'input',
                             'name' => 'program_3_time',
                             'placeholder' => 'Tijd',
-                            'size' => 3
+                            'size' => 20
                         ],
                         'field_2' => [
                             'type' => 'input',
@@ -169,7 +169,7 @@ class Program
                             'type' => 'input',
                             'name' => 'program_4_time',
                             'placeholder' => 'Tijd',
-                            'size' => 3
+                            'size' => 20
                         ],
                         'field_2' => [
                             'type' => 'input',
@@ -191,7 +191,7 @@ class Program
                             'type' => 'input',
                             'name' => 'program_5_time',
                             'placeholder' => 'Tijd',
-                            'size' => 3
+                            'size' => 20
                         ],
                         'field_2' => [
                             'type' => 'input',
@@ -213,7 +213,7 @@ class Program
                             'type' => 'input',
                             'name' => 'program_6_time',
                             'placeholder' => 'Tijd',
-                            'size' => 3
+                            'size' => 20
                         ],
                         'field_2' => [
                             'type' => 'input',
@@ -235,7 +235,7 @@ class Program
                             'type' => 'input',
                             'name' => 'program_7_time',
                             'placeholder' => 'Tijd',
-                            'size' => 3
+                            'size' => 20
                         ],
                         'field_2' => [
                             'type' => 'input',
@@ -257,7 +257,7 @@ class Program
                             'type' => 'input',
                             'name' => 'program_8_time',
                             'placeholder' => 'Tijd',
-                            'size' => 3
+                            'size' => 20
                         ],
                         'field_2' => [
                             'type' => 'input',
@@ -279,7 +279,7 @@ class Program
                             'type' => 'input',
                             'name' => 'program_9_time',
                             'placeholder' => 'Tijd',
-                            'size' => 3
+                            'size' => 20
                         ],
                         'field_2' => [
                             'type' => 'input',
@@ -301,7 +301,7 @@ class Program
                             'type' => 'input',
                             'name' => 'program_10_time',
                             'placeholder' => 'Tijd',
-                            'size' => 3
+                            'size' => 20
                         ],
                         'field_2' => [
                             'type' => 'input',
@@ -323,7 +323,7 @@ class Program
                             'type' => 'input',
                             'name' => 'program_11_time',
                             'placeholder' => 'Tijd',
-                            'size' => 3
+                            'size' => 20
                         ],
                         'field_2' => [
                             'type' => 'input',
@@ -345,7 +345,7 @@ class Program
                             'type' => 'input',
                             'name' => 'program_12_time',
                             'placeholder' => 'Tijd',
-                            'size' => 3
+                            'size' => 20
                         ],
                         'field_2' => [
                             'type' => 'input',
@@ -379,7 +379,7 @@ class Program
                                 'type' => 'input',
                                 'name' => 'workshop_1_name',
                                 'placeholder' => 'Titel',
-                                'size' => 20
+                                'size' => 40
                             ],
                             'field_3' => [
                                 'type' => 'textarea',
@@ -401,7 +401,7 @@ class Program
                                 'type' => 'input',
                                 'name' => 'workshop_2_name',
                                 'placeholder' => 'Titel',
-                                'size' => 20
+                                'size' => 40
                             ],
                             'field_3' => [
                                 'type' => 'textarea',
@@ -423,7 +423,7 @@ class Program
                                 'type' => 'input',
                                 'name' => 'workshop_3_name',
                                 'placeholder' => 'Titel',
-                                'size' => 20
+                                'size' => 40
                             ],
                             'field_3' => [
                                 'type' => 'textarea',
@@ -445,7 +445,7 @@ class Program
                                 'type' => 'input',
                                 'name' => 'workshop_4_name',
                                 'placeholder' => 'Titel',
-                                'size' => 20
+                                'size' => 40
                             ],
                             'field_3' => [
                                 'type' => 'textarea',
@@ -467,7 +467,7 @@ class Program
                                 'type' => 'input',
                                 'name' => 'workshop_5_name',
                                 'placeholder' => 'Titel',
-                                'size' => 20
+                                'size' => 40
                             ],
                             'field_3' => [
                                 'type' => 'textarea',
@@ -489,7 +489,7 @@ class Program
                                 'type' => 'input',
                                 'name' => 'workshop_6_name',
                                 'placeholder' => 'Titel',
-                                'size' => 20
+                                'size' => 40
                             ],
                             'field_3' => [
                                 'type' => 'textarea',
@@ -511,7 +511,7 @@ class Program
                                 'type' => 'input',
                                 'name' => 'workshop_7_name',
                                 'placeholder' => 'Titel',
-                                'size' => 20
+                                'size' => 40
                             ],
                             'field_3' => [
                                 'type' => 'textarea',
@@ -533,7 +533,7 @@ class Program
                                 'type' => 'input',
                                 'name' => 'workshop_8_name',
                                 'placeholder' => 'Titel',
-                                'size' => 20
+                                'size' => 40
                             ],
                             'field_3' => [
                                 'type' => 'textarea',
@@ -555,7 +555,7 @@ class Program
                                 'type' => 'input',
                                 'name' => 'workshop_9_name',
                                 'placeholder' => 'Titel',
-                                'size' => 20
+                                'size' => 40
                             ],
                             'field_3' => [
                                 'type' => 'textarea',
@@ -577,7 +577,7 @@ class Program
                                 'type' => 'input',
                                 'name' => 'workshop_10_name',
                                 'placeholder' => 'Titel',
-                                'size' => 20
+                                'size' => 40
                             ],
                             'field_3' => [
                                 'type' => 'textarea',
@@ -599,7 +599,7 @@ class Program
                                 'type' => 'input',
                                 'name' => 'workshop_11_name',
                                 'placeholder' => 'Titel',
-                                'size' => 20
+                                'size' => 40
                             ],
                             'field_3' => [
                                 'type' => 'textarea',
@@ -621,7 +621,7 @@ class Program
                                 'type' => 'input',
                                 'name' => 'workshop_12_name',
                                 'placeholder' => 'Titel',
-                                'size' => 20
+                                'size' => 40
                             ],
                             'field_3' => [
                                 'type' => 'textarea',
