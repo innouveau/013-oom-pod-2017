@@ -48,10 +48,10 @@ function getMenu() {
         $post_id = get_the_ID();
         $url = get_the_permalink();
         $meeting_date = get_post_meta($post_id, 'meeting_date_value', true);
-        $meeting_location = get_post_meta($post_id, 'meeting_location_value', true);
+        $meeting_city = get_post_meta($post_id, 'meeting_city_value', true);
         echo '<li><a href="'. $url . '">';
         echo '<span class="menu-date">' . $meeting_date . '</span>';
-        echo '<span class="menu-location">' . $meeting_location . '</span>';
+        echo '<span class="menu-location">' . $meeting_city . '</span>';
         echo '</a></li>';
     endwhile;
     wp_reset_postdata();

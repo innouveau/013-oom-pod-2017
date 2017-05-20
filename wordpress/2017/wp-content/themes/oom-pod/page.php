@@ -50,7 +50,7 @@
                         if($q->have_posts()) : while($q->have_posts()) : $q->the_post();
                             $post_id = get_the_ID();
                             $url = get_the_permalink();
-                            $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post_id ), 'full' )[0];
+                            $image = get_post_meta($post_id, 'city_picture_value', true);
 
                             // metabox variables
                             $meeting_date = get_post_meta($post_id, 'meeting_date_value', true);

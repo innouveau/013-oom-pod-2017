@@ -90,6 +90,12 @@ class Program
                     'placeholder' => 'Tekst bij de terugblik',
                     'size' => 10
                 ],
+                'field_12' => [
+                    'type' => 'input',
+                    'name' => 'city_picture',
+                    'placeholder' => 'Link naar locatie afbeelding',
+                    'size' => 50
+                ],
             ],
         ],
 
