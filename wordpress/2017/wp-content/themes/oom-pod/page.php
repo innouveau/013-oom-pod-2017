@@ -51,22 +51,29 @@
                             $post_id = get_the_ID();
                             $url = get_the_permalink();
                             $image = get_post_meta($post_id, 'city_picture_value', true);
-
                             // metabox variables
                             $meeting_date = get_post_meta($post_id, 'meeting_date_value', true);
+                            $meeting_date_set = explode(' ', $meeting_date, 2);
                             $meeting_location = get_post_meta($post_id, 'meeting_location_value', true);
                             $meeting_city = get_post_meta($post_id, 'meeting_city_value', true);
                             ?>
 
                             <a class="home-meeting" href="<?php echo $url; ?>">
-                                <div class="home-meeting-img" style="background-image: url(<?php echo $image; ?>);">
+                                <div class="home-meeting-img" style="background-image: url(<?php echo $image;?>);">
                                     <div class="home-meeting-title">
-                                        <h5>
-                                            <?php echo $meeting_date; ?>
-                                        </h5>
-                                        <h4>
-                                            <?php echo $meeting_city; ?>
-                                        </h4>
+                                        <div class="home-meeting-title-date">
+                                            <h5>
+                                                <?php echo $meeting_date_set[0]; ?>
+                                            </h5>
+                                            <h6>
+                                                <?php echo $meeting_date_set[1]; ?>
+                                            </h6>
+                                        </div>
+                                        <div class="home-meeting-title-location">
+                                            <h4>
+                                                <?php echo $meeting_city; ?>
+                                            </h4>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="home-meeting-footer">

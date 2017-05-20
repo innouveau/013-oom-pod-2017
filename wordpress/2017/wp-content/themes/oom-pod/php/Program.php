@@ -15,8 +15,8 @@ class Program
                 'field_0' => [
                     'type' => 'input',
                     'name' => 'meeting_finished',
-                    'placeholder' => 'Afgelopen. x = ja',
-                    'size' => 15
+                    'placeholder' => 'Status: 0 = nnb, x = afgelopen',
+                    'size' => 50
                 ],
                 'field_1' => [
                     'type' => 'input',
@@ -64,12 +64,6 @@ class Program
                     'type' => 'input',
                     'name' => 'meeting_form_link',
                     'placeholder' => 'Link naar het formulier',
-                    'size' => 70
-                ],
-                'field_9' => [
-                    'type' => 'input',
-                    'name' => 'program_intro',
-                    'placeholder' => 'Tekst bij het pogrammma',
                     'size' => 70
                 ],
                 'field_10' => [

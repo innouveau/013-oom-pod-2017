@@ -4,16 +4,10 @@
     if(have_posts()): while(have_posts()) : the_post();
 
         $post_id = $post->ID;
-        if (get_post_meta($post_id, 'meeting_finished_value', true) == 'x') {
-            $finished = true;
-        } else {
-            $finished = false;
-        }
-
-
         $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post_id ), 'full' )[0];
 
         // metabox variables
+        $meeting_status = get_post_meta($post_id, 'meeting_finished_value', true);
         $meeting_date = get_post_meta($post_id, 'meeting_date_value', true);
         $meeting_location = get_post_meta($post_id, 'meeting_location_value', true);
         $meeting_city = get_post_meta($post_id, 'meeting_city_value', true);
@@ -26,6 +20,7 @@
         $workshop_quote = get_post_meta($post_id, 'workshop_quote_value', true);
         $workshop_intro = get_post_meta($post_id, 'workshop_intro_value', true);
         $review_text = get_post_meta($post_id, 'review_text_value', true);
+        $location_image = get_bloginfo('home') . '/' . get_post_meta($post_id, 'city_picture_value', true);
 
 ?>
 
@@ -45,7 +40,7 @@
 
                         <div id="meeting-header" class="grid-row">
                             <?php
-                                if ($finished) {
+                                if ($meeting_status == 'x') {
                             ?>
 
                             <div class="grid-50 grid-left grid-col"></div>
@@ -78,7 +73,7 @@
 
         <div id="page-body">
             <?php
-                if ($finished) {
+                if ($meeting_status == 'x') {
             ?>
             <!-- gallery -->
             <div class="module">
@@ -126,16 +121,22 @@
                 </div>
 
                 <div class="pagewrap">
-                    <div class="module-content">
+                    <div id="workshop-module" class="module-content">
                         <div class="module-absolute">
-                            <div class="module-intro">
-                                <?php echo $program_intro; ?>
+                            <div class="meeting-city">
+                                <img src="<?php echo $location_image; ?>">
                             </div>
-                        </div>
+                         </div>
                         <?php getPrograms($post_id); ?>
                     </div>
                 </div>
             </div>
+
+
+            <?php
+            }
+            if ($meeting_status != '0') {
+            ?>
 
             <!-- workshops -->
             <div class="module">

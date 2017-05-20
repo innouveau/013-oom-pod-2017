@@ -352,25 +352,52 @@ button.yellow {
 
 .home-meeting-title {
     position: absolute;
-    left: 8px;
-    bottom: 8px;
+    left: 20px;
+    top: 20px;
     z-index: 1;
     line-height: 1.1;
+    color: #fff;
 }
 
-.home-meeting-title h5 {
+.home-meeting-title-date {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 42px;
+}
+
+.home-meeting-title-location {
+    position: absolute;
+    left: 50px;
+    top: 0;
+    width: 250px;
+}
+
+.home-meeting-title-date h5 {
     font-weight: 900;
-    color: #FFD150;
-    font-size: 18px;
+    font-size: 30px;
     margin: 0;
-    line-height: 1.1;
+    line-height: 1.2;
+    text-align: center;
 }
 
-.home-meeting-title h4 {
+.home-meeting-title-date h6 {
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0;
+    line-height: 0.8;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.home-meeting-title-location h4 {
     font-weight: 700;
     color: #fff;
-    font-size: 33px;
+    font-size: 60px;
+    line-height: 1;
     margin: 0;
+    word-break: normal;
 }
 
 .home-meeting-footer {
@@ -510,6 +537,21 @@ body #fancybox-close {
     color: #FFD150;
     font-size: 40px;
     line-height: 1.2;
+}
+
+.meeting-city {
+    padding-right: 100px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.meeting-city img {
+    width: 100%;
+    height: auto;
+}
+
+#workshop-module {
+    min-height: 380px;
 }
 
 
