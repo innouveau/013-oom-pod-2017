@@ -56,6 +56,13 @@
                             $meeting_date_set = explode(' ', $meeting_date, 2);
                             $meeting_location = get_post_meta($post_id, 'meeting_location_value', true);
                             $meeting_city = get_post_meta($post_id, 'meeting_city_value', true);
+                            $meeting_status = get_post_meta($post_id, 'meeting_finished_value', true);
+                            if ($meeting_status == '0') {
+                                $program = 'Programma nog niet bekend';
+                            } else {
+                                $program = 'Programma';
+                            }
+
                             ?>
 
                             <a class="home-meeting" href="<?php echo $url; ?>">
@@ -71,14 +78,15 @@
                                         </div>
                                         <div class="home-meeting-title-location">
                                             <h4>
-                                                <?php echo $meeting_city; ?>
+                                                <?php the_title(); ?>
                                             </h4>
                                         </div>
                                     </div>
+                                    <div class="home-meeting-footer">
+                                        <?php echo $program; ?>
+                                    </div>
                                 </div>
-                                <div class="home-meeting-footer">
-                                    Programma
-                                </div>
+
                             </a>
                     <?php
                         endwhile;

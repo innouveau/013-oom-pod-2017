@@ -344,10 +344,15 @@ button.yellow {
 }
 
 .home-meeting-img {
-    height: 180px;
+    height: 220px;
     position: relative;
     background-size: cover;
     background-position: 50% 50%;
+}
+
+.home-meeting:hover .home-meeting-img {
+    background-color: #FFD150;
+    background-blend-mode: multiply;
 }
 
 .home-meeting-title {
@@ -357,6 +362,10 @@ button.yellow {
     z-index: 1;
     line-height: 1.1;
     color: #fff;
+}
+
+.home-meeting:hover .home-meeting-title {
+    color: #FFD150;
 }
 
 .home-meeting-title-date {
@@ -393,7 +402,6 @@ button.yellow {
 
 .home-meeting-title-location h4 {
     font-weight: 700;
-    color: #fff;
     font-size: 60px;
     line-height: 1;
     margin: 0;
@@ -401,12 +409,19 @@ button.yellow {
 }
 
 .home-meeting-footer {
+    position: absolute;
+    left: 70px;
+    bottom: 0;
     height: 40px;
-    background: #FFD150;
     color: #fff;
     font-size: 18px;
     font-weight: 700;
-    padding: 8px;
+    padding: 8px 0;
+    display: none;
+}
+
+.home-meeting:hover .home-meeting-footer {
+    display: block;
 }
 
 #footer-logos {
