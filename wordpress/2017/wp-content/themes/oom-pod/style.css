@@ -179,9 +179,10 @@ body.home a.svglogo svg polygon {
 /* menu */
 
 #hamburger {
-    width: 26px;
+    width: 34px;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 6px;
+    padding: 4px;
     display: inline-block;
     position: relative;
 }
@@ -192,8 +193,16 @@ body.home a.svglogo svg polygon {
     margin-bottom: 5px;
 }
 
-#hamburger:hover .burger {
+.burger:last-child {
+    margin-bottom: 0;
+}
+
+#hamburger:hover {
     background: #FFD150;
+}
+
+body.home #hamburger:hover {
+    background: #fff;
 }
 
 body.home .burger {
@@ -213,6 +222,52 @@ body.home .burger {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+#home-button {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    height: 27px;
+    border: 2px solid #fff;
+    vertical-align: top;
+    margin: 8px 0 0 8px;
+    color: #fff;
+}
+
+body.home #home-button {
+    border: 2px solid #000;
+    color: #000;
+}
+
+.home-button-arrow {
+    padding: 2px 4px;
+    display: inline-block;
+    border-right: 2px solid #fff;
+    vertical-align: top;
+    width: 23px;
+    height: 23px;
+    background-image: url(img/arrow-left-white.svg);
+}
+
+body.home .home-button-arrow {
+    border-right: 2px solid #000;
+    background-image: url(img/arrow-left.svg);
+}
+
+.home-button-label {
+    padding: 2px 4px;
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+}
+
+#home-button:hover {
+    background: #FFD150;
+}
+
+body.home #home-button:hover {
+    background: #fff;
 }
 
 
@@ -333,7 +388,6 @@ button.yellow {
     vertical-align: top;
     width: calc((100% - 40px) / 3);
     height: 220px;
-    cursor: pointer;
     text-decoration: none;
     margin-right: 20px;
     margin-bottom: 60px;
@@ -350,7 +404,7 @@ button.yellow {
     background-position: 50% 50%;
 }
 
-.home-meeting:hover .home-meeting-img {
+a.home-meeting:hover .home-meeting-img {
     background-color: #FFD150;
     background-blend-mode: multiply;
 }
@@ -364,7 +418,7 @@ button.yellow {
     color: #fff;
 }
 
-.home-meeting:hover .home-meeting-title {
+a.home-meeting:hover .home-meeting-title {
     color: #FFD150;
 }
 
@@ -778,6 +832,24 @@ body #fancybox-close {
     .meeting-program-time, .meeting-workshop-time {
         text-align: left;
     }
+
+    /* menu */
+
+    #hamburger-content li a span {
+        font-size: 20px;
+    }
+
+    /* home */
+
+    .home-meeting {
+        width: 100%;
+        height: 220px;
+        margin-right: 0;
+        display: block;
+        max-width: 400px;
+    }
+
+
 }
 
 

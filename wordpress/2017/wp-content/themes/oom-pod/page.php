@@ -57,38 +57,58 @@
                             $meeting_location = get_post_meta($post_id, 'meeting_location_value', true);
                             $meeting_city = get_post_meta($post_id, 'meeting_city_value', true);
                             $meeting_status = get_post_meta($post_id, 'meeting_finished_value', true);
-                            if ($meeting_status == '0') {
-                                $program = 'Programma nog niet bekend';
-                            } else {
-                                $program = 'Programma';
-                            }
+                            if ($meeting_status == '0') { ?>
 
-                            ?>
-
-                            <a class="home-meeting" href="<?php echo $url; ?>">
-                                <div class="home-meeting-img" style="background-image: url(<?php echo $image;?>);">
-                                    <div class="home-meeting-title">
-                                        <div class="home-meeting-title-date">
-                                            <h5>
-                                                <?php echo $meeting_date_set[0]; ?>
-                                            </h5>
-                                            <h6>
-                                                <?php echo $meeting_date_set[1]; ?>
-                                            </h6>
+                                <div class="home-meeting home-meeting-inactive">
+                                    <div class="home-meeting-img" style="background-image: url(<?php echo $image;?>);">
+                                        <div class="home-meeting-title">
+                                            <div class="home-meeting-title-date">
+                                                <h5>
+                                                    <?php echo $meeting_date_set[0]; ?>
+                                                </h5>
+                                                <h6>
+                                                    <?php echo $meeting_date_set[1]; ?>
+                                                </h6>
+                                            </div>
+                                            <div class="home-meeting-title-location">
+                                                <h4>
+                                                    <?php the_title(); ?>
+                                                </h4>
+                                            </div>
                                         </div>
-                                        <div class="home-meeting-title-location">
-                                            <h4>
-                                                <?php the_title(); ?>
-                                            </h4>
+                                        <div class="home-meeting-footer">
+                                            Programma nog niet bekend
                                         </div>
-                                    </div>
-                                    <div class="home-meeting-footer">
-                                        <?php echo $program; ?>
                                     </div>
                                 </div>
 
-                            </a>
-                    <?php
+
+                            <?php } else { ?>
+
+                                <a class="home-meeting" href="<?php echo $url; ?>">
+                                    <div class="home-meeting-img" style="background-image: url(<?php echo $image;?>);">
+                                        <div class="home-meeting-title">
+                                            <div class="home-meeting-title-date">
+                                                <h5>
+                                                    <?php echo $meeting_date_set[0]; ?>
+                                                </h5>
+                                                <h6>
+                                                    <?php echo $meeting_date_set[1]; ?>
+                                                </h6>
+                                            </div>
+                                            <div class="home-meeting-title-location">
+                                                <h4>
+                                                    <?php the_title(); ?>
+                                                </h4>
+                                            </div>
+                                        </div>
+                                        <div class="home-meeting-footer">
+                                            Programma
+                                        </div>
+                                    </div>
+                                </a>
+
+                            <?php }
                         endwhile;
                         endif;
                     ?>
@@ -113,7 +133,7 @@
                                 </div>
                             </div>
                             <div class="grid-50 grid-right grid-col">
-                                <b>Omdat goed praktijkopleiders voor goed opgeleide leerlingen zorgen.</b>
+                                <b>Omdat goede praktijkopleiders voor goed opgeleide leerlingen zorgen.</b>
                                 Daarom organiseren de technische opleidingsfondsen
                                 A+O-Metalektro, OOM en OTIB gezamenlijk praktijkopleidersdagen.
                                 Het doel van deze dagen is om praktijkopleiders te informeren

@@ -39,6 +39,13 @@
                             <div class="burger"></div>
                             <div class="burger"></div>
                         </div>
+
+                        <a href="<?php echo get_bloginfo('home'); ?>" id="home-button">
+                            <div class="home-button-arrow"></div>
+                            <div class="home-button-label">
+                                home
+                            </div>
+                        </a>
                     </div>
 
                     <div id="hamburger-content">
@@ -56,6 +63,8 @@
                             <img src="<?php echo get_template_directory_uri(); ?>/img/lightbox/close.svg">
                         </div>
                     </div>
+
+
 
                     <div id="top-logos" class="grid-50 grid-right grid-col">
                         <?php getLogos(); ?>
