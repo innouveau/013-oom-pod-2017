@@ -34,7 +34,7 @@
                             <div class="grid-50 grid-left grid-col">&nbsp;</div>
 
                             <div id="pod-identity" class="grid-50 grid-right grid-col">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/identity/pod-logo-2017.svg">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/identity/pod-logo-2018.svg">
                             </div>
                         </div>
 
@@ -45,7 +45,7 @@
 
                             <div class="grid-50 grid-left grid-col"></div>
                             <div id="meeting-header-review" class="grid-50 grid-right grid-col">
-                                Terugblik
+
                             </div>
 
                             <?php
@@ -80,7 +80,7 @@
                 <div class="pagewrap">
                     <div class="module-header">
                         <h3>
-                            <?php echo $meeting_date; ?>
+                            Fotoverslag <?php echo $meeting_date; ?>
                         </h3>
                     </div>
                 </div>
@@ -135,7 +135,7 @@
 
             <?php
             }
-            if ($meeting_status != '0') {
+            if ($meeting_status == '') {
             ?>
 
             <!-- workshops -->

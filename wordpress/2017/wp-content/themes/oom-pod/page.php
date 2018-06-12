@@ -22,7 +22,7 @@
                         </div>
 
                         <div id="pod-identity" class="grid-50 grid-right grid-col">
-                            <img src="<?php echo get_template_directory_uri(); ?>/img/identity/pod-logo-2017-black.svg">
+                            <img src="<?php echo get_template_directory_uri(); ?>/img/identity/pod-logo-2018-black.svg">
                         </div>
                     </div>
                 </div>
@@ -103,7 +103,14 @@
                                             </div>
                                         </div>
                                         <div class="home-meeting-footer">
-                                            Programma
+                                            <?php
+                                                if ($meeting_status == 'x') {
+                                                    echo 'Fotoverslag';
+                                                } else {
+                                                    echo 'Programma';
+                                                }
+                                            ?>
+
                                         </div>
                                     </div>
                                 </a>
