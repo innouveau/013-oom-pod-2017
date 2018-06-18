@@ -33,7 +33,7 @@
         <div id="top-bar">
             <div class="pagewrap">
                 <div class="grid-row">
-                    <div id="menu" class="grid-50 grid-left grid-col">
+                    <div id="menu" class="grid-50">
                         <div id="hamburger">
                             <div class="burger"></div>
                             <div class="burger"></div>
@@ -66,7 +66,7 @@
 
 
 
-                    <div id="top-logos" class="grid-50 grid-right grid-col">
+                    <div id="top-logos" class="grid-50">
                         <?php getLogos(); ?>
                     </div>
                 </div>

@@ -1,9 +1,6 @@
 <?php
     get_header();
-
-
     if(have_posts()): while(have_posts()) : the_post();
-
         $post_id = $post->ID;
     endwhile; endif
 ?>
@@ -15,13 +12,16 @@
             <div id="page-top-content">
                 <div class="pagewrap">
                     <div id="pod-identity-container" class="grid-row">
-                        <div class="grid-50 grid-left grid-col">
+                        <div class="grid-60">
+                            <div class="home-intro__video">
+                                <iframe src="https://player.vimeo.com/video/274713351" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                            </div>
                             <div id="home-intro">
                                 <?php the_content(); ?>
                             </div>
                         </div>
 
-                        <div id="pod-identity" class="grid-50 grid-right grid-col">
+                        <div id="pod-identity" class="grid-40">
                             <img src="<?php echo get_template_directory_uri(); ?>/img/identity/pod-logo-2018-black.svg">
                         </div>
                     </div>
@@ -57,65 +57,11 @@
                             $meeting_location = get_post_meta($post_id, 'meeting_location_value', true);
                             $meeting_city = get_post_meta($post_id, 'meeting_city_value', true);
                             $meeting_status = get_post_meta($post_id, 'meeting_finished_value', true);
-                            if ($meeting_status == '0') { ?>
-
-                                <div class="home-meeting home-meeting-inactive">
-                                    <div class="home-meeting-img" style="background-image: url(<?php echo $image;?>);">
-                                        <div class="home-meeting-title">
-                                            <div class="home-meeting-title-date">
-                                                <h5>
-                                                    <?php echo $meeting_date_set[0]; ?>
-                                                </h5>
-                                                <h6>
-                                                    <?php echo $meeting_date_set[1]; ?>
-                                                </h6>
-                                            </div>
-                                            <div class="home-meeting-title-location">
-                                                <h4>
-                                                    <?php the_title(); ?>
-                                                </h4>
-                                            </div>
-                                        </div>
-                                        <div class="home-meeting-footer">
-                                            Programma nog niet bekend
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                            <?php } else { ?>
-
-                                <a class="home-meeting" href="<?php echo $url; ?>">
-                                    <div class="home-meeting-img" style="background-image: url(<?php echo $image;?>);">
-                                        <div class="home-meeting-title">
-                                            <div class="home-meeting-title-date">
-                                                <h5>
-                                                    <?php echo $meeting_date_set[0]; ?>
-                                                </h5>
-                                                <h6>
-                                                    <?php echo $meeting_date_set[1]; ?>
-                                                </h6>
-                                            </div>
-                                            <div class="home-meeting-title-location">
-                                                <h4>
-                                                    <?php the_title(); ?>
-                                                </h4>
-                                            </div>
-                                        </div>
-                                        <div class="home-meeting-footer">
-                                            <?php
-                                                if ($meeting_status == 'x') {
-                                                    echo 'Fotoverslag';
-                                                } else {
-                                                    echo 'Programma';
-                                                }
-                                            ?>
-
-                                        </div>
-                                    </div>
-                                </a>
-
-                            <?php }
+                            if ($meeting_status == '0') {
+                                include('php/elements/tile--still-unknown.php');
+                            } else {
+                                include('php/elements/tile.php');
+                            }
                         endwhile;
                         endif;
                     ?>
@@ -134,12 +80,12 @@
                 <div class="pagewrap">
                     <div class="module-content">
                         <div class="grid-row">
-                            <div class="grid-50 grid-left grid-col">
+                            <div class="grid-50">
                                 <div class="module-intro">
                                     Door wie zijn deze dagen mogelijk gemaakt?
                                 </div>
                             </div>
-                            <div class="grid-50 grid-right grid-col">
+                            <div class="grid-50">
                                 <b>Omdat goede praktijkopleiders voor goed opgeleide leerlingen zorgen.</b>
                                 Daarom organiseren de technische opleidingsfondsen
                                 A+O-Metalektro, OOM en OTIB gezamenlijk praktijkopleidersdagen.
@@ -150,8 +96,8 @@
                         </div>
 
                         <div class="grid-row">
-                            <div class="grid-50 grid-left grid-col"></div>
-                            <div class="grid-50 grid-right grid-col">
+                            <div class="grid-50"></div>
+                            <div class="grid-50">
                                 <div id="footer-logos">
                                     <?php getLogos(); ?>
                                 </div>
