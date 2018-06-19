@@ -1,0 +1,84 @@
+html {
+    font-size: 100%;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-family: "Frutiger";
+    font-size: 16px;
+    line-height: 1.625;
+    background: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+
+
+/* architecture */
+
+.pagewrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.grid-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid-50 {
+    width: ~'calc(50% - 10px)';
+}
+
+.grid-60 {
+    width: ~'calc(60% - 10px)';
+}
+
+.grid-40 {
+    width: ~'calc(40% - 10px)';
+}
+
+
+#page-top-content .grid-40 {
+    padding-left: 100px;
+}
+
+#page-top-content .grid-40 img {
+    width: 100%;
+}
+
+#page-body {
+    position: relative;
+    z-index: 1;
+}
+
+.background-pattern {
+    background-color: @yellow;
+    background-image: url(img/patterns/pod-pattern-03.png);
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+    .grid-row {
+        display: block;
+    }
+}
+
+
+
+
+
+
+

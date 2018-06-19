@@ -1,0 +1,59 @@
+#top-bar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding-top: 10px;
+    height: 60px;
+    background: transparent;
+    transition: all 0.5s ease;
+
+    &.scrolled {
+        background: rgba(0,0,0,0.8);
+    }
+}
+
+
+body.home #top-bar.scrolled {
+    background: rgba(255,255,255,0.8);
+}
+
+#top-bar-mini-logo {
+    display: none;
+}
+
+#top-logos {
+    vertical-align: top;
+}
+
+#top-logos a {
+    float: left;
+    margin-right: 16px;
+}
+
+a.svglogo {
+    text-decoration: none;
+}
+
+a.svglogo svg {
+    display: inline-block;
+}
+
+a.svglogo svg rect,
+a.svglogo svg path,
+a.svglogo svg polygon {
+    fill: #fff;
+}
+
+a.svglogo:hover svg rect,
+a.svglogo:hover svg path,
+a.svglogo:hover svg polygon {
+    fill: @yellow;
+}
+
+body.home a.svglogo svg rect,
+body.home a.svglogo svg path,
+body.home a.svglogo svg polygon {
+    fill: #000;
+}

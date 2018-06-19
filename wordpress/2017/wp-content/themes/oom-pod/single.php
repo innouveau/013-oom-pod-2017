@@ -74,6 +74,7 @@
         <div id="page-body">
             <?php
                 if ($meeting_status == 'x') {
+                    include('php/elements/report-and-downloads.php');
                     include('php/elements/gallery.php');
                 } else {
                     include('php/elements/program.php');

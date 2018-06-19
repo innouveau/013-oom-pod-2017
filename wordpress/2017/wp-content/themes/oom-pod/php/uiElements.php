@@ -7,10 +7,10 @@ function getPrograms($post_id) {
         $description = get_post_meta($post_id, 'program_' . $i . '_description_value', true);
         if ($title != '') { ?>
             <div class="grid-row meeting-program-row">
-                <div class="meeting-program-time grid-50 grid-left grid-col">
+                <div class="meeting-program-time grid-50">
                     <?php echo $time; ?>
                 </div>
-                <div class="meeting-program-description grid-50 grid-right grid-col">
+                <div class="meeting-program-description grid-50">
                     <span class="meeting-program-title"><?php echo $title; ?></span>
                     <?php echo $description; ?>
                 </div>
@@ -26,10 +26,10 @@ function getWorkshops($post_id) {
         $description = get_post_meta($post_id, 'workshop_' . $i . '_description_value', true);
         if ($title != '') { ?>
             <div class="grid-row meeting-workshop-row">
-                <div class="meeting-workshop-time grid-50 grid-left grid-col">
+                <div class="meeting-workshop-time grid-50">
                     <?php echo $code; ?>
                 </div>
-                <div class="meeting-workshop-description grid-50 grid-right grid-col">
+                <div class="meeting-workshop-description grid-50">
                     <span class="meeting-workshop-title"><?php echo $title; ?></span>
                     <?php echo $description; ?>
                 </div>
