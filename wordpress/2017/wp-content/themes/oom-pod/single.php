@@ -42,24 +42,23 @@
                             <?php
                                 if ($meeting_status == 'x') {
                             ?>
-
-                            <div class="grid-50 grid-left grid-col"></div>
-                            <div id="meeting-header-review" class="grid-50 grid-right grid-col">
-
-                            </div>
-
+                                <div class="grid-50">
+                                    Verslag
+                                </div>
+                                <div class="grid-50">
+                                    <?php echo $meeting_date; ?><br>
+                                    <?php echo $meeting_city; ?>
+                                </div>
                             <?php
                                 } else {
                             ?>
-
-                            <div id="meeting-header-date" class="grid-50 grid-left grid-col">
-                                <?php echo $meeting_date; ?>
-                            </div>
-                            <div id="meeting-header-location" class="grid-50 grid-right grid-col">
-                                <?php echo $meeting_location; ?><br>
-                                <?php echo $meeting_city; ?>
-                            </div>
-
+                                <div class="grid-50">
+                                    <?php echo $meeting_date; ?>
+                                </div>
+                                <div class="grid-50">
+                                    <?php echo $meeting_location; ?><br>
+                                    <?php echo $meeting_city; ?>
+                                </div>
                             <?php
                                 }
                             ?>

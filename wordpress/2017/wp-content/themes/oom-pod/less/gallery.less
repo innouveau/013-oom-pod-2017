@@ -1,0 +1,99 @@
+body {
+
+    .ngg-galleryoverview {
+        margin: 40px -10px 0 -10px;
+
+        .ngg-gallery-thumbnail {
+            border: 1px solid transparent;
+            margin-bottom: 10px;
+
+            &:hover {
+                border: 1px solid @yellow;
+            }
+
+        }
+    }
+
+    #fancybox-overlay {
+        background: rgba(255,255,255,0.8)!important;
+        opacity: 1!important;
+    }
+
+    #fancybox-outer {
+        background: #000;
+        position: relative;
+
+        &:after {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 10000000;
+            width: 460px;
+            height: 280px;
+            content: '';
+            background-image: url(img/identity/pod-logo-lightbox.png);
+        }
+
+        #fancybox-content {
+            border-color: transparent;
+
+            img {
+                border: 10px solid transparent;
+            }
+        }
+
+        #fancybox-title {
+            background: transparent;
+            text-align: left;
+            font-size: 16px;
+            font-weight: 300;
+            color: #fff;
+            padding: 0 20px 20px 90px;
+            margin: 0!important;
+            width: ~'calc(100% + 0)!important';
+        }
+
+        #fancybox-right {
+            right: 20px!important;
+
+            #fancybox-right-ico {
+                right: 20px!important;
+                left: auto!important;
+
+                &.fancy-ico {
+                    background-image: url(img/lightbox/next.svg)!important;
+                }
+            }
+        }
+
+        #fancybox-left {
+            left: 20px!important;
+            right: auto!important;
+
+            #fancybox-left-ico {
+                left: 20px!important;
+
+                &.fancy-ico {
+                    background-image: url(img/lightbox/prev.svg)!important;
+                }
+            }
+        }
+
+        .fancy-ico {
+            width: 24px!important;
+            height: 40px!important;
+            background-position: 50% 50%!important;
+        }
+
+        #fancybox-close {
+            width: 40px!important;
+            height: 40px!important;
+            right: 32px;
+            top: 32px;
+            background-image: url(img/lightbox/close.svg)!important;
+        }
+
+    }
+
+}
+
