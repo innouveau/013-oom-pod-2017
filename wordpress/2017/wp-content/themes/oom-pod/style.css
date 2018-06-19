@@ -540,15 +540,12 @@ body.home a.svglogo svg polygon {
   margin: 0;
 }
 .downloads a {
-  color: #FFD150;
-  text-decoration: none;
   display: block;
-  border-bottom: 2px solid #FFD150;
-  margin-bottom: 12px;
 }
-.downloads a:hover {
-  color: #000;
-  border-bottom: 2px solid #000;
+h1 {
+  margin-top: 0;
+  font-weight: 900;
+  font-size: 40px;
 }
 h3 {
   margin: 0;
@@ -559,6 +556,18 @@ h3 {
 .intro {
   font-size: 24px;
   font-weight: 700;
+}
+.stronglink,
+.downloads a {
+  color: #FFD150;
+  text-decoration: none;
+  border-bottom: 2px solid #FFD150;
+  margin-bottom: 12px;
+}
+.stronglink:hover,
+.downloads a:hover {
+  color: #000;
+  border-bottom: 2px solid #000;
 }
 #meeting-workshops {
   padding-top: 36px;
