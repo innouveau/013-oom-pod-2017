@@ -6,432 +6,17 @@ Description: custom template for OOM
 Version: 1.0
 License: exclusief gebruik voor OOM
 */
-/* page top */
-#page-top {
-  min-height: 800px;
-  position: relative;
-  overflow: hidden;
-}
-.home #page-top {
-  overflow: visible;
-}
-#page-top-image {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  background-size: cover;
-  background-position: 50% 50%;
-}
-#page-top-content {
-  position: absolute;
-  left: 0;
-  top: 160px;
-  width: 100%;
-  z-index: 1;
-}
-#pod-identity-container {
-  height: 395px;
-}
-/* menu */
-#hamburger {
-  width: 34px;
-  cursor: pointer;
-  margin-top: 6px;
-  padding: 4px;
-  display: inline-block;
-  position: relative;
-}
-.burger {
-  height: 4px;
-  background: #fff;
-  margin-bottom: 5px;
-}
-.burger:last-child {
-  margin-bottom: 0;
-}
-#hamburger:hover {
-  background: #FFD150;
-}
-body.home #hamburger:hover {
-  background: #fff;
-}
-body.home .burger {
-  background: #000;
-}
-#hamburger-content {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url(img/patterns/pod-pattern-full-white.svg);
-  background-color: #000;
-  background-position: 50% 50%;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-#home-button {
-  display: inline-block;
-  text-decoration: none;
-  font-size: 14px;
-  height: 27px;
-  border: 2px solid #fff;
-  vertical-align: top;
-  margin: 8px 0 0 8px;
-  color: #fff;
-}
-body.home #home-button {
-  border: 2px solid #000;
-  color: #000;
-}
-.home-button-arrow {
-  padding: 2px 4px;
-  display: inline-block;
-  border-right: 2px solid #fff;
-  vertical-align: top;
-  width: 23px;
-  height: 23px;
-  background-image: url(img/arrow-left-white.svg);
-}
-body.home .home-button-arrow {
-  border-right: 2px solid #000;
-  background-image: url(img/arrow-left.svg);
-}
-.home-button-label {
-  padding: 2px 4px;
-  display: inline-block;
-  vertical-align: top;
-  height: 100%;
-}
-#home-button:hover {
-  background: #FFD150;
-}
-body.home #home-button:hover {
-  background: #fff;
-}
-body.menu-active {
-  overflow: hidden;
-}
-#hamburger-content ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  width: 100%;
-}
-#hamburger-content li a {
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-  color: #fff;
-  font-size: 0;
-  width: 100%;
-}
-#hamburger-content li a span {
-  display: inline-block;
-  font-size: 36px;
-  line-height: 1.6;
-  font-weight: 700;
-  width: 50%;
-}
-#hamburger-content li a .menu-date {
-  color: #FFD150;
-  text-align: right;
-  padding-right: 8px;
-}
-#hamburger-content li a .menu-location {
-  color: #fff;
-  padding-left: 8px;
-}
-#hamburger-content li.current-menu-item a {
-  cursor: default;
-}
-#hamburger-close {
-  position: absolute;
-  bottom: 40px;
-  right: 40px;
-  cursor: pointer;
-}
-/* button */
-button,
-.button {
-  height: 40px;
-  padding: 12px 24px;
-  cursor: pointer;
-  font-size: 18px;
-  line-height: 14px;
-  font-weight: 900;
-  border: 0;
-  text-decoration: none;
-  display: inline-block;
-  vertical-align: middle;
-}
-.button {
+* {
   box-sizing: border-box;
-  padding-top: 15px;
-}
-button.yellow {
-  background: #FFD150;
-  color: #fff;
-}
-.button.white {
-  background: #fff;
-  color: #000;
-}
-.button:hover,
-button:hover {
-  background: #000;
-  color: #fff;
-}
-/* home */
-#home-head {
-  height: 700px;
-  background-image: url('img/patterns/triangle-pattern.svg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-  padding-top: 220px;
-}
-.home-intro__video {
-  height: 0;
-  padding-bottom: 56.25%;
-  position: relative;
-}
-.home-intro__video iframe {
-  position: absolute;
-  width: 100%!important;
-  height: 100%!important;
-  margin-bottom: 20px;
-}
-#home-intro {
-  font-size: 24px;
-  line-height: 1.9;
-  font-weight: 700;
-  margin-bottom: 70px;
-}
-#home-meeting-container {
-  padding: 60px 0;
-  font-size: 0;
-}
-.home-meeting {
-  display: inline-block;
-  vertical-align: top;
-  width: calc((100% - 40px) / 3);
-  height: 220px;
-  text-decoration: none;
-  margin-right: 20px;
-  margin-bottom: 60px;
-}
-.home-meeting:nth-child(3n) {
-  margin-right: 0;
-}
-.home-meeting-img {
-  height: 220px;
-  position: relative;
-  background-size: cover;
-  background-position: 50% 50%;
-}
-a.home-meeting:hover .home-meeting-img {
-  background-color: #FFD150;
-  background-blend-mode: multiply;
-}
-.home-meeting-title {
-  position: absolute;
-  left: 20px;
-  top: 20px;
-  z-index: 1;
-  line-height: 1.1;
-  color: #fff;
-}
-a.home-meeting:hover .home-meeting-title {
-  color: #FFD150;
-}
-.home-meeting-title-date {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 42px;
-}
-.home-meeting-title-location {
-  position: absolute;
-  left: 50px;
-  top: 0;
-  width: 250px;
-}
-.home-meeting-title-date h5 {
-  font-weight: 900;
-  font-size: 30px;
-  margin: 0;
-  line-height: 1.2;
-  text-align: center;
-}
-.home-meeting-title-date h6 {
-  font-weight: 700;
-  font-size: 16px;
-  margin: 0;
-  line-height: 0.8;
-  text-transform: uppercase;
-  text-align: center;
-}
-.home-meeting-title-location h4 {
-  font-weight: 700;
-  font-size: 60px;
-  line-height: 1;
-  margin: 0;
-  word-break: normal;
-}
-.home-meeting-footer {
-  position: absolute;
-  left: 70px;
-  bottom: 0;
-  height: 40px;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 700;
-  padding: 8px 0;
-  display: none;
-}
-.home-meeting:hover .home-meeting-footer {
-  display: block;
-}
-#footer-logos {
-  padding-top: 60px;
-}
-/* Meeting */
-.meeting-city {
-  padding-right: 100px;
-  height: 300px;
-  overflow: hidden;
-}
-.meeting-city img {
-  width: 100%;
-  height: auto;
-}
-/* program */
-.meeting-program-row {
-  padding-bottom: 40px;
-}
-.meeting-program-title,
-.meeting-workshop-title {
-  font-size: 18px;
-  font-weight: 700;
-}
-.meeting-program-time,
-.meeting-workshop-time {
-  text-align: right;
-  color: #FFD150;
-  font-weight: 900;
-  font-size: 18px;
-}
-/* map */
-#meeting-location {
-  height: 520px;
-  position: relative;
-}
-#meeting-location-map {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 0;
-  background: grey;
-}
-#meeting-location-content {
-  height: 100%;
-  position: absolute;
-  left: calc(50% - 600px);
-  top: 0;
-  z-index: 1;
-  display: inline-block;
-}
-#meeting-location .module-header {
-  border-bottom: 0;
-}
-.plan-route {
-  display: inline-block;
-  width: 196px;
-  height: 40px;
-  text-decoration: none;
-  background: #fff;
-  color: #000;
-  position: absolute;
-  left: calc(50% - 20px);
-  top: 240px;
-}
-.plan-route:hover {
-  background: #000;
-  color: #fff;
-}
-.plan-route-circle {
-  float: left;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: #FFD150;
-  margin: 0 18px 0 -20px;
-}
-.plan-route-text {
-  padding-top: 4px;
-  font-size: 18px;
-  font-weight: 900;
-}
-@media (max-width: 1200px) {
-  .pagewrap {
-    width: 100%;
-    margin: 0;
-    padding: 0 20px;
-  }
-  #meeting-location-content {
-    left: 20px;
-  }
-}
-@media (max-width: 768px) {
-  #top-logos {
-    display: none;
-  }
-  #page-top-content {
-    top: 80px;
-  }
-  #meeting-header-date {
-    text-align: left;
-  }
-  .module-absolute {
-    position: relative;
-    left: 0;
-    top: 0;
-    width: 100%;
-  }
-  .module-intro {
-    padding-bottom: 40px;
-  }
-  .meeting-program-time,
-  .meeting-workshop-time {
-    text-align: left;
-  }
-  /* menu */
-  #hamburger-content li a span {
-    font-size: 20px;
-  }
-  /* home */
-  .home-meeting {
-    width: 100%;
-    height: 220px;
-    margin-right: 0;
-    display: block;
-    max-width: 400px;
-  }
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 html {
   font-size: 100%;
   height: 100%;
   width: 100%;
 }
-body {
+html body {
   padding: 0;
   margin: 0;
   width: 100%;
@@ -440,46 +25,15 @@ body {
   line-height: 1.625;
   background: #fff;
 }
-* {
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-}
-/* architecture */
-.pagewrap {
+html body .pagewrap {
   width: 1200px;
   margin: 0 auto;
 }
-.grid-row {
-  display: flex;
-  justify-content: space-between;
-}
-.grid-50 {
-  width: calc(50% - 10px);
-}
-.grid-60 {
-  width: calc(60% - 10px);
-}
-.grid-40 {
-  width: calc(40% - 10px);
-}
-#page-top-content .grid-40 {
-  padding-left: 100px;
-}
-#page-top-content .grid-40 img {
-  width: 100%;
-}
-#page-body {
-  position: relative;
-  z-index: 1;
-}
-.background-pattern {
-  background-color: #FFD150;
-  background-image: url(img/patterns/pod-pattern-03.png);
-}
-@media (max-width: 768px) {
-  .grid-row {
-    display: block;
+@media (max-width: 1200px) {
+  html body .pagewrap {
+    width: 100%;
+    margin: 0;
+    padding: 0 20px;
   }
 }
 #top-bar {
@@ -496,8 +50,133 @@ body {
 #top-bar.scrolled {
   background: rgba(0, 0, 0, 0.8);
 }
+#top-bar #menu #hamburger {
+  width: 34px;
+  cursor: pointer;
+  margin-top: 6px;
+  padding: 4px;
+  display: inline-block;
+  position: relative;
+}
+#top-bar #menu #hamburger :hover {
+  background: #FFD150;
+}
+#top-bar #menu #hamburger .burger {
+  height: 4px;
+  background: #fff;
+  margin-bottom: 5px;
+}
+#top-bar #menu #hamburger .burger:last-child {
+  margin-bottom: 0;
+}
+#top-bar #menu #home-button {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 14px;
+  height: 27px;
+  border: 2px solid #fff;
+  vertical-align: top;
+  margin: 8px 0 0 8px;
+  color: #fff;
+}
+#top-bar #menu #home-button:hover {
+  background: #FFD150;
+}
+#top-bar #menu #home-button .home-button-arrow {
+  padding: 2px 4px;
+  display: inline-block;
+  border-right: 2px solid #fff;
+  vertical-align: top;
+  width: 23px;
+  height: 23px;
+  background-image: url(img/arrow-left-white.svg);
+}
+#top-bar #menu #home-button .home-button-label {
+  padding: 2px 4px;
+  display: inline-block;
+  vertical-align: top;
+  height: 100%;
+}
+#top-bar #hamburger-content {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/patterns/pod-pattern-full-white.svg);
+  background-color: #000;
+  background-position: 50% 50%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#top-bar #hamburger-content ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+}
+#top-bar #hamburger-content ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0;
+  width: 100%;
+}
+#top-bar #hamburger-content ul li a span {
+  display: inline-block;
+  font-size: 36px;
+  line-height: 1.6;
+  font-weight: 700;
+  width: 50%;
+}
+#top-bar #hamburger-content ul li a span.menu-date {
+  color: #FFD150;
+  text-align: right;
+  padding-right: 8px;
+}
+#top-bar #hamburger-content ul li a span.menu-location {
+  color: #fff;
+  padding-left: 8px;
+}
+@media (max-width: 768px) {
+  #top-bar #hamburger-content ul li a span {
+    font-size: 20px;
+  }
+}
+#top-bar #hamburger-content ul li.current-menu-item a {
+  cursor: default;
+}
+#top-bar #hamburger-content #hamburger-close {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  cursor: pointer;
+}
+body.menu-active {
+  overflow: hidden;
+}
 body.home #top-bar.scrolled {
   background: rgba(255, 255, 255, 0.8);
+}
+body.home #top-bar #menu #home-button {
+  border: 2px solid #000;
+  color: #000;
+}
+body.home #top-bar #menu #home-button:hover {
+  background: #fff;
+}
+body.home #top-bar #menu #home-button .home-button-arrow {
+  border-right: 2px solid #000;
+  background-image: url(img/arrow-left.svg);
+}
+body.home #hamburger:hover {
+  background: #fff;
+}
+body.home #hamburger .burger {
+  background: #000;
 }
 #top-bar-mini-logo {
   display: none;
@@ -505,30 +184,14 @@ body.home #top-bar.scrolled {
 #top-logos {
   vertical-align: top;
 }
+@media (max-width: 768px) {
+  #top-logos {
+    display: none;
+  }
+}
 #top-logos a {
   float: left;
   margin-right: 16px;
-}
-a.svglogo {
-  text-decoration: none;
-}
-a.svglogo svg {
-  display: inline-block;
-}
-a.svglogo svg rect,
-a.svglogo svg path,
-a.svglogo svg polygon {
-  fill: #fff;
-}
-a.svglogo:hover svg rect,
-a.svglogo:hover svg path,
-a.svglogo:hover svg polygon {
-  fill: #FFD150;
-}
-body.home a.svglogo svg rect,
-body.home a.svglogo svg path,
-body.home a.svglogo svg polygon {
-  fill: #000;
 }
 .downloads {
   margin-top: 32px;
@@ -569,20 +232,6 @@ h3 {
   color: #000;
   border-bottom: 2px solid #000;
 }
-#meeting-workshops {
-  padding-top: 36px;
-  display: none;
-}
-#hide-button {
-  display: none;
-}
-.meeting-workshop-row {
-  padding-bottom: 24px;
-}
-.meeting-workshop-description {
-  border-bottom: 1px solid #000;
-  padding-bottom: 12px;
-}
 .module.module--top {
   margin-top: 44px;
 }
@@ -596,11 +245,24 @@ h3 {
   top: 24px;
   width: 50%;
 }
+@media (max-width: 768px) {
+  .module-absolute {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+}
 .module-intro {
   font-size: 32px;
   line-height: 1.1875;
   font-weight: 700;
   max-width: 380px;
+}
+@media (max-width: 768px) {
+  .module-intro {
+    padding-bottom: 40px;
+  }
 }
 .module-header {
   border-bottom: 2px solid #C9C6C5;
@@ -622,6 +284,11 @@ h3 {
 #meeting-header div:first-child {
   text-align: right;
   color: #FFD150;
+}
+@media (max-width: 768px) {
+  #meeting-header div:first-child {
+    text-align: left;
+  }
 }
 body .ngg-galleryoverview {
   margin: 40px -10px 0 -10px;
@@ -716,4 +383,380 @@ body #fancybox-outer #fancybox-close {
 }
 .sponsors .sponsor .sponsor__text {
   margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  .sponsors {
+    display: block;
+  }
+  .sponsors .sponsor {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+.grid-row {
+  display: flex;
+  justify-content: space-between;
+}
+.grid-row .grid-50 {
+  width: calc(50% - 10px);
+}
+.grid-row .grid-60 {
+  width: calc(60% - 10px);
+}
+.grid-row .grid-40 {
+  width: calc(40% - 10px);
+}
+@media (max-width: 768px) {
+  .grid-row {
+    display: block;
+  }
+  .grid-row .grid-40,
+  .grid-row .grid-50,
+  .grid-row .grid-60 {
+    width: 100%;
+  }
+}
+.background-pattern {
+  background-color: #FFD150;
+  background-image: url(img/patterns/pod-pattern-03.png);
+}
+#page-body {
+  position: relative;
+  z-index: 1;
+}
+button,
+.button {
+  height: 40px;
+  padding: 12px 24px;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 14px;
+  font-weight: 900;
+  border: 0;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+.button {
+  box-sizing: border-box;
+  padding-top: 15px;
+}
+button.yellow {
+  background: #FFD150;
+  color: #fff;
+}
+.button.white {
+  background: #fff;
+  color: #000;
+}
+.button:hover,
+button:hover {
+  background: #000;
+  color: #fff;
+}
+.home-intro__video {
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+.home-intro__video iframe {
+  position: absolute;
+  width: 100%!important;
+  height: 100%!important;
+  margin-bottom: 20px;
+}
+#home-intro {
+  font-size: 24px;
+  line-height: 1.9;
+  font-weight: 700;
+  margin-bottom: 70px;
+}
+@media (max-width: 768px) {
+  #home-intro {
+    font-size: 18px;
+  }
+}
+#home-meeting-container {
+  padding: 60px 0;
+  font-size: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#home-meeting-container .home-meeting {
+  display: inline-block;
+  vertical-align: top;
+  width: calc((100% - 40px) / 3);
+  height: 220px;
+  text-decoration: none;
+  margin-bottom: 60px;
+}
+#home-meeting-container .home-meeting .home-meeting-img {
+  height: 220px;
+  position: relative;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+#home-meeting-container .home-meeting .home-meeting-img .home-meeting-title {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  z-index: 1;
+  line-height: 1.1;
+  color: #fff;
+}
+#home-meeting-container .home-meeting .home-meeting-img .home-meeting-title .home-meeting-title-date {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 42px;
+}
+#home-meeting-container .home-meeting .home-meeting-img .home-meeting-title .home-meeting-title-date h5 {
+  font-weight: 900;
+  font-size: 30px;
+  margin: 0;
+  line-height: 1.2;
+  text-align: center;
+}
+#home-meeting-container .home-meeting .home-meeting-img .home-meeting-title .home-meeting-title-date h6 {
+  font-weight: 700;
+  font-size: 16px;
+  margin: 0;
+  line-height: 0.8;
+  text-transform: uppercase;
+  text-align: center;
+}
+#home-meeting-container .home-meeting .home-meeting-img .home-meeting-title .home-meeting-title-location {
+  position: absolute;
+  left: 50px;
+  top: 0;
+  width: 250px;
+}
+#home-meeting-container .home-meeting .home-meeting-img .home-meeting-title .home-meeting-title-location h4 {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1;
+  margin: 0;
+  word-break: normal;
+}
+#home-meeting-container .home-meeting .home-meeting-img .home-meeting-footer {
+  position: absolute;
+  left: 70px;
+  bottom: 0;
+  height: 40px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 8px 0;
+  display: none;
+}
+#home-meeting-container .home-meeting:hover .home-meeting-img {
+  background-color: #FFD150;
+  background-blend-mode: multiply;
+}
+#home-meeting-container .home-meeting:hover .home-meeting-img .home-meeting-title {
+  color: #FFD150;
+}
+#home-meeting-container .home-meeting:hover .home-meeting-img .home-meeting-footer {
+  display: block;
+}
+@media (max-width: 768px) {
+  #home-meeting-container {
+    display: block;
+  }
+  #home-meeting-container .home-meeting {
+    width: 100%;
+    height: 220px;
+    display: block;
+  }
+}
+#page-top {
+  min-height: 800px;
+  position: relative;
+  overflow: hidden;
+}
+#page-top #page-top-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+#page-top #page-top-content {
+  position: absolute;
+  left: 0;
+  top: 160px;
+  width: 100%;
+  z-index: 1;
+}
+#page-top #page-top-content #pod-identity-container #pod-identity {
+  padding-left: 100px;
+}
+#page-top #page-top-content #pod-identity-container #pod-identity img {
+  width: calc(100% + 40px);
+}
+@media (max-width: 1300px) {
+  #page-top #page-top-content #pod-identity-container #pod-identity img {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  #page-top #page-top-content {
+    top: 80px;
+  }
+  #page-top #page-top-content #pod-identity-container {
+    display: flex !important;
+    flex-direction: column-reverse;
+  }
+  #page-top #page-top-content #pod-identity-container #pod-identity {
+    padding-left: 0;
+  }
+  #page-top #page-top-content #pod-identity-container #pod-identity img {
+    height: 140px;
+    width: auto;
+  }
+}
+.home #page-top {
+  overflow: visible;
+}
+#footer-logos {
+  padding-top: 60px;
+}
+@media (max-width: 768px) {
+  #footer-logos a {
+    display: block;
+  }
+}
+.meeting-city {
+  padding-right: 100px;
+  height: 300px;
+  overflow: hidden;
+}
+.meeting-city img {
+  width: 100%;
+  height: auto;
+}
+.meeting-program-row,
+.meeting-workshop-row {
+  padding-bottom: 40px;
+}
+.meeting-program-row .meeting-program-time,
+.meeting-workshop-row .meeting-program-time,
+.meeting-program-row .meeting-workshop-time,
+.meeting-workshop-row .meeting-workshop-time {
+  text-align: right;
+  color: #FFD150;
+  font-weight: 900;
+  font-size: 18px;
+}
+@media (max-width: 768px) {
+  .meeting-program-row .meeting-program-time,
+  .meeting-workshop-row .meeting-program-time,
+  .meeting-program-row .meeting-workshop-time,
+  .meeting-workshop-row .meeting-workshop-time {
+    text-align: left;
+  }
+}
+.meeting-program-row .meeting-workshop-description,
+.meeting-workshop-row .meeting-workshop-description {
+  border-bottom: 1px solid #000;
+  padding-bottom: 12px;
+}
+.meeting-program-row .meeting-program-title,
+.meeting-workshop-row .meeting-program-title,
+.meeting-program-row .meeting-workshop-title,
+.meeting-workshop-row .meeting-workshop-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+#meeting-workshops {
+  padding-top: 36px;
+  display: none;
+}
+#meeting-workshops .meeting-workshop-row {
+  padding-bottom: 24px;
+}
+#meeting-workshops #hide-button {
+  display: none;
+}
+#meeting-location {
+  height: 520px;
+  position: relative;
+}
+#meeting-location #meeting-location-map {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  background: grey;
+}
+#meeting-location #meeting-location-content {
+  height: 100%;
+  position: absolute;
+  left: calc(50% - 600px);
+  top: 0;
+  z-index: 1;
+  display: inline-block;
+}
+#meeting-location #meeting-location-content .module-header {
+  border-bottom: 0;
+}
+@media (max-width: 1200px) {
+  #meeting-location #meeting-location-content {
+    left: 20px;
+  }
+}
+#meeting-location .plan-route {
+  display: inline-block;
+  width: 196px;
+  height: 40px;
+  text-decoration: none;
+  background: #fff;
+  color: #000;
+  position: absolute;
+  left: calc(50% - 20px);
+  top: 240px;
+}
+#meeting-location .plan-route:hover {
+  background: #000;
+  color: #fff;
+}
+#meeting-location .plan-route .plan-route-circle {
+  float: left;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #FFD150;
+  margin: 0 18px 0 -20px;
+}
+#meeting-location .plan-route .plan-route-text {
+  padding-top: 4px;
+  font-size: 18px;
+  font-weight: 900;
+}
+a.svglogo {
+  text-decoration: none;
+}
+a.svglogo svg {
+  display: inline-block;
+}
+a.svglogo svg rect,
+a.svglogo svg path,
+a.svglogo svg polygon {
+  fill: #fff;
+}
+a.svglogo:hover svg rect,
+a.svglogo:hover svg path,
+a.svglogo:hover svg polygon {
+  fill: #FFD150;
+}
+body.home a.svglogo svg rect,
+body.home a.svglogo svg path,
+body.home a.svglogo svg polygon {
+  fill: #000;
 }

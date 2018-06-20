@@ -1,0 +1,29 @@
+.grid-row {
+    display: flex;
+    justify-content: space-between;
+
+    .grid-50 {
+        width: ~'calc(50% - 10px)';
+    }
+
+    .grid-60 {
+        width: ~'calc(60% - 10px)';
+    }
+
+    .grid-40 {
+        width: ~'calc(40% - 10px)';
+    }
+
+    @media (max-width: 768px) {
+        display: block;
+
+        .grid-40, .grid-50, .grid-60 {
+            width: 100%;
+        }
+    }
+
+}
+
+
+
+

@@ -1,0 +1,135 @@
+.meeting-city {
+    padding-right: 100px;
+    height: 300px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+
+
+// program / workshop
+
+.meeting-program-row,
+.meeting-workshop-row {
+    padding-bottom: 40px;
+
+    .meeting-program-time,
+    .meeting-workshop-time {
+        text-align: right;
+        color: @yellow;
+        font-weight: 900;
+        font-size: 18px;
+
+        @media (max-width: 768px) {
+            text-align: left;
+        }
+    }
+
+    .meeting-workshop-description {
+        border-bottom: 1px solid #000;
+        padding-bottom: 12px;
+    }
+
+
+    .meeting-program-title,
+    .meeting-workshop-title {
+        font-size: 18px;
+        font-weight: 700;
+    }
+}
+
+#meeting-workshops {
+    padding-top: 36px;
+    display: none;
+
+    .meeting-workshop-row {
+        padding-bottom: 24px;
+    }
+
+    #hide-button {
+        display: none;
+    }
+}
+
+
+
+// location
+
+#meeting-location {
+    height: 520px;
+    position: relative;
+
+    #meeting-location-map {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 0;
+        background: grey;
+    }
+
+    #meeting-location-content {
+        height: 100%;
+        position: absolute;
+        left: ~'calc(50% - 600px)';
+        top: 0;
+        z-index: 1;
+        display: inline-block;
+
+        .module-header {
+            border-bottom: 0;
+        }
+
+        @media (max-width: 1200px) {
+            left: 20px;
+        }
+    }
+
+    .plan-route {
+        display: inline-block;
+        width: 196px;
+        height: 40px;
+        text-decoration: none;
+        background: #fff;
+        color: #000;
+        position: absolute;
+        left: ~'calc(50% - 20px)';
+        top: 240px;
+
+        &:hover {
+            background: #000;
+            color: #fff;
+        }
+
+        .plan-route-circle {
+            float: left;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: @yellow;
+            margin: 0 18px 0 -20px;
+        }
+
+        .plan-route-text {
+            padding-top: 4px;
+            font-size: 18px;
+            font-weight: 900;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+

@@ -12,12 +12,190 @@
     &.scrolled {
         background: rgba(0,0,0,0.8);
     }
+
+    #menu {
+
+        #hamburger {
+            width: 34px;
+            cursor: pointer;
+            margin-top: 6px;
+            padding: 4px;
+            display: inline-block;
+            position: relative;
+
+            :hover {
+                background: @yellow;
+            }
+
+
+            .burger {
+                height: 4px;
+                background: #fff;
+                margin-bottom: 5px;
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        #home-button {
+            display: inline-block;
+            text-decoration: none;
+            font-size: 14px;
+            height: 27px;
+            border: 2px solid #fff;
+            vertical-align: top;
+            margin: 8px 0 0 8px;
+            color: #fff;
+
+            &:hover {
+                background: @yellow;
+            }
+
+            .home-button-arrow {
+                padding: 2px 4px;
+                display: inline-block;
+                border-right: 2px solid #fff;
+                vertical-align: top;
+                width: 23px;
+                height: 23px;
+                background-image: url(img/arrow-left-white.svg);
+            }
+
+            .home-button-label {
+                padding: 2px 4px;
+                display: inline-block;
+                vertical-align: top;
+                height: 100%;
+            }
+        }
+    }
+
+
+
+    #hamburger-content {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(img/patterns/pod-pattern-full-white.svg);
+        background-color: #000;
+        background-position: 50% 50%;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            width: 100%;
+
+            li {
+
+                a {
+                    display: block;
+                    padding: 10px;
+                    text-decoration: none;
+                    color: #fff;
+                    font-size: 0;
+                    width: 100%;
+
+                    span {
+                        display: inline-block;
+                        font-size: 36px;
+                        line-height: 1.6;
+                        font-weight: 700;
+                        width: 50%;
+
+                        &.menu-date {
+                            color: @yellow;
+                            text-align: right;
+                            padding-right: 8px;
+                        }
+
+                        &.menu-location {
+                            color: #fff;
+                            padding-left: 8px;
+                        }
+
+                        @media (max-width: 768px) {
+                            font-size: 20px;
+                        }
+                    }
+                }
+
+                &.current-menu-item {
+
+                    a {
+                        cursor: default;
+                    }
+                }
+            }
+        }
+
+        #hamburger-close {
+            position: absolute;
+            bottom: 40px;
+            right: 40px;
+            cursor: pointer;
+        }
+    }
+
+}
+
+body.menu-active {
+    overflow: hidden;
+}
+
+body.home {
+
+    #top-bar {
+
+        &.scrolled {
+            background: rgba(255,255,255,0.8);
+        }
+
+        #menu {
+
+            #home-button {
+                border: 2px solid #000;
+                color: #000;
+
+                &:hover {
+                    background: #fff;
+                }
+
+
+                .home-button-arrow {
+                    border-right: 2px solid #000;
+                    background-image: url(img/arrow-left.svg);
+                }
+            }
+        }
+    }
+
+    #hamburger {
+
+        &:hover {
+            background: #fff;
+        }
+
+        .burger {
+            background: #000;
+        }
+    }
+
 }
 
 
-body.home #top-bar.scrolled {
-    background: rgba(255,255,255,0.8);
-}
+
+
+
+
 
 #top-bar-mini-logo {
     display: none;
@@ -25,35 +203,15 @@ body.home #top-bar.scrolled {
 
 #top-logos {
     vertical-align: top;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
+
+    a {
+        float: left;
+        margin-right: 16px;
+    }
 }
 
-#top-logos a {
-    float: left;
-    margin-right: 16px;
-}
 
-a.svglogo {
-    text-decoration: none;
-}
-
-a.svglogo svg {
-    display: inline-block;
-}
-
-a.svglogo svg rect,
-a.svglogo svg path,
-a.svglogo svg polygon {
-    fill: #fff;
-}
-
-a.svglogo:hover svg rect,
-a.svglogo:hover svg path,
-a.svglogo:hover svg polygon {
-    fill: @yellow;
-}
-
-body.home a.svglogo svg rect,
-body.home a.svglogo svg path,
-body.home a.svglogo svg polygon {
-    fill: #000;
-}

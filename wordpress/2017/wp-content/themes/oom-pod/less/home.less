@@ -1,0 +1,137 @@
+
+.home-intro__video {
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+
+    iframe {
+        position: absolute;
+        width: 100%!important;
+        height: 100%!important;
+        margin-bottom: 20px;
+    }
+}
+
+
+#home-intro {
+    font-size: 24px;
+    line-height: 1.9;
+    font-weight: 700;
+    margin-bottom: 70px;
+
+    @media (max-width: 768px) {
+        font-size: 18px;
+    }
+}
+
+
+
+#home-meeting-container {
+    padding: 60px 0;
+    font-size: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .home-meeting {
+        display: inline-block;
+        vertical-align: top;
+        width: ~'calc((100% - 40px) / 3)';
+        height: 220px;
+        text-decoration: none;
+        margin-bottom: 60px;
+
+        .home-meeting-img {
+            height: 220px;
+            position: relative;
+            background-size: cover;
+            background-position: 50% 50%;
+
+            .home-meeting-title {
+                position: absolute;
+                left: 20px;
+                top: 20px;
+                z-index: 1;
+                line-height: 1.1;
+                color: #fff;
+
+                .home-meeting-title-date {
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 42px;
+
+                    h5 {
+                        font-weight: 900;
+                        font-size: 30px;
+                        margin: 0;
+                        line-height: 1.2;
+                        text-align: center;
+                    }
+
+                    h6 {
+                        font-weight: 700;
+                        font-size: 16px;
+                        margin: 0;
+                        line-height: 0.8;
+                        text-transform: uppercase;
+                        text-align: center;
+                    }
+                }
+
+                .home-meeting-title-location {
+                    position: absolute;
+                    left: 50px;
+                    top: 0;
+                    width: 250px;
+
+                    h4 {
+                        font-weight: 700;
+                        font-size: 60px;
+                        line-height: 1;
+                        margin: 0;
+                        word-break: normal;
+                    }
+                }
+            }
+
+            .home-meeting-footer {
+                position: absolute;
+                left: 70px;
+                bottom: 0;
+                height: 40px;
+                color: #fff;
+                font-size: 18px;
+                font-weight: 700;
+                padding: 8px 0;
+                display: none;
+            }
+        }
+
+        &:hover {
+
+            .home-meeting-img {
+                background-color: @yellow;
+                background-blend-mode: multiply;
+
+                .home-meeting-title {
+                    color: @yellow;
+                }
+
+                .home-meeting-footer {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        display: block;
+
+        .home-meeting {
+            width: 100%;
+            height: 220px;
+            display: block;
+        }
+    }
+}
