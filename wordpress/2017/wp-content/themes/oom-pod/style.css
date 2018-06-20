@@ -699,3 +699,21 @@ body #fancybox-outer #fancybox-close {
   top: 32px;
   background-image: url(img/lightbox/close.svg) !important;
 }
+.sponsors {
+  display: flex;
+  justify-content: space-between;
+}
+.sponsors .sponsor {
+  width: calc(100% / 3 - 8px);
+}
+.sponsors .sponsor .sponsor__logo {
+  height: 60px;
+  margin-bottom: 10px;
+}
+.sponsors .sponsor .sponsor__logo svg path,
+.sponsors .sponsor .sponsor__logo svg polygon {
+  fill: #000;
+}
+.sponsors .sponsor .sponsor__text {
+  margin-bottom: 20px;
+}

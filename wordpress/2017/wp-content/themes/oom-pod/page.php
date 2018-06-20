@@ -35,14 +35,89 @@
                 <div class="pagewrap">
                     <div class="module-header">
                         <h3>
-                            aanbieder
+                            aanbieders
                         </h3>
                     </div>
                 </div>
 
                 <div class="pagewrap">
                     <div class="module-content">
-                        Hier de aanbieders
+                        <div class="sponsors">
+                            <div class="sponsor">
+                                <div class="sponsor__logo">
+                                    <svg width="183" height="40">
+                                        <?php getLogoAO(); ?>
+                                    </svg>
+                                </div>
+                                <div class="sponsor__text">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Sed vitae finibus leo.
+                                    Integer vitae massa dui. Sed urna dolor,
+                                    ullamcorper facilisis tristique nec, porta
+                                    nec est. Vivamus accumsan elit vel lectus
+                                    gravida volutpat. Vivamus id porta mauris.
+                                    Nulla leo dolor, posuere nec ornare ut,
+                                    suscipit in lectus.
+                                </div>
+                                <div class="sponsor__link">
+                                    <a class="stronglink" href="https://www.ao-metalektro.nl/" target="_blank">
+                                        Ga naar de website
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="sponsor">
+                                <div class="sponsor__logo">
+                                    <svg width="148" height="40">
+                                        <?php getLogoOom(); ?>
+                                    </svg>
+                                </div>
+                                <div class="sponsor__text">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipiscing elit. Sed vitae finibus leo.
+                                    Integer vitae massa dui. Sed urna dolor,
+                                    ullamcorper facilisis tristique nec, porta
+                                    nec est. Vivamus accumsan elit vel lectus
+                                    gravida volutpat. Vivamus id porta mauris.
+                                    Nulla leo dolor, posuere nec ornare ut,
+                                    suscipit in lectus. Quisque varius, enim non
+                                    euismod cursus, lacus libero tempor purus, a
+                                    tincidunt ipsum odio id elit. Proin egestas
+                                    nunc accumsan leo faucibus, ut imperdiet
+                                    turpis malesuada.
+                                </div>
+                                <div class="sponsor__link">
+                                    <a class="stronglink" href="https://www.oom.nl/" target="_blank">
+                                        Ga naar de website
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="sponsor">
+                                <div class="sponsor__logo">
+                                    <svg width="114" height="40">
+                                        <?php getLogoOtib();?>
+                                    </svg>
+                                </div>
+                                <div class="sponsor__text">
+                                    Sed urna dolor,
+                                    ullamcorper facilisis tristique nec, porta
+                                    nec est. Vivamus accumsan elit vel lectus
+                                    gravida volutpat. Vivamus id porta mauris.
+                                    Nulla leo dolor, posuere nec ornare ut,
+                                    suscipit in lectus. Quisque varius, enim non
+                                    euismod cursus, lacus libero tempor purus, a
+                                    tincidunt ipsum odio id elit. Proin egestas
+                                    nunc accumsan leo faucibus, ut imperdiet
+                                    turpis malesuada.
+                                </div>
+                                <div class="sponsor__link">
+                                    <a class="stronglink" href="https://www.otib.nl/" target="_blank">
+                                        Ga naar de website
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
