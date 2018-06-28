@@ -10,7 +10,7 @@
     <script>console.log("start: " + new Date())</script>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Praktijk Opleiders Dagen 2017</title>
+    <title>Praktijk Opleiders Dagen 2018-2019</title>
 
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/fonts/frutiger.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" media="screen" />
