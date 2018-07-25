@@ -56,6 +56,10 @@
                 <div class="grid-50">
                     Ga naar het online inschrijfformulier.
                     <br><br>
+                    <a class="stronglink stronglink--white stronglink--big" href="<?php echo get_permalink(181); ?>">
+                        Privacy Statement
+                    </a>
+                    <br><br>
                     <a class="button white" target="_blank" href="<?php echo $meeting_form_link; ?>">aanmelden</a>
                 </div>
             </div>

@@ -57,10 +57,16 @@
                                 </a>
                             </li>
                             <?php getMenu(); ?>
+                            <!--<li>-->
+                                <!--<a href="<?php echo get_the_permalink(176); ?>">-->
+                                    <!--<span class="menu-date">organisatie</span>-->
+                                    <!--<span class="menu-location">A+O, OOM en OTIB</span>-->
+                                <!--</a>-->
+                            <!--</li>-->
                             <li>
-                                <a href="<?php echo get_the_permalink(176); ?>">
-                                    <span class="menu-date">organisatie</span>
-                                    <span class="menu-location">A+O, OOM en OTIB</span>
+                                <a href="<?php echo get_the_permalink(181); ?>">
+                                    <span class="menu-date">Privacy</span>
+                                    <span class="menu-location">Statement</span>
                                 </a>
                             </li>
                         </ul>

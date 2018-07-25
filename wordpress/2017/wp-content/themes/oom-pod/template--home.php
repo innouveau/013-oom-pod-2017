@@ -99,9 +99,14 @@ endwhile; endif
                             en te inspireren, maar vooral ook om praktijkopleiders ervaringen
                             met elkaar uit te laten wisselen.
                         </p>
+                        <!--<p>-->
+                            <!--<a class="stronglink" href="<?php echo get_permalink(176); ?>">-->
+                                <!--Lees hier wat zij voor u kunnen betekenen-->
+                            <!--</a>-->
+                        <!--</p>-->
                         <p>
-                            <a class="stronglink" href="<?php echo get_permalink(176); ?>">
-                                Lees hier wat zij voor u kunnen betekenen
+                            <a class="stronglink stronglink--big" href="<?php echo get_permalink(181); ?>">
+                                Privacy Statement
                             </a>
                         </p>
                     </div>

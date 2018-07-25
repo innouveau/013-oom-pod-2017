@@ -219,6 +219,15 @@ h3 {
 .intro {
   font-size: 24px;
   font-weight: 700;
+  margin-bottom: 60px;
+}
+.normal-link {
+  color: #FFD150;
+  text-decoration: none;
+}
+.normal-link:hover {
+  color: #FFD150;
+  text-decoration: underline;
 }
 .stronglink,
 .downloads a {
@@ -231,6 +240,18 @@ h3 {
 .downloads a:hover {
   color: #000;
   border-bottom: 2px solid #000;
+}
+.stronglink.stronglink--big,
+.downloads a.stronglink--big {
+  font-size: 18px;
+  font-weight: 800;
+  padding-bottom: 6px;
+  letter-spacing: 1px;
+}
+.stronglink.stronglink--white,
+.downloads a.stronglink--white {
+  color: #fff;
+  border-bottom: 2px solid #fff;
 }
 .module.module--top {
   margin-top: 44px;
@@ -756,7 +777,10 @@ a.svglogo:hover svg polygon {
   fill: #FFD150;
 }
 body.home a.svglogo svg rect,
+body.page-template-template--privacy a.svglogo svg rect,
 body.home a.svglogo svg path,
-body.home a.svglogo svg polygon {
+body.page-template-template--privacy a.svglogo svg path,
+body.home a.svglogo svg polygon,
+body.page-template-template--privacy a.svglogo svg polygon {
   fill: #000;
 }

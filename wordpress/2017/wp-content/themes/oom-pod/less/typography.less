@@ -14,6 +14,17 @@ h3 {
 .intro {
     font-size: 24px;
     font-weight: 700;
+    margin-bottom: 60px;
+}
+
+.normal-link {
+    color: @yellow;
+    text-decoration: none;
+
+    &:hover {
+        color: @yellow;
+        text-decoration: underline;
+    }
 }
 
 
@@ -27,5 +38,17 @@ h3 {
     &:hover {
         color: #000;
         border-bottom: 2px solid #000;
+    }
+
+    &.stronglink--big {
+        font-size: 18px;
+        font-weight: 800;
+        padding-bottom: 6px;
+        letter-spacing: 1px;
+    }
+
+    &.stronglink--white {
+        color: #fff;
+        border-bottom: 2px solid #fff;
     }
 }

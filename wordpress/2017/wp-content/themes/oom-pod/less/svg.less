@@ -18,8 +18,16 @@ a.svglogo:hover svg polygon {
     fill: @yellow;
 }
 
-body.home a.svglogo svg rect,
-body.home a.svglogo svg path,
-body.home a.svglogo svg polygon {
-    fill: #000;
+
+body.home,
+body.page-template-template--privacy {
+
+    a.svglogo {
+
+        svg {
+            rect, path, polygon {
+                fill: #000;
+            }
+        }
+    }
 }
