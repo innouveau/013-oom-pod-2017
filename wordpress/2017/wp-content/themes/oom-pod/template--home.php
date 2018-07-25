@@ -105,7 +105,7 @@ endwhile; endif
                             <!--</a>-->
                         <!--</p>-->
                         <p>
-                            <a class="stronglink stronglink--big" href="<?php echo get_permalink(181); ?>">
+                            <a class="stronglink stronglink--big" href="<?php echo get_permalink($privacyPage); ?>">
                                 Privacy Statement
                             </a>
                         </p>

@@ -56,7 +56,7 @@
                 <div class="grid-50">
                     Ga naar het online inschrijfformulier.
                     <br><br>
-                    <a class="stronglink stronglink--white stronglink--big" href="<?php echo get_permalink(181); ?>">
+                    <a class="stronglink stronglink--white stronglink--big" href="<?php echo get_permalink($privacyPage); ?>">
                         Privacy Statement
                     </a>
                     <br><br>

@@ -1,6 +1,7 @@
 <?php
     require 'php/svgLogos.php';
     require 'php/uiElements.php';
+    require 'php/page-ids.php';
 ?>
 <!DOCTYPE html>
 
@@ -64,7 +65,7 @@
                                 <!--</a>-->
                             <!--</li>-->
                             <li>
-                                <a href="<?php echo get_the_permalink(181); ?>">
+                                <a href="<?php echo get_the_permalink($privacyPage); ?>">
                                     <span class="menu-date">Privacy</span>
                                     <span class="menu-location">Statement</span>
                                 </a>
