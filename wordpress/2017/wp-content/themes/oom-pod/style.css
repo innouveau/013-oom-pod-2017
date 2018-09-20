@@ -329,16 +329,6 @@ body #fancybox-outer {
   background: #000;
   position: relative;
 }
-body #fancybox-outer:after {
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 10000000;
-  width: 460px;
-  height: 280px;
-  content: '';
-  background-image: url(img/identity/pod-logo-lightbox.png);
-}
 body #fancybox-outer #fancybox-content {
   border-color: transparent;
 }

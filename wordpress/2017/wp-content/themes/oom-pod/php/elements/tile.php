@@ -18,9 +18,9 @@
         <div class="home-meeting-footer">
             <?php
                 if ($meeting_status == 'x') {
-                    echo 'Fotoverslag';
+                    echo "Foto's en downloads";
                 } else {
-                    echo 'Programma';
+                    echo "Programma";
                 }
             ?>
         </div>
