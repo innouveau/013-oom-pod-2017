@@ -10,7 +10,7 @@
     <head>
     <script>console.log("start: " + new Date())</script>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Praktijk Opleiders Dagen 2018-2019</title>
 
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/fonts/frutiger.css" media="screen" />
@@ -21,6 +21,8 @@
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
     <!-- assets -->
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/assets/jquery.js"></script>
 
     <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>

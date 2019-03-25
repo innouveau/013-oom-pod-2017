@@ -491,7 +491,7 @@ button:hover {
   padding: 60px 0;
   font-size: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
 }
 #home-meeting-container .home-meeting {
@@ -501,6 +501,10 @@ button:hover {
   height: 220px;
   text-decoration: none;
   margin-bottom: 60px;
+  margin-right: 20px;
+}
+#home-meeting-container .home-meeting:nth-child(3n+3) {
+  margin-right: 0;
 }
 #home-meeting-container .home-meeting .home-meeting-img {
   height: 220px;
@@ -579,6 +583,7 @@ button:hover {
     width: 100%;
     height: 220px;
     display: block;
+    margin-right: 0;
   }
 }
 #page-top {
