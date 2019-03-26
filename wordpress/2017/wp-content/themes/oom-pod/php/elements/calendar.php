@@ -13,7 +13,7 @@
             $title = get_the_title();
             $url = get_the_permalink();
             $date = get_field('datum');
-            $summary = get_field('summary');
+            $summary = get_field('samenvatting');
             echo '{ date: "' . $date .'", event: { title: "' . $title .'", description: "' . $summary . '", url: "' . $url . '" }}';
             echo ',';
         endwhile;

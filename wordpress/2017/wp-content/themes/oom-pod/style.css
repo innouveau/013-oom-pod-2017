@@ -779,3 +779,6 @@ body.home a.svglogo svg polygon,
 body.page-template-template--privacy a.svglogo svg polygon {
   fill: #000;
 }
+.datereader .navigator .navigator__tools .navigator__tool {
+  background: #000;
+}

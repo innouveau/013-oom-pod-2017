@@ -6,11 +6,15 @@ require 'Program.php';
 
 function setupInterface()
 {
-    $builder = new InterfaceBuilder(Program::$data);
-    $builder->init();
+
+    if (in_category('bijeenkomst')) {
+        $builder = new InterfaceBuilder(Program::$data);
+        $builder->init();
+    }
+
 }
 
-add_action( 'add_meta_boxes', 'setupInterface' );
+
 
 function onSavePost($post_id)
 {
@@ -18,4 +22,10 @@ function onSavePost($post_id)
     $handler->process();
 }
 
+
+add_action( 'add_meta_boxes', 'setupInterface' );
 add_action( 'save_post', 'onSavePost' );
+
+
+
+
