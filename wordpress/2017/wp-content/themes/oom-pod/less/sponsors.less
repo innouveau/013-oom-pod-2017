@@ -5,9 +5,37 @@
     .sponsor {
         width: ~'calc(100% / 3 - 8px)';
 
+        .sponsor__image {
+            padding-bottom: 66%;
+            height: 0;
+            background-position: 50% 50%;
+            background-size: cover;
+            background-color: #ddd;
+            margin-bottom: 20px;
+        }
+
+        .sponsor__content {
+            min-height: 140px;
+
+            p {
+
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        .sponsor__title {
+            font-weight: 700;
+        }
+
         .sponsor__logo {
             height: 60px;
             margin-bottom: 10px;
+
+            img {
+                max-width: 100%;
+            }
 
             svg {
 

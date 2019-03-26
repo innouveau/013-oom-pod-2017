@@ -117,6 +117,22 @@ endwhile; endif
             </div>
         </div>
     </div>
+
+    <div class="module">
+         <div class="pagewrap">
+            <div class="module-header">
+                <h3>
+                    Sponsors
+                </h3>
+            </div>
+
+            <div class="module-content">
+                <div class="grid-row">
+                    <?php include('php/elements/sponsors.php'); ?>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 
