@@ -3,11 +3,20 @@
  * 	Template Name: Test
  */?>
 
- <?php
+<?php
     get_header();
+?>
+
+<div id="top-bar">
+    <?php include('php/elements/topbar.php'); ?>
+</div>
+
+
+<?php
     if(have_posts()): while(have_posts()) : the_post();
         $post_id = $post->ID;
-endwhile; endif
+    endwhile;
+    endif
 ?>
 
 <div id="page-top">
@@ -47,24 +56,54 @@ endwhile; endif
             </div>
 
             <div class="module-content">
-                <div class="grid-row">
-                    <?php include('php/elements/calendar.php'); ?>
-                </div>
+                <?php include('php/elements/calendar.php'); ?>
             </div>
         </div>
     </div>
 
     <div class="module">
-         <div class="pagewrap">
-            <div class="module-header">
-                <h3>
-                    Sponsors
-                </h3>
+            <div class="pagewrap">
+                <div class="module-header">
+                    <h3>
+                        organisatie
+                    </h3>
+                </div>
             </div>
 
-            <div class="module-content">
-                <div class="grid-row">
-                    <?php include('php/elements/sponsors.php'); ?>
+            <div class="pagewrap">
+                <div class="module-content">
+                    <div class="grid-row">
+                        <div class="grid-50">
+                            <div class="module-intro">
+                                Door wie zijn deze dagen mogelijk gemaakt?
+                            </div>
+                        </div>
+                        <div class="grid-50">
+                            <p>
+                                <b>Omdat goede praktijkopleiders voor goed opgeleide leerlingen zorgen.</b>
+                                Daarom organiseren de technische opleidingsfondsen
+                                A+O-Metalektro, OOM en OTIB gezamenlijk praktijkopleidersdagen.
+                                Het doel van deze dagen is om praktijkopleiders te informeren
+                                en te inspireren, maar vooral ook om praktijkopleiders ervaringen
+                                met elkaar uit te laten wisselen.
+                            </p>
+                            <!--<p>-->
+                                <!--<a class="stronglink" href="<?php echo get_permalink(176); ?>">-->
+                                    <!--Lees hier wat zij voor u kunnen betekenen-->
+                                <!--</a>-->
+                            <!--</p>-->
+                            <p>
+                                <br><br>
+                                <a class="stronglink stronglink--big" href="<?php echo get_permalink($privacyPage); ?>">
+                                    Privacy Statement
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="grid-row">
+                        <?php include('php/elements/sponsors.php'); ?>
+                    </div>
                 </div>
             </div>
         </div>

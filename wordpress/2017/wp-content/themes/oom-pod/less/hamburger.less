@@ -1,0 +1,48 @@
+#menu {
+
+    #hamburger {
+        width: 34px;
+        cursor: pointer;
+        margin-top: 6px;
+        padding: 4px;
+        display: inline-block;
+        position: relative;
+
+        .burger {
+            height: 4px;
+            background: #fff;
+            margin-bottom: 5px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &:hover {
+
+            .burger {
+                background: #000;
+            }
+        }
+    }
+}
+
+.hamburger--black {
+
+    #menu {
+
+        #hamburger {
+
+            .burger {
+                background: #000;
+            }
+
+            &:hover {
+                background: @yellow;
+            }
+        }
+    }
+}
+
+
+

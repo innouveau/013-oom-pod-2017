@@ -50,148 +50,11 @@ html body .pagewrap {
 #top-bar.scrolled {
   background: rgba(0, 0, 0, 0.8);
 }
-#top-bar #menu #hamburger {
-  width: 34px;
-  cursor: pointer;
-  margin-top: 6px;
-  padding: 4px;
-  display: inline-block;
-  position: relative;
-}
-#top-bar #menu #hamburger :hover {
-  background: #FFD150;
-}
-#top-bar #menu #hamburger .burger {
-  height: 4px;
-  background: #fff;
-  margin-bottom: 5px;
-}
-#top-bar #menu #hamburger .burger:last-child {
-  margin-bottom: 0;
-}
-#top-bar #menu #home-button {
-  display: inline-block;
-  text-decoration: none;
-  font-size: 14px;
-  height: 27px;
-  border: 2px solid #fff;
-  vertical-align: top;
-  margin: 8px 0 0 8px;
-  color: #fff;
-}
-#top-bar #menu #home-button:hover {
-  background: #FFD150;
-}
-#top-bar #menu #home-button .home-button-arrow {
-  padding: 2px 4px;
-  display: inline-block;
-  border-right: 2px solid #fff;
-  vertical-align: top;
-  width: 23px;
-  height: 23px;
-  background-image: url(img/arrow-left-white.svg);
-}
-#top-bar #menu #home-button .home-button-label {
-  padding: 2px 4px;
-  display: inline-block;
-  vertical-align: top;
-  height: 100%;
-}
-#top-bar #hamburger-content {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url(img/patterns/pod-pattern-full-white.svg);
-  background-color: #000;
-  background-position: 50% 50%;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-#top-bar #hamburger-content ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  width: 100%;
-}
-#top-bar #hamburger-content ul li a {
-  display: block;
-  padding: 10px;
-  text-decoration: none;
-  color: #fff;
-  font-size: 0;
-  width: 100%;
-}
-#top-bar #hamburger-content ul li a span {
-  display: inline-block;
-  font-size: 36px;
-  line-height: 1.6;
-  font-weight: 700;
-  width: 50%;
-}
-#top-bar #hamburger-content ul li a span.menu-date {
-  color: #FFD150;
-  text-align: right;
-  padding-right: 8px;
-}
-#top-bar #hamburger-content ul li a span.menu-location {
-  color: #fff;
-  padding-left: 8px;
-}
-@media (max-width: 768px) {
-  #top-bar #hamburger-content ul li a span {
-    font-size: 20px;
-  }
-}
-#top-bar #hamburger-content ul li.current-menu-item a {
-  cursor: default;
-}
-#top-bar #hamburger-content #hamburger-close {
-  position: absolute;
-  bottom: 40px;
-  right: 40px;
-  cursor: pointer;
-}
 body.menu-active {
   overflow: hidden;
 }
-body.home #top-bar.scrolled {
-  background: rgba(255, 255, 255, 0.8);
-}
-body.home #top-bar #menu #home-button {
-  border: 2px solid #000;
-  color: #000;
-}
-body.home #top-bar #menu #home-button:hover {
-  background: #fff;
-}
-body.home #top-bar #menu #home-button .home-button-arrow {
-  border-right: 2px solid #000;
-  background-image: url(img/arrow-left.svg);
-}
-body.home #hamburger:hover {
-  background: #fff;
-}
-body.home #hamburger .burger {
-  background: #000;
-}
 #top-bar-mini-logo {
   display: none;
-}
-#top-logos {
-  vertical-align: top;
-}
-@media (max-width: 768px) {
-  #top-logos {
-    display: none;
-  }
-}
-#top-logos a {
-  float: left;
-  margin-right: 16px;
 }
 .downloads {
   margin-top: 32px;
@@ -380,12 +243,14 @@ body #fancybox-outer #fancybox-close {
 .sponsors {
   display: flex;
   justify-content: space-between;
+  margin-top: 80px;
+  line-height: 1.625;
 }
 .sponsors .sponsor {
-  width: calc(100% / 3 - 8px);
+  width: calc(100% / 3 - 13px);
 }
 .sponsors .sponsor .sponsor__image {
-  padding-bottom: 66%;
+  padding-bottom: 60%;
   height: 0;
   background-position: 50% 50%;
   background-size: cover;
@@ -394,16 +259,20 @@ body #fancybox-outer #fancybox-close {
 }
 .sponsors .sponsor .sponsor__content {
   min-height: 140px;
+  font-size: 16px;
+  margin-bottom: 40px;
 }
 .sponsors .sponsor .sponsor__content p:first-child {
   margin-top: 0;
 }
 .sponsors .sponsor .sponsor__title {
   font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 30px;
 }
 .sponsors .sponsor .sponsor__logo {
   height: 60px;
-  margin-bottom: 10px;
+  margin-bottom: 70px;
 }
 .sponsors .sponsor .sponsor__logo img {
   max-width: 100%;
@@ -484,6 +353,12 @@ button.yellow {
 button:hover {
   background: #000;
   color: #fff;
+}
+body.home #top-bar.scrolled {
+  background: rgba(255, 255, 255, 0.8);
+}
+body.home #top-bar #menu #home-button {
+  display: none;
 }
 .home-intro__video {
   height: 0;
@@ -799,6 +674,168 @@ body.home a.svglogo svg polygon,
 body.page-template-template--privacy a.svglogo svg polygon {
   fill: #000;
 }
-.datereader .navigator .navigator__tools .navigator__tool {
+#menu #hamburger {
+  width: 34px;
+  cursor: pointer;
+  margin-top: 6px;
+  padding: 4px;
+  display: inline-block;
+  position: relative;
+}
+#menu #hamburger .burger {
+  height: 4px;
+  background: #fff;
+  margin-bottom: 5px;
+}
+#menu #hamburger .burger:last-child {
+  margin-bottom: 0;
+}
+#menu #hamburger:hover .burger {
   background: #000;
+}
+.hamburger--black #menu #hamburger .burger {
+  background: #000;
+}
+.hamburger--black #menu #hamburger:hover {
+  background: #FFD150;
+}
+#hamburger-content {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/patterns/pod-pattern-full-white.svg);
+  background-color: #000;
+  background-position: 50% 50%;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#hamburger-content ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 100%;
+}
+#hamburger-content ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0;
+  width: 100%;
+}
+#hamburger-content ul li a span {
+  display: inline-block;
+  font-size: 36px;
+  line-height: 1.6;
+  font-weight: 700;
+  width: 50%;
+}
+#hamburger-content ul li a span.menu-date {
+  color: #FFD150;
+  text-align: right;
+  padding-right: 8px;
+}
+#hamburger-content ul li a span.menu-location {
+  color: #fff;
+  padding-left: 8px;
+}
+@media (max-width: 768px) {
+  #hamburger-content ul li a span {
+    font-size: 20px;
+  }
+}
+#hamburger-content ul li.current-menu-item a {
+  cursor: default;
+}
+#hamburger-content #hamburger-close {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  cursor: pointer;
+}
+#top-logos {
+  vertical-align: top;
+}
+@media (max-width: 768px) {
+  #top-logos {
+    display: none;
+  }
+}
+#top-logos a {
+  float: left;
+  margin-right: 16px;
+}
+.top-logos--black #top-logos a svg path,
+.top-logos--black #top-logos a svg rect,
+.top-logos--black #top-logos a svg polygon,
+.top-logos--black #top-logos a svg circle {
+  fill: #000;
+}
+#home-button {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 14px;
+  height: 27px;
+  border: 2px solid #fff;
+  vertical-align: top;
+  margin: 8px 0 0 8px;
+  color: #fff;
+}
+#home-button:hover {
+  background: #FFD150;
+}
+#home-button .home-button-arrow {
+  padding: 2px 4px;
+  display: inline-block;
+  border-right: 2px solid #fff;
+  vertical-align: top;
+  width: 23px;
+  height: 23px;
+  background-image: url(img/arrow-left-white.svg);
+}
+#home-button .home-button-label {
+  padding: 2px 4px;
+  display: inline-block;
+  vertical-align: top;
+  height: 100%;
+}
+.home-button--black #home-button {
+  border: 2px solid #000;
+  color: #000;
+}
+.home-button--black #home-button:hover {
+  background: #FFD150;
+}
+.home-button--black #home-button .home-button-arrow {
+  border-right: 2px solid #000;
+  background-image: url(img/arrow-left-black.svg);
+}
+.agenda-single .agenda-single__topbar {
+  padding-top: 80px;
+  height: 180px;
+  border-bottom: 2px solid #BEBEBE;
+  margin-bottom: 60px;
+}
+.agenda-single .agenda-single__topbar .agenda-single__back {
+  height: 52px;
+}
+.agenda-single .agenda-single__topbar .agenda-single__back a {
+  color: #FFD150;
+  text-decoration: none;
+  font-size: 16px;
+}
+.agenda-single .agenda-single__topbar .agenda-single__back a:hover {
+  color: #000;
+}
+.agenda-single .agenda-single__topbar .agenda-single__date {
+  font-weight: 700;
+  font-size: 30px;
+  color: #FFD150;
+}
+.agenda-single .agenda-single__image img {
+  width: 100%;
 }

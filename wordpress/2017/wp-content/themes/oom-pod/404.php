@@ -1,34 +1,24 @@
 <?php get_header(); ?>
 
+<div id="top-bar" class="hamburger--black home-button--black top-logos--black">
+    <?php include('php/elements/topbar.php'); ?>
+</div>
 
-    <div id="pagewrap">
-        <div id="top">
-            <div id="branding">
-                
-            </div>
-            <div id="menu">
-                <?php get_sidebar(); ?>
-            </div>
-            <div id="social-media">
-                -
-            </div>
-        </div>
-        <!-- end of top --->
-        
-        <div id="bottom">
-            <div id="post">
-                    <h1>
-                        Deze pagina bestaat niet...
-                    </h1>
-                    <div id="content">
-                       &nbsp;
+
+<div class="module">
+    <div class="pagewrap">
+        <div class="module-content">
+            <div class="grid-row">
+                <div class="grid-50">
+                    <div class="module-intro">
+                        Deze pagina bestaat niet (meer).
                     </div>
-
+                </div>
+                <div class="grid-50"></div>
             </div>
-            <!-- end of post -->
         </div>
-        <!-- end of bottom --->
     </div>
-    <!-- end of pagewrap --->
+</div>
+
 
 <?php get_footer(); ?>

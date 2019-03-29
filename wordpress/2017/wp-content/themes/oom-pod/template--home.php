@@ -3,11 +3,18 @@
  * 	Template Name: Home
  */?>
 
+ <?php get_header(); ?>
+
+ <div id="top-bar">
+     <?php include('php/elements/topbar.php'); ?>
+ </div>
+
+
  <?php
-    get_header();
     if(have_posts()): while(have_posts()) : the_post();
         $post_id = $post->ID;
-endwhile; endif
+    endwhile;
+    endif
 ?>
 
 <div id="page-top">
@@ -47,22 +54,6 @@ endwhile; endif
 
         <div id="home-meeting-container">
             <?php include('php/elements/home-meetings.php'); ?>
-        </div>
-    </div>
-
-    <div class="module">
-         <div class="pagewrap">
-            <div class="module-header">
-                <h3>
-                    Agenda
-                </h3>
-            </div>
-
-            <div class="module-content">
-                <div class="grid-row">
-                    <?php include('php/elements/calendar.php'); ?>
-                </div>
-            </div>
         </div>
     </div>
 
@@ -113,22 +104,6 @@ endwhile; endif
                             <?php getLogos(); ?>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="module">
-         <div class="pagewrap">
-            <div class="module-header">
-                <h3>
-                    Sponsors
-                </h3>
-            </div>
-
-            <div class="module-content">
-                <div class="grid-row">
-                    <?php include('php/elements/sponsors.php'); ?>
                 </div>
             </div>
         </div>

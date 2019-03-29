@@ -22,6 +22,9 @@
         <div class="sponsor__logo">
             <img src="<?php echo get_field('logo'); ?>">
         </div>
+        <div class="sponsor__url">
+            <a href="<?php echo get_field('url'); ?>" target="_blank" class="stronglink stronglink--big">Ga naar de website</a>
+        </div>
     </div>
 
     <?php

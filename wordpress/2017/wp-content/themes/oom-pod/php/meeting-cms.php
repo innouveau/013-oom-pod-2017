@@ -7,11 +7,10 @@ require 'Program.php';
 function setupInterface()
 {
 
-    if (in_category('bijeenkomst')) {
+    if (in_category('meeting')) {
         $builder = new InterfaceBuilder(Program::$data);
         $builder->init();
     }
-
 }
 
 

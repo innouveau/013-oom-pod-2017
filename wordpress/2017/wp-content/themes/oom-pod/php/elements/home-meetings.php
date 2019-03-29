@@ -2,7 +2,7 @@
     $args = array(
         'posts_per_page' => 20,
         'order' => 'ASC',
-        'category_name' => 'bijeenkomst',
+        'category_name' => 'meeting',
     );
     $q = new WP_Query($args);
     if($q->have_posts()) : while($q->have_posts()) : $q->the_post();

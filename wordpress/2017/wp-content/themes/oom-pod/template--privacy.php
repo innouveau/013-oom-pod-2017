@@ -1,13 +1,18 @@
-<?php
-/*
- * 	Template Name: Privacy
- */?>
+<?php /* Template Name: Privacy */ ?>
 
 <?php
     get_header();
+?>
+
+<div id="top-bar" class="top-logos--black">
+    <?php include('php/elements/topbar.php'); ?>
+</div>
+
+<?php
     if(have_posts()): while(have_posts()) : the_post();
         $post_id = $post->ID;
-endwhile; endif
+    endwhile;
+    endif
 ?>
 
 <div id="page-top">

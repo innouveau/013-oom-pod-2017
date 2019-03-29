@@ -1,41 +1,48 @@
 <?php
     $post_id = $post->ID;
-    $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post_id ), 'full' )[0];
+    $images = wp_get_attachment_image_src( get_post_thumbnail_id( $post_id ), 'full' );
 ?>
 
 
-<div id="page-top">
-    <div id="page-top-image" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/patterns/pod-pattern-home.png);"></div>
 
 
-    <div id="page-top-content">
-        <div class="pagewrap">
-            <div id="pod-identity-container" class="grid-row">
-                <div class="grid-60"></div>
+<div class="agenda-single">
+    <div class="pagewrap">
+        <div class="agenda-single__topbar">
 
-                <div id="pod-identity" class="grid-40">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/identity/pod-logo-2018-black.svg">
-                </div>
+            <div class="agenda-single__back">
+                <a href="<?php echo get_bloginfo('home'); ?>#kalender">
+                    terug naar kalender
+                </a>
+            </div>
+            <div class="agenda-single__date">
+                <?php echo get_field('datum'); ?>
             </div>
         </div>
     </div>
-</div>
-<!-- end of page top -->
 
-
-<div id="page-body">
     <div class="module">
         <div class="pagewrap">
-            <div class="module-header">
-                <h3>
-                    <?php the_title(); ?>
-                </h3>
-            </div>
-        </div>
-
-        <div class="pagewrap">
             <div class="module-content">
-                <?php the_content(); ?>
+                <div class="grid-row">
+                    <div class="grid-50">
+                        <div class="module-intro">
+                            <?php the_title(); ?>
+                        </div>
+                    </div>
+                    <div class="grid-50">
+                        <?php
+                            if ($images) {
+                        ?>
+                        <div class="agenda-single__image">
+                            <img src="<?php echo $images[0]; ?>">
+                        </div>
+                        <?php
+                            }
+                            the_content();
+                        ?>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

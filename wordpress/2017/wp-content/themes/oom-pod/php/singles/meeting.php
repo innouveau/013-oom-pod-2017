@@ -68,13 +68,13 @@
         <div id="page-body">
             <?php
                 if ($meeting_status == 'x') {
-                    include('php/elements/report-and-downloads.php');
-                    include('php/elements/gallery.php');
+                    include(get_template_directory() . '/php/elements/report-and-downloads.php');
+                    include(get_template_directory() . '/php/elements/gallery.php');
                 } else {
-                    include('php/elements/program.php');
+                    include(get_template_directory() . '/php/elements/program.php');
                 }
                 if ($meeting_status == '') {
-                    include('php/elements/meeting-content.php');
+                    include(get_template_directory() . '/php/elements/meeting-content.php');
                 }
             ?>
         </div>
