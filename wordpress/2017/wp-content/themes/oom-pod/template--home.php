@@ -34,7 +34,7 @@
                 </div>
 
                 <div id="pod-identity" class="grid-40">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/identity/pod-logo-2018-black.svg">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/identity/pod-logo-black.svg">
                 </div>
             </div>
         </div>
@@ -48,7 +48,7 @@
 
         <div class="module-header">
             <h3>
-                bijeenkomsten
+                bijeenkomsten in 2019
             </h3>
         </div>
 

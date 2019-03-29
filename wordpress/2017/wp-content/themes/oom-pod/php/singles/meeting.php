@@ -29,7 +29,7 @@
                             <div class="grid-50 grid-left grid-col">&nbsp;</div>
 
                             <div id="pod-identity" class="grid-50 grid-right grid-col">
-                                <img src="<?php echo get_template_directory_uri(); ?>/img/identity/pod-logo-2018.svg">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/identity/pod-logo.svg">
                             </div>
                         </div>
 
