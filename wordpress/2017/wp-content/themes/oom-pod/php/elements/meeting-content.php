@@ -77,6 +77,7 @@
             </h3>
         </div>
         <div class="module-content">
+            <img src="<?php echo $location_image; ?>">
             <div class="module-intro">
                 <?php echo $meeting_address; ?><br>
                 <?php echo $meeting_zipcode; ?><br>

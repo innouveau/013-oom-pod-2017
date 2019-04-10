@@ -26,7 +26,7 @@
             <div id="pod-identity-container" class="grid-row">
                 <div class="grid-60">
                     <div class="home-intro__video">
-                        <iframe src="https://player.vimeo.com/video/277406487" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                        <iframe src="https://player.vimeo.com/video/329295499" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                     </div>
                     <div id="home-intro">
                         <?php the_content(); ?>

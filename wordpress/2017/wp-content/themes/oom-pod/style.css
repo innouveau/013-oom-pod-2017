@@ -614,6 +614,10 @@ body.home #top-bar #menu #home-button {
   z-index: 1;
   display: inline-block;
 }
+#meeting-location #meeting-location-content img {
+  width: 500px;
+  max-width: 100%;
+}
 #meeting-location #meeting-location-content .module-header {
   border-bottom: 0;
 }

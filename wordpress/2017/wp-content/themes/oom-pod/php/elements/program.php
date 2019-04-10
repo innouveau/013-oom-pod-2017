@@ -11,7 +11,7 @@
         <div id="workshop-module" class="module-content">
             <div class="module-absolute">
                 <div class="meeting-city">
-                    <img src="<?php echo $location_image; ?>">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/keynote-speaker/keynote-speaker__lucia-rijker.jpg">
                 </div>
             </div>
             <?php getPrograms($post_id); ?>
