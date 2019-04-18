@@ -843,3 +843,9 @@ body.page-template-template--privacy a.svglogo svg polygon {
 .agenda-single .agenda-single__image img {
   width: 100%;
 }
+.agenda-single a {
+  color: #FFD150;
+}
+.agenda-single a:hover {
+  color: #000;
+}

@@ -26,7 +26,7 @@
             <div id="pod-identity-container" class="grid-row">
                 <div class="grid-60">
                     <div class="home-intro__video">
-                        <iframe src="https://player.vimeo.com/video/329295499" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                        <iframe src="https://player.vimeo.com/video/331176742" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                     </div>
                     <div id="home-intro">
                         <?php the_content(); ?>
@@ -57,6 +57,21 @@
         </div>
     </div>
 
+    <a name="kalender"></a>
+    <div class="module">
+         <div class="pagewrap">
+            <div class="module-header">
+                <h3>
+                    Agenda
+                </h3>
+            </div>
+
+            <div class="module-content">
+                <?php include('php/elements/calendar.php'); ?>
+            </div>
+        </div>
+    </div>
+
     <div class="module">
         <div class="pagewrap">
             <div class="module-header">
@@ -83,11 +98,6 @@
                             en te inspireren, maar vooral ook om praktijkopleiders ervaringen
                             met elkaar uit te laten wisselen.
                         </p>
-                        <!--<p>-->
-                            <!--<a class="stronglink" href="<?php echo get_permalink(176); ?>">-->
-                                <!--Lees hier wat zij voor u kunnen betekenen-->
-                            <!--</a>-->
-                        <!--</p>-->
                         <p>
                             <br><br>
                             <a class="stronglink stronglink--big" href="<?php echo get_permalink($privacyPage); ?>">
@@ -98,12 +108,7 @@
                 </div>
 
                 <div class="grid-row">
-                    <div class="grid-50"></div>
-                    <div class="grid-50">
-                        <div id="footer-logos">
-                            <?php getLogos(); ?>
-                        </div>
-                    </div>
+                    <?php include('php/elements/sponsors.php'); ?>
                 </div>
             </div>
         </div>
