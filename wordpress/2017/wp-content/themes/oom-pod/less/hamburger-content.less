@@ -12,42 +12,39 @@
     .hamburger-container {
         height: 100%;
         overflow: auto;
-        display: flex;
-        //flex-direction: column;
-        justify-content: center;
-        padding: 50px 0;
+        padding: 50px;
 
         ul {
             padding: 0;
             margin: 0;
             list-style: none;
             width: 100%;
+            border-bottom: 1px solid #fff;
 
             li {
 
                 a {
-                    display: block;
                     padding: 10px;
                     text-decoration: none;
-                    color: #fff;
-                    font-size: 0;
+                    color: @yellow;
                     width: 100%;
+                    display: flex;
+                    font-size: 36px;
+                    line-height: 1.6;
+                    justify-content: center;
+                    font-weight: 700;
 
                     span {
                         display: inline-block;
-                        font-size: 36px;
-                        line-height: 1.6;
-                        font-weight: 700;
                         width: 50%;
 
                         &.menu-date {
-                            color: @yellow;
+                            color: #fff;
                             text-align: right;
                             padding-right: 8px;
                         }
 
                         &.menu-location {
-                            color: #fff;
                             padding-left: 8px;
                         }
 
