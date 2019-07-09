@@ -713,17 +713,21 @@ body.page-template-template--privacy a.svglogo svg polygon {
   background-color: #000;
   background-position: 50% 50%;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
-#hamburger-content ul {
+#hamburger-content .hamburger-container {
+  height: 100%;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+#hamburger-content .hamburger-container ul {
   padding: 0;
   margin: 0;
   list-style: none;
   width: 100%;
 }
-#hamburger-content ul li a {
+#hamburger-content .hamburger-container ul li a {
   display: block;
   padding: 10px;
   text-decoration: none;
@@ -731,28 +735,28 @@ body.page-template-template--privacy a.svglogo svg polygon {
   font-size: 0;
   width: 100%;
 }
-#hamburger-content ul li a span {
+#hamburger-content .hamburger-container ul li a span {
   display: inline-block;
   font-size: 36px;
   line-height: 1.6;
   font-weight: 700;
   width: 50%;
 }
-#hamburger-content ul li a span.menu-date {
+#hamburger-content .hamburger-container ul li a span.menu-date {
   color: #FFD150;
   text-align: right;
   padding-right: 8px;
 }
-#hamburger-content ul li a span.menu-location {
+#hamburger-content .hamburger-container ul li a span.menu-location {
   color: #fff;
   padding-left: 8px;
 }
 @media (max-width: 768px) {
-  #hamburger-content ul li a span {
+  #hamburger-content .hamburger-container ul li a span {
     font-size: 20px;
   }
 }
-#hamburger-content ul li.current-menu-item a {
+#hamburger-content .hamburger-container ul li.current-menu-item a {
   cursor: default;
 }
 #hamburger-content #hamburger-close {
