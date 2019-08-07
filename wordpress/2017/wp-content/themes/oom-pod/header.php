@@ -14,7 +14,7 @@
     <title>Praktijk Opleiders Dagen 2019-2020</title>
 
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/fonts/frutiger.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>" media="screen" />
+    <link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>?v=5" media="screen" />
 
 
     <link rel="profile" href="http://gmpg.org/xfn/11">

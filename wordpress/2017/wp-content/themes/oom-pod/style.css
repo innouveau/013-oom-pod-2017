@@ -119,6 +119,10 @@ h3 {
 .module.module--top {
   margin-top: 44px;
 }
+.module img {
+  max-width: 100%;
+  height: auto;
+}
 .module-content {
   padding: 35px 0;
   position: relative;
@@ -480,6 +484,28 @@ body.home #top-bar #menu #home-button {
     display: block;
     margin-right: 0;
   }
+}
+.menu__home {
+  padding: 0;
+  margin: 0;
+}
+.menu__home li {
+  list-style: none;
+  margin: 7px 0;
+}
+.menu__home li a {
+  color: #FFD150;
+  text-decoration: none;
+  border-bottom: 2px solid #FFD150;
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: 800;
+  padding-bottom: 6px;
+  letter-spacing: 1px;
+}
+.menu__home li a:hover {
+  color: #000;
+  border-bottom: 2px solid #000;
 }
 #page-top {
   min-height: 800px;

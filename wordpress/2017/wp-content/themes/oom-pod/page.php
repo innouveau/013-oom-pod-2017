@@ -3,6 +3,10 @@
 ?>
 
 
+<div id="top-bar" class="top-logos--black">
+    <?php include('php/elements/topbar.php'); ?>
+</div>
+
 
 <?php
     if(have_posts()): while(have_posts()) : the_post();
