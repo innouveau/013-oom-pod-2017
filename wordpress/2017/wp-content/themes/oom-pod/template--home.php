@@ -48,27 +48,12 @@
 
         <div class="module-header">
             <h3>
-                bijeenkomsten in 2019
+                bijeenkomsten in 2020
             </h3>
         </div>
 
         <div id="home-meeting-container">
             <?php include('php/elements/home-meetings.php'); ?>
-        </div>
-    </div>
-
-    <a name="kalender"></a>
-    <div class="module">
-         <div class="pagewrap">
-            <div class="module-header">
-                <h3>
-                    Agenda
-                </h3>
-            </div>
-
-            <div class="module-content">
-                <?php include('php/elements/calendar.php'); ?>
-            </div>
         </div>
     </div>
 
