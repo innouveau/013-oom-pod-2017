@@ -15,7 +15,7 @@
                         $keynote_speaker = get_field('keynote_speaker');
 
                         if ($keynote_speaker) {
-                            echo '<img src="' . get_template_directory_uri() . '/img/keynote-speaker/keynote-speaker__lucia-rijker.jpg">';
+                            echo '<img src="' . get_template_directory_uri() . '/img/keynote-speaker/keynote-speaker__2020.jpg">';
                         }
                     ?>
                 </div>
