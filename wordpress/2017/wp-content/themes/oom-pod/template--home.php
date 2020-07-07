@@ -85,7 +85,7 @@
                         <p>
                             <b>Omdat goede praktijkopleiders voor goed opgeleide leerlingen zorgen.</b>
                             Daarom organiseren de technische opleidingsfondsen
-                            A+O-Metalektro, OOM en OTIB gezamenlijk praktijkopleidersdagen.
+                            A+O-Metalektro, OOM en Wij Techniek gezamenlijk praktijkopleidersdagen.
                             Het doel van deze dagen is om praktijkopleiders te informeren
                             en te inspireren, maar vooral ook om praktijkopleiders ervaringen
                             met elkaar uit te laten wisselen.

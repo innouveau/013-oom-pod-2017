@@ -12,10 +12,8 @@ function getLogos() {
             <?php getLogoOom(); ?>
         </svg>
     </a>
-    <a href="https://www.otib.nl/" target="_blank" class="svglogo">
-        <svg width="114" height="40">
-            <?php getLogoOtib(); ?>
-        </svg>
+    <a href="https://www.wij-techniek.nl/" target="_blank">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/logos/wij-techniek.png">
     </a>
 <?php
 }

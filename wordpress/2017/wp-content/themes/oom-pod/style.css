@@ -815,6 +815,9 @@ body.page-template-template--privacy a.svglogo svg polygon {
 .top-logos--black #top-logos a svg circle {
   fill: #000;
 }
+.top-logos--black #top-logos a img {
+  height: 40px;
+}
 #home-button {
   display: inline-block;
   text-decoration: none;
