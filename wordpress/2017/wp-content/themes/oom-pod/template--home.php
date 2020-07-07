@@ -26,7 +26,7 @@
             <div id="pod-identity-container" class="grid-row">
                 <div class="grid-60">
                     <div class="home-intro__video">
-                        <iframe src="https://player.vimeo.com/video/389940673" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                        <iframe src="https://player.vimeo.com/video/399097775" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                     </div>
                     <div id="home-intro">
                         <?php the_content(); ?>
@@ -50,6 +50,13 @@
             <h3>
                 bijeenkomsten in 2020
             </h3>
+        </div>
+        <div class="note">
+            In verband met het coronavirus worden alle praktijkopleidersdagen
+            doorgeschoven naar het eerste kwartaal van 2021.
+            Wanneer meer duidelijk is over data en locaties zullen we deze op
+            onze website zetten.
+            Voor vragen over de praktijkopleidersdagen kunt u ons <a href="mailto:rh.degroot@technischefondsen.nl" target="_blank">hier</a> een mail sturen.
         </div>
 
         <div id="home-meeting-container">

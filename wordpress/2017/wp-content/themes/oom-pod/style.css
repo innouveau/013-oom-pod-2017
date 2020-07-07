@@ -116,6 +116,16 @@ h3 {
   color: #fff;
   border-bottom: 2px solid #fff;
 }
+.note {
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 30px 0 10px 0;
+  color: #B20009;
+}
+.note a {
+  color: #B20009;
+}
 .module.module--top {
   margin-top: 44px;
 }
@@ -569,8 +579,6 @@ body.home #top-bar #menu #home-button {
 }
 .meeting-city {
   padding-right: 100px;
-  height: 300px;
-  overflow: hidden;
 }
 .meeting-city img {
   width: 100%;
