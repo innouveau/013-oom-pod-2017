@@ -56,7 +56,7 @@
             doorgeschoven naar het eerste kwartaal van 2021.
             Wanneer meer duidelijk is over data en locaties zullen we deze op
             onze website zetten.
-            Voor vragen over de praktijkopleidersdagen kunt u ons <a href="mailto:rh.degroot@technischefondsen.nl" target="_blank">hier</a> een mail sturen.
+            Voor vragen over de praktijkopleidersdagen kunt u ons <a href="mailto:h.degroot@technischefondsen.nl" target="_blank">hier</a> een mail sturen.
         </div>
 
         <div id="home-meeting-container">
