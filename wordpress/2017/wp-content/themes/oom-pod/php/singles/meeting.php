@@ -67,6 +67,10 @@
 
         <div id="page-body">
             <?php
+                if ($meeting_status == 'webinar') {
+                     include(get_template_directory() . '/php/elements/meeting/intro.php');
+                }
+
                 if ($meeting_status == 'x') {
                     include(get_template_directory() . '/php/elements/meeting/report-and-downloads.php');
                     include(get_template_directory() . '/php/elements/meeting/gallery.php');
@@ -76,6 +80,10 @@
 
                 if ($meeting_status == '') {
                     include(get_template_directory() . '/php/elements/meeting/meeting-content.php');
+                }
+
+                if ($meeting_status == 'webinar') {
+                    include(get_template_directory() . '/php/elements/meeting/sign-up.php');
                 }
             ?>
         </div>

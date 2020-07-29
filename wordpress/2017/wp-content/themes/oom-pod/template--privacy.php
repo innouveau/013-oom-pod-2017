@@ -27,12 +27,8 @@
                         <?php the_title(); ?>
                     </h1>
                     <div class="intro">
-                        Stichting Arbeidsmarkt en Opleidingsfonds (A+O), Stichting Opleiding, Ontwikkeling, Metaalbewerking (OOM), Stichting Opleidings- en Ontwikkelingsfonds voor het Technische Installatiebedrijf (OTIB) (hierna te noemen: partijen) verzamelen en verwerken je persoonsgegevens voor verschillende doeleinden.
-                    </div>
-
-                    <div>
-                        Voor A+O, OOM en OTIB is het zorgvuldig omgaan met jouw persoonsgegevens van groot belang. Wij staan regelmatig stil bij onze methoden voor gegevensverzameling, opslag en verwerking om ervoor te zorgen dat wij uitsluitend persoonlijke informatie verzamelen, opslaan en verwerken die nodig is om onze diensten te leveren of te verbeteren.
-                    </div>
+                        Stichting Arbeidsmarkt en Opleidingsfonds (A+O), Stichting Opleiding, Ontwikkeling, Metaalbewerking (OOM) en WIJ TECHNIEK (hierna te noemen: partijen) verzamelen en verwerken je persoonsgegevens voor verschillende doeleinden. Voor A+O, OOM en WIJ TECHNIEK is het zorgvuldig omgaan met jouw persoonsgegevens van groot belang. Wij staan regelmatig stil bij onze methoden voor gegevensverzameling, opslag en verwerking om ervoor te zorgen dat wij uitsluitend persoonlijke informatie verzamelen, opslaan en verwerken die nodig is om onze diensten te leveren of te verbeteren. 
+                        <br><br>Dit privacy statement beschrijft de wijze waarop wij met jouw persoonsgegevens omgaan. Partijen spannen zich in om informatie vertrouwelijk te behandelen en alleen te gebruiken voor de doeleinden zoals in dit statement staat beschreven. Alle privacygevoelige informatie die je aan partijen verstrekt valt hieronder. Bij de verwerking van persoonsgegevens partijen zich aan de eisen van de Algemene Verordening Gegevensbescherming (AVG).                    </div>
                 </div>
 
                 <div id="pod-identity" class="grid-40">
@@ -61,7 +57,7 @@
                     <div class="grid-50">
                         Deze privacyverklaring kan van tijd tot tijd worden gewijzigd. De meest recente versie van deze privacyverklaring staat altijd op www.praktijkopleidersdagen.nl.
                         <br><br>
-                        De privacy statement is voor het laatst gewijzigd op: 15 juni 2018.
+                        De privacy statement is voor het laatst gewijzigd op: 2 juni 2020.
                     </div>
                 </div>
             </div>
@@ -82,8 +78,7 @@
                 <div class="grid-row">
                     <div class="grid-50"></div>
                     <div class="grid-50">
-                        Persoonsgegevens zijn gegevens die iets vertellen over wie je bent of die we in verband kunnen brengen met jou. Denk hierbij aan je naam, je e-mailadres of je telefoonnummer. Persoonsgegevens zijn alle gegevens waarmee je geïdentificeerd kan worden.
-                    </div>
+Persoonsgegevens zijn gegevens die iets vertellen over wie je bent of die we in verband kunnen brengen met jou. Denk hierbij aan je naam, je e-mailadres of je telefoonnummer. Persoonsgegevens zijn alle gegevens waarmee je geïdentificeerd kan worden.                    </div>
                 </div>
             </div>
         </div>
@@ -103,8 +98,7 @@
                 <div class="grid-row">
                     <div class="grid-50"></div>
                     <div class="grid-50">
-                        Partijen ontvangen van jou de persoonsgegevens. Dit gebeurt bijvoorbeeld bij het inschrijven voor een evenement of workshop
-                    </div>
+Partijen ontvangen van jou de persoonsgegevens. Dit gebeurt bijvoorbeeld bij het inschrijven voor een evenement of workshop.                    </div>
                 </div>
             </div>
         </div>
@@ -124,7 +118,7 @@
                 <div class="grid-row">
                     <div class="grid-50"></div>
                     <div class="grid-50">
-                        Op het moment dat partijen een evenement of workshop organiseren, dan gebruiken zij daarvoor persoonsgegevens. Partijen gebruiken daarbij de volgende categorie persoonsgegevens:
+Op het moment dat partijen een evenement of workshop organiseren, dan gebruiken zij daarvoor persoonsgegevens. Partijen gebruiken daarbij de volgende categorie persoonsgegevens:
                         <ul>
                             <li>
                                 NAW;
@@ -162,11 +156,11 @@
                         <ol>
                             <li>
                                 Verbeteren van de dienstverlening<br>
-                                In het kader van het verbeteren van onze dienstverlening kan in bepaalde gevallen na afloop van een evenement gevraagd worden om een enquête in te vullen. Deze persoonsgegevens worden na ontvangst geanonimiseerd, waarna wij ze gebruiken om onze dienstverlening te verbeteren.
+In het kader van het verbeteren van onze dienstverlening kan in bepaalde gevallen na afloop van een evenement gevraagd worden om een enquête in te vullen. Deze persoonsgegevens worden na ontvangst geanonimiseerd, waarna wij ze gebruiken om onze dienstverlening te verbeteren. 
                             </li>
                             <li>
                                 Workshops en Evenementen<br>
-                                Indien je deelneemt aan een evenement dat door partijen wordt georganiseerd dan kunnen wij op verschillende momenten persoonsgegevens van je opvragen. Dit doen wij om de volgenden redenen:
+Indien je deelneemt aan een evenement dat door partijen wordt georganiseerd dan kunnen wij op verschillende momenten persoonsgegevens van je opvragen. Dit doen wij om de volgenden redenen:
                                 <ul>
                                     <li>
                                         Om te bepalen of je behoort tot de vakmensen in de
@@ -190,7 +184,7 @@
                                 </ul>
                             </li>
                         </ol>
-                        De persoonsgegevens die op een workshop of evenement worden ontvangen, worden voor geen enkel ander doel gebruikt. Wel kunnen wij deze persoonsgegevens met derde partijen delen, dit gebeurt alleen voor doeleinden die met het evenement te maken hebben. Denk hierbij bijvoorbeeld aan de professionele fotograaf die op het evenement foto’s maakt of standhouders die in opdracht van partijen zijn ingehuurd. Met deze derde partijen worden altijd zeer duidelijke afspraken gemaakt om de bescherming van jouw (persoons) gegevens te garanderen.
+De persoonsgegevens die op een workshop of evenement worden ontvangen, worden voor geen enkel ander doel gebruikt. Wel kunnen wij deze persoonsgegevens met derde partijen delen, dit gebeurt alleen voor doeleinden die met het evenement te maken hebben. Denk hierbij bijvoorbeeld aan de professionele fotograaf die op het evenement foto’s maakt of standhouders die in opdracht van partijen zijn ingehuurd. Met deze derde partijen worden altijd zeer duidelijke afspraken gemaakt om de bescherming van jouw (persoons)gegevens te garanderen.
                     </div>
                 </div>
             </div>
@@ -211,7 +205,7 @@
                 <div class="grid-row">
                     <div class="grid-50"></div>
                     <div class="grid-50">
-                        Partijen maken gebruik van cookies. Een cookie is een eenvoudig klein bestandje dat met deze website wordt meegestuurd en door jouw browser op de harde schijf van jouw computer wordt opgeslagen. Wij gebruiken cookies om het gebruik van onze website te vergemakkelijken en jouw instellingen en voorkeuren te onthouden. De cookies die door onze website worden verstuurd zijn niet gekoppeld aan persoonsgegevens. Je kunt het ontvangen van cookies uitzetten via je browser, dit kan het functioneren van onze website negatief beïnvloeden. Wel verzamelen wij bepaalde niet-identificeerbare automatische informatie over de gebruikers van onze websites. De verzamelde gegevens worden gebruikt om de inhoud van de website optimaal af te stemmen op de wensen en de behoeftes van de bezoekers van onze website(s).
+Partijen maken gebruik van cookies. Een cookie is een eenvoudig klein bestandje dat met deze website wordt meegestuurd en door jouw browser op de harde schijf van jouw computer wordt opgeslagen. Wij gebruiken cookies om het gebruik van onze website te vergemakkelijken en jouw instellingen en voorkeuren te onthouden. De cookies die door onze website worden verstuurd zijn niet gekoppeld aan persoonsgegevens. Je kunt het ontvangen van cookies uitzetten via je browser, dit kan het functioneren van onze website negatief beïnvloeden. Wel verzamelen wij bepaalde niet-identificeerbare automatische informatie over de gebruikers van onze websites. De verzamelde gegevens worden gebruikt om de inhoud van de website optimaal af te stemmen op de wensen en de behoeftes van de bezoekers van onze website(s). 
                     </div>
                 </div>
             </div>
@@ -232,7 +226,7 @@
                 <div class="grid-row">
                     <div class="grid-50"></div>
                     <div class="grid-50">
-                        In uitzonderlijke gevallen kunnen foto’s van jou gebruikt worden in het kader van partijen haar opleidings- en ontwikkelingsdoeleinden. Deze foto’s kunnen op evenementen, workshops of trainingen gemaakt worden. De mogelijkheid bestaat dat deze foto’s gepubliceerd worden in fysieke en/of digitale media. (Zoals facebook, webpagina’s, kranten, promotiemateriaal, etc). Indien dit gebeurt zal OTIB je hier altijd toestemming voor vragen en de foto’s pas na jouw toestemming gebruiken.
+In uitzonderlijke gevallen kunnen foto’s van jou gebruikt worden in het kader van partijen haar opleidings- en ontwikkelingsdoeleinden. Deze foto’s kunnen op evenementen, workshops of trainingen gemaakt worden. De mogelijkheid bestaat dat deze foto’s gepubliceerd worden in fysieke en/of digitale media. (Zoals facebook, webpagina’s, kranten, promotiemateriaal, etc). Indien dit gebeurt zal A+O, OOM of WIJ TECHNIEK je hier altijd toestemming voor vragen en de foto’s pas na jouw toestemming gebruiken. 
                     </div>
                 </div>
             </div>
@@ -253,7 +247,7 @@
                 <div class="grid-row">
                     <div class="grid-50"></div>
                     <div class="grid-50">
-                        Soms moeten wij persoonsgegevens met derde partijen delen zodat ze ons kunnen helpen bij een van de bovengenoemde doeleinden. Dit betekent dat verschillende partijen mogelijk toegang tot jouw persoonsgegevens kunnen krijgen. Deze partijen zijn onder te verdelen in de volgende categorieën:
+Soms moeten wij persoonsgegevens met derde partijen delen zodat ze ons kunnen helpen bij een van de bovengenoemde doeleinden. Dit betekent dat verschillende partijen mogelijk toegang tot jouw persoonsgegevens kunnen krijgen. Deze partijen zijn onder te verdelen in de volgende categorieën:
 
                         <ul>
                             <li>
@@ -275,7 +269,7 @@
                                 Toezichthouders;
                             </li>
                         </ul>
-                        Op het moment dat wij jouw persoonsgegevens aan derde partijen geven dan worden aan deze derde partijen zeer strenge eisen gesteld. Dit gebeurt altijd in overeenstemming met de AVG. De 3 scholingsfondsen zullen nooit je persoonsgegevens doorgeven aan internationale organisaties en/of derde landen gevestigd buiten de Europese Economische Ruimte. Tevens zullen je persoonsgegevens nooit gebruikt worden voor andere dan eerder genoemde doeleinden.
+Op het moment dat wij jouw persoonsgegevens aan derde partijen geven dan worden aan deze derde partijen zeer strenge eisen gesteld. Dit gebeurt altijd in overeenstemming met de AVG. De 3 scholingsfondsen zullen nooit je persoonsgegevens doorgeven aan internationale organisaties en/of derde landen gevestigd buiten de Europese Economische Ruimte. Tevens zullen je persoonsgegevens nooit gebruikt worden voor andere dan eerdergenoemde doeleinden.
                     </div>
                 </div>
             </div>
@@ -296,8 +290,8 @@
                 <div class="grid-row">
                     <div class="grid-50"></div>
                     <div class="grid-50">
-                        Partijen bewaren je persoonsgegevens nooit langer dan noodzakelijk om bovenstaande doeleinden te bereiken. Per doeleinde kunnen deze bewaartermijnen verschillen.
-                        Betreffende de persoonsgegevens die wij in het kader van evenementen en workshops ontvangen bewaren wij deze maximaal 1 jaar.
+Partijen bewaren je persoonsgegevens nooit langer dan noodzakelijk om bovenstaande doeleinden te bereiken. Per doeleinde kunnen deze bewaartermijnen verschillen.
+Betreffende de persoonsgegevens die wij in het kader van evenementen en workshops ontvangen bewaren wij deze maximaal 1 jaar.
                     </div>
                 </div>
             </div>
@@ -318,7 +312,7 @@
                 <div class="grid-row">
                     <div class="grid-50"></div>
                     <div class="grid-50">
-                        Partijen gaan heel zorgvuldig en vertrouwelijk met de gegevens om die je ons geeft. Wij nemen voortdurend passende maatregelen om de gegevens te beschermen tegen verlies, misbruik, onbevoegde toegang, ongewenste openbaarmaking en overig ongeoorloofd gebruik.
+Partijen gaan heel zorgvuldig en vertrouwelijk met de gegevens om die je ons geeft. Wij nemen voortdurend passende maatregelen om de gegevens te beschermen tegen verlies, misbruik, onbevoegde toegang, ongewenste openbaarmaking en overig ongeoorloofd gebruik. 
                     </div>
                 </div>
             </div>
@@ -339,33 +333,30 @@
                 <div class="grid-row">
                     <div class="grid-50"></div>
                     <div class="grid-50">
-                        De AVG kent verschillende rechten aan je toe met betrekking tot de verwerking van jouw persoonsgegevens:
+De AVG kent verschillende rechten aan je toe met betrekking tot de verwerking van jouw persoonsgegevens: 
                         <ul>
                             <li>
-                                recht van inzage van persoonsgegevens: Dit betekent dat
-                                je het recht hebt op inzage in je persoonsgegevens en op informatie over op welke wijze jouw persoonsgegevens worden verwerkt;
+                                recht van inzage van persoonsgegevens: Dit betekent dat je het recht hebt op inzage in je persoonsgegevens en op informatie over op welke wijze jouw persoonsgegevens worden verwerkt; 
                             </li>
                             <li>
-                                recht op rectificatie van persoonsgegevens: Dit betekent dat je het recht hebt om onjuiste en/of onvolledige persoonsgegevens te laten wijzigen;
+                               recht op rectificatie van persoonsgegevens: Dit betekent dat je het recht hebt om onjuiste en/of onvolledige persoonsgegevens te laten wijzigen; 
                             </li>
                             <li>
-                                recht op gegevenswissing: Dit betekent dat je in specifieke situaties het recht hebt om persoonsgegevens te laten wissen, tenzij een wettelijke plicht geldt om deze persoonsgegevens te bewaren;
+recht op gegevenswissing: Dit betekent dat je in specifieke situaties het recht hebt om persoonsgegevens te laten wissen, tenzij een wettelijke plicht geldt om deze persoonsgegevens te bewaren; 
                             </li>
                             <li>
-                                recht op beperking van de verwerking: Dit betekent dat je in specifieke situaties het recht hebt om de verwerking van je persoonsgegevens tijdelijk te laten stoppen, met uitzondering van de opslag van uw persoonsgegevens;
+recht op beperking van de verwerking: Dit betekent dat je in specifieke situaties het recht hebt om de verwerking van je persoonsgegevens tijdelijk te laten stoppen, met uitzondering van de opslag van uw persoonsgegevens; 
                             </li>
                             <li>
-                                recht op overdraagbaarheid van persoonsgegevens; Dit betekent dat je in specifieke situaties het recht hebt
-                                om bepaalde persoonsgegevens in een gestructureerd, gangbaar, machineleesbaar en interoperabel formaat te krijgen en die aan een ander bedrijf door te sturen.
+recht op overdraagbaarheid van persoonsgegevens; Dit betekent dat je in specifieke situaties het recht hebt om bepaalde persoonsgegevens in een gestructureerd, gangbaar, machineleesbaar en interoperabel formaat te krijgen en die aan een ander bedrijf door te sturen. 
+
                             </li>
                             <li>
-                                recht van bezwaar: Dit betekent dat je in specifieke situaties het recht hebt om de verwerking van je persoonsgegevens tijdelijk te laten stoppen.
-                            </li>
+recht van bezwaar: Dit betekent dat je in specifieke situaties het recht hebt om de verwerking van je persoonsgegevens tijdelijk te laten stoppen.                             </li>
                         </ul>
 
-                        Indien je een beroep wil doen op een van je rechten onder de AVG, dan kun je contact opnemen door een e-mail te sturen naar <a class="normal-link" href="mailto:h.degroot@technischefondsen.nl">h.degroot@technischefondsen.nl</a> of door een brief te sturen naar OTIB, afdeling Privacy, Postbus 416, 3440 AK WOERDEN. OTIB zal dan namens de partijen binnen de gestelde wettelijke termijn reageren op jouw beroep op je rechten onder de AVG.<br>
-                        Indien je vragen hebt over de verwerking van je persoonsgegevens of dit privacyverklaring dan kun je telefonisch contact opnemen via 06-12880015.
-                    </div>
+                        Indien je een beroep wil doen op een van je rechten onder de AVG, dan kun je contact opnemen door een e-mail te sturen naar <a class="normal-link" href="mailto:h.degroot@technischefondsen.nl">h.degroot@technischefondsen.nl</a> of door een brief te sturen naar WIJ TECHNIEK, afdeling Privacy, Postbus 416, 3440 AK WOERDEN. WIJ TECHNIEK zal dan namens de partijen binnen de gestelde wettelijke termijn reageren op jouw beroep op je rechten onder de AVG. <br>
+Indien je vragen hebt over de verwerking van je persoonsgegevens of dit privacyverklaring dan kun je telefonisch contact opnemen via 06-12880015.                     </div>
                 </div>
             </div>
         </div>
@@ -385,7 +376,7 @@
                 <div class="grid-row">
                     <div class="grid-50"></div>
                     <div class="grid-50">
-                        Je kunt een klacht indienen bij de Autoriteit Persoonsgegevens indien je van mening bent dat partijen jouw persoonsgegevens (heeft) verwerkt in strijd met de toepasselijke wetgeving, waaronder de AVG.
+Je kunt een klacht indienen bij de Autoriteit Persoonsgegevens indien je van mening bent dat partijen jouw persoonsgegevens (heeft) verwerkt in strijd met de toepasselijke wetgeving, waaronder de AVG. 
                     </div>
                 </div>
             </div>
@@ -406,12 +397,11 @@
                 <div class="grid-row">
                     <div class="grid-50"></div>
                     <div class="grid-50">
-                        Namens de partijen heeft OTIB een Functionaris voor de Gegevensbescherming (FG) aangesteld. De FG van OTIB ziet toe op de naleving van de AVG en de bescherming van jouw persoonsgegevens. Je kunt contact opnemen met de FG door een e-mail te verzenden naar <a class="normal-link" href="mailto:h.degroot@technischefondsen.nl">h.degroot@technischefondsen.nl</a>.
+Namens de partijen heeft WIJ TECHNIEK een Functionaris voor de Gegevensbescherming (FG) aangesteld. De FG van WIJ TECHNIEK ziet toe op de naleving van de AVG en de bescherming van jouw persoonsgegevens. Je kunt contact opnemen met de FG door een e-mail te verzenden naar h.degroot@technischefondsen.nl
                         <br>
                         <div id="footer-logos">
                             <?php getLogos(); ?>
-                        </div>persoonsgegeven
-
+                        </div>
                     </div>
                 </div>
             </div>

@@ -2,11 +2,11 @@
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /013-team-hilgersom/013-oom-pod-2017/dev/wordpress/2017/
+RewriteBase /clients/013-team-hilgersom/013-oom-pod-2017/dev/wordpress/2017/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /013-team-hilgersom/013-oom-pod-2017/dev/wordpress/2017/index.php [L]
+RewriteRule . /clients/013-team-hilgersom/013-oom-pod-2017/dev/wordpress/2017/index.php [L]
 </IfModule>
 
 # END WordPress

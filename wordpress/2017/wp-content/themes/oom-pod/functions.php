@@ -1,8 +1,9 @@
 <?php
 include('php/meeting-cms.php');
 
-//update_option('siteurl', 'http://praktijkopleidersdagen.nl' );
-//update_option('home', 'http://praktijkopleidersdagen.nl' );
+//$url = 'http://localhost/clients/013-team-hilgersom/013-oom-pod-2017/dev/wordpress/2017';
+//update_option('siteurl', $url );
+//update_option('home', $url );
 
 
 add_theme_support('post-thumbnails');

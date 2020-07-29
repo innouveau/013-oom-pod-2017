@@ -52,11 +52,13 @@
             </h3>
         </div>
         <div class="note">
-            In verband met het coronavirus worden alle praktijkopleidersdagen
-            doorgeschoven naar het eerste kwartaal van 2021.
-            Wanneer meer duidelijk is over data en locaties zullen we deze op
-            onze website zetten.
-            Voor vragen over de praktijkopleidersdagen kunt u ons <a href="mailto:h.degroot@technischefondsen.nl" target="_blank">hier</a> een mail sturen.
+            In verband met Covid-19 zijn alle fysieke praktijkopleidersdagen
+            uitgesteld naar 2021. Te zijner tijd ontvang je hier een uitnodiging
+            voor.<br><br>
+            Dit jaar organiseren we een 4-tal webinars speciaal voor jou als
+            praktijkopleider. We starten op 23 september met een grootse
+            Kick Off-webinar die opgevolgd wordt door 3 inhoudelijke
+            workshop-webinars (29 oktober, 19 november, 10 december).
         </div>
 
         <div id="home-meeting-container">
